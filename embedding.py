@@ -29,8 +29,8 @@ with torch.no_grad():
     feature_matrix1 = outputs.last_hidden_state[:, 0, :].numpy()
 matrix_tensor1 = torch.tensor(feature_matrix1)
 
-tokenizer2 = AutoTokenizer.from_pretrained("DeepChem/ChemBERTa-77M-MLM")
-model2 = AutoModel.from_pretrained("DeepChem/ChemBERTa-77M-MLM")
+tokenizer2 = AutoTokenizer.from_pretrained("DeepChem/ChemBERTa-100M-MLM")
+model2 = AutoModel.from_pretrained("DeepChem/ChemBERTa-100M-MLM")
 
 inputs = tokenizer2(smile_list, return_tensors="pt", padding=True, truncation=True)
 
