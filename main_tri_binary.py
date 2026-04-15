@@ -38,7 +38,7 @@ def set_random_seed(seed):
         torch.cuda.manual_seed_all(seed)
 
 
-parser = argparse.ArgumentParser(description='Binary Triplet classification with TriMoGCL')
+parser = argparse.ArgumentParser(description='Binary Triplet classification with HANAMI')
 # Dataset
 parser.add_argument('--data-name', default='ms', help='graph name')
 parser.add_argument('--task', default='binary', help='graph name')
