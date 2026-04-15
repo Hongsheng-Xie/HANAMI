@@ -1,2 +1,3 @@
-# HANAMI
-Heterogeneous Graph Contrastive Learning for Drug-Disease-Gene interaction Motif Prediction
+# HANAMI: Heterogeneous Graph Contrastive Learning for Drug-Gene-Disease Motif Prediction
+
+## Overview
