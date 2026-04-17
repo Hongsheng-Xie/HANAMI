@@ -3,7 +3,7 @@ import torch.nn.functional as F
 import numpy as np
 import argparse
 import os.path
-from transfer_util import prepare_data
+from transfer_utils import prepare_data
 from base_gcn import GCN_binary_SAGE
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score,\
 precision_recall_curve, auc, f1_score
