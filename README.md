@@ -31,13 +31,11 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 ## Files Description
 
-- `data_loader.py`: Handles data loading, preprocessing, and cross-validation splits
-- `model.py`: Defines the neural network architecture
-- `layers.py`: Contains custom layer implementations (GCMC, GCN, Attention, Decoder)
-- `train.py`: Main training script with seed-based experiments
-- `ablation.py`: Ablation study script for hyperparameter analysis
-- `evaluation.py`: Model evaluation metrics (AUROC, AUPR)
-- `augmentation.py`: Graph data augmentation techniques
+- `Attention.py`: Implements a PyTorch-based attention mechanism
+- `base_gcn.py`: Defines the neural network architectures and custom layers, including GraphSAGE layers, Structure-Aware Poolings, and Multi-Layer Perceptrons (MLPs)
+- `create_data.py`: Manages the logic of assembling valid drug-gene-disease motifs and generating corresponding negative samples
+- `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
+- `main_tri_binary.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
 - `utils.py`: Utility functions for graph processing and logging
 
 ## Usage
