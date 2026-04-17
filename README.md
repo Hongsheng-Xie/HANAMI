@@ -1,13 +1,12 @@
 # HANAMI: Heterogeneous Graph Contrastive Learning for Drug-Gene-Disease Motif Prediction
 
 ## Overview
-This project implements a drug–gene–disease motif prediction model using a multi-view deep graph learning framework with GraphSAGE convolution. The model predicts seven different drug-gene-disease motifs by integrating heterogeneous biomedical data and leverages relation-aware topology encoding and contrastive learning to enable accurate and biologically meaningful predictions. 
+This project implements a drug–gene–disease motif prediction model using a multi-view deep graph learning framework with GraphSAGE convolution. The model predicts seven different drug-gene-disease motifs by integrating heterogeneous biomedical data and leverages relation-aware topology encoding and contrastive learning to enable accurate and biologically meaningful predictions. It employs an architecture combining:
 
-This project implements a drug-disease association prediction model using Graph Convolutional Networks (GCN) with advanced data augmentation techniques. The model predicts novel drug-disease associations by learning from known associations and similarity information. It employs a dual-channel architecture combining:
-- Topology-based Graph Convolutional Matrix Completion (GCMC) layers
-- Feature-based Graph Convolutional Networks (FGCN)
+- Heterogeneous GraphSAGE Convolutional Networks
+- Structure-Aware Pooling Module
 - Attention-based fusion mechanism
-- Various data augmentation strategies
+- N-pair Contrastive Learning strategies
 
 ---
 ![Main Model Architecture](image/main.png)
