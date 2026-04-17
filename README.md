@@ -5,7 +5,7 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 - Message Passing GraphSAGE Convolutional Networks
 - Structure-Aware Pooling module
-- Attention-based fusion mechanism
+- Attention-based fusion
 - N-pair Contrastive Learning strategy
 
 ---
@@ -28,11 +28,10 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 ---
 
-
 ## Files Description
 
 - `Attention.py`: Implements a PyTorch-based attention mechanism
-- `base_gcn.py`: Defines the neural network architectures and custom layers, including GraphSAGE layers, Structure-Aware Poolings, and Multi-Layer Perceptrons (MLPs)
+- `base_gcn.py`: Defines the neural network architectures and custom layers, including GraphSAGE layers, Structure-Aware Poolings, Multi-Layer Perceptrons (MLPs), and Decoders
 - `create_data.py`: Manages the logic of assembling valid drug-gene-disease motifs and generating corresponding negative samples
 - `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
 - `main_tri_binary.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
@@ -45,15 +44,16 @@ This project implements a drug–gene–disease motif prediction model using a m
 Run training with default parameters:
 
 ```bash
-python train.py --data_name lrssl --device 0
+python main_tri_binary.py
 ```
 
 ## Model Architecture
 
-1. **GCMC Module**: Processes drug-disease interaction graph with relation-specific transformations
-2. **FGCN Module**: Processes drug and disease similarity graphs separately
-3. **Attention Fusion**: Combines topology and feature representations
-4. **MLP Decoder**: Predicts association scores
+1. **Message Passing GraphSAGE Convolution module**: Processes the drug-gene-disease interaction graph by aggregating relational and topological contexts from neighboring nodes.
+2. **Structure-Aware Pooling module**: Processes triplet embeddings through combined globally and locally consolidated representations.
+3. **Attention-based fusion**: Combines different feature representations within the network.
+4. **N-pair Contrastive Learning**: Regularizes the latent space and optimizes structural motif representations
+5. **MLP Decoder**: Predicts association scores
 
 ## Data Format
 
