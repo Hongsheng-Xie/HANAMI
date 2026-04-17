@@ -220,7 +220,7 @@ def get_binary_dataset(args, cycles, tuples, single):
     data = Data(edge_index=train_graph, edge_attr=train_attr)
     data.num_nodes = args.dise_num + args.drug_num + args.gene_num
 
-    dise_feat = torch.load(args.input_dir + 'dise_Bio.pth')
+    dise_feat = torch.load(args.input_dir + 'dise_All.pth')
     drug_feat = torch.load(args.input_dir + 'drug_All.pth')
     gene_feat = torch.load(args.input_dir + 'gene_All.pth')
 
