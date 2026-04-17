@@ -74,10 +74,10 @@ Input data should be in NumPy (.npy) and PyTorch (.pth) format containing:
 ## Cold Start
 
 ### Overview
-The cold start module handles completely unseen drugs and diseases using a retrieval-aggregation framework with disease-conditional attention. It uses raw feature similarity for neighbor selection and trained embeddings for context-aware aggregation to predict associations for entities not seen during training.
+The cold start module handles unseen drugs, genes, and diseases using an inductive transfer learning strategy that maps novel entities into a shared latent space via specialized encoders. The framework is built upon a DRKG subgraph for training and validation, which is strictly isolated from the MS dataset. All overlapping nodes and edges are removed to prevent data leakage. 
 
 ### Usage
-Run training with default parameters:
+Run transfer training with default parameters:
 
 ```bash
 python transfer_main_tri_binary.py
