@@ -58,13 +58,19 @@ python main_tri_binary.py
 ## Data Format
 
 Input data should be in NumPy (.npy) and PyTorch (.pth) format containing:
-- `didr`: Drug-disease association matrix
-- `drug`: Drug similarity matrix
-- `disease`: Disease similarity matrix
-- `drug_embed`: Drug feature embeddings
-- `disease_embed`: Disease feature embeddings
-- `Wrname`: Drug identifiers
+- `Compound-Disease-feat-hierarchy.npy`: Drug-disease association matrix
+- `Gene-Disease-feat-hierarchy.npy`: Gene-disease association matrix
+- `Gene-Compound-feat-hierarchy.npy`: Gene-drug association matrix
+- `subgraph_drug.npy`: Drug indexes for transfer learning subgraph
+- `subgraph_dise.npy`: Disease indexes for transfer learning subgraph
+- `subgraph_gene.npy`: Gene indexes for transfer learning subgraph
 
+- `dise_All.pth`: Disease feature embeddings
+- `drug_All.pth`: Drug feature embeddings
+- `gene_All.pth`: Gene feature embeddings
+- `DRKG_MS_dise_Rev.pth`: Disease feature embeddings for the subgraph of DRKG excluding MS
+- `DRKG_MS_drug_Rev.pth`: Drug feature embeddings for the subgraph of DRKG excluding MS
+- `DRKG_MS_gene_Rev.pth`: Gene feature embeddings for the subgraph of DRKG excluding MS
 ## Cold Start
 
 ### Overview
