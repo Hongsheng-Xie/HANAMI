@@ -77,12 +77,8 @@ Input data should be in NumPy (.npy) and PyTorch (.pth) format containing:
 The cold start module handles completely unseen drugs and diseases using a retrieval-aggregation framework with disease-conditional attention. It uses raw feature similarity for neighbor selection and trained embeddings for context-aware aggregation to predict associations for entities not seen during training.
 
 ### Usage
-First, train models and save embeddings:
-```bash
-python train.py --data_name Gdataset --device 0 --save_model
-```
+Run training with default parameters:
 
-Then run cold start evaluation:
 ```bash
-python cold_start.py
+python transfer_main_tri_binary.py
 ```
