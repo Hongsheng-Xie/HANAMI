@@ -21,7 +21,7 @@ This project implements a drug–gene–disease motif prediction model using a m
 | **BioBERT (v1.1 large-cased-squad)** | 1024-dim biomedical text embeddings for disease terms | [`dmis-lab/biobert-large-cased-v1.1-squad`](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad)|
 | **ClinicalBERT (base-cased-clinical)** | 768-dim biomedical text embeddings for disease terms | [`emilyalsentzer/Bio_ClinicalBERT`](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)|
 | **DrugBank** | Curated drug metadata & identifiers | [DrugBank Online](https://go.drugbank.com/)|
-| **OMIM** | Curated disease phenotype information | [omim.org](https://www.ncbi.nlm.nih.gov/omim)|
+| **MeSH** | Curated disease phenotype information | [mesh.org](https://www.ncbi.nlm.nih.gov/mesh/)|
 
 ---
 
