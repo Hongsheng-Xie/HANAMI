@@ -46,7 +46,7 @@ parser.add_argument('--task', default='binary', help='graph name')
 parser.add_argument('--input_dir', type=str, default='./data/')
 parser.add_argument('--res_dir', type=str, default='24-7-4-binary all')
 
-parser.add_argument('--dise_feat_dir', type=str, default='./data/ms/dise_Bio.pth')
+parser.add_argument('--dise_feat_dir', type=str, default='./data/ms/dise_All.pth')
 parser.add_argument('--drug_feat_dir', type=str, default='./data/ms/drug_All.pth')
 parser.add_argument('--gene_feat_dir', type=str, default='./data/ms/gene_All.pth')
 
