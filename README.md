@@ -57,7 +57,7 @@ python main_tri_binary.py
 
 ## Data Format
 
-Input data should be in MATLAB (.mat) format containing:
+Input data should be in NumPy (.npy) and PyTorch (.pth) format containing:
 - `didr`: Drug-disease association matrix
 - `drug`: Drug similarity matrix
 - `disease`: Disease similarity matrix
