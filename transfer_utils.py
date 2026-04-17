@@ -456,7 +456,7 @@ def get_binary_dataset(args, cycles, tuples, single,cycles1,tuples1,single1):
     data.train_graph = train_graph
     data.train_attr = train_attr
     
-    dise_feat1 = torch.load(args.input_dir1 + 'dise_Bio.pth')
+    dise_feat1 = torch.load(args.input_dir1 + 'dise_All.pth')
     drug_feat1 = torch.load(args.input_dir1 + 'drug_All.pth')
     gene_feat1 = torch.load(args.input_dir1 + 'gene_All.pth')
     dise_feat1 = dise_feat1.float()
@@ -573,7 +573,7 @@ def split_motif_mc(args, cycles, tuples, single):
 
     data = Data(edge_index=train_graph, edge_attr=train_attr)
     data.num_nodes = args.dise_num + args.drug_num + args.gene_num
-    dise_feat = torch.load(args.input_dir + 'dise_Bio.pth')
+    dise_feat = torch.load(args.input_dir + 'dise_All.pth')
     drug_feat = torch.load(args.input_dir + 'drug_All.pth')
     gene_feat = torch.load(args.input_dir + 'gene_All.pth')
     
