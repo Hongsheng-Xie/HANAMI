@@ -3,7 +3,7 @@
 ## Overview
 This project implements a drug–gene–disease motif prediction model using a multi-view deep graph learning framework with GraphSAGE convolution. The model predicts seven different drug-gene-disease motifs by integrating heterogeneous biomedical data and leverages relation-aware topology encoding and contrastive learning to enable accurate and biologically meaningful predictions. It employs an architecture combining:
 
-- Heterogeneous GraphSAGE Convolutional Networks
+- Message Passing GraphSAGE Convolutional Networks
 - Structure-Aware Pooling Module
 - Attention-based fusion mechanism
 - N-pair Contrastive Learning strategies
