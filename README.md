@@ -15,7 +15,7 @@ This project implements a drug-disease association prediction model using Graph 
 
 | Resource | Purpose in DREAM-GNN | Link |
 | -------- | ------------------- | ---- |
-| **ChemBERTa (DeepChem, ChemBERTa-100M-MLM)** | 1024-dim SMILES embeddings for small-molecule drugs | [`DeepChem/ChemBERTa-100M-MLM`&`seyonec/ChemBERTa-zinc-base-v1`](https://huggingface.co/DeepChem/ChemBERTa-100M-MLM&https://huggingface.co/seyonec/ChemBERTa-zinc-base-v1)|
+| **ChemBERTa (DeepChem, ChemBERTa-100M-MLM)** | 1024-dim SMILES embeddings for small-molecule drugs | [`DeepChem/ChemBERTa-100M-MLM`](https://huggingface.co/DeepChem/ChemBERTa-100M-MLM)&[`seyonec/ChemBERTa-zinc-base-v1`](https://huggingface.co/seyonec/ChemBERTa-zinc-base-v1)|
 | **ESM-2 (650 M, UR50D)** | 1280-dim protein sequence embeddings for biologics | [`facebookresearch/esm2_t33_650M_UR50D`](https://huggingface.co/facebookresearch/esm2_t33_650M_UR50D)|
 | **BioBERT (v1.1 base-cased)** | 768-dim biomedical text embeddings for disease terms | [`dmis-lab/biobert-base-cased-v1.1`](https://huggingface.co/dmis-lab/biobert-base-cased-v1.1)|
 | **DrugBank** | Curated drug metadata & identifiers | [DrugBank Online](https://go.drugbank.com/)|
