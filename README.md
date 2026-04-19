@@ -44,7 +44,7 @@ This project implements a drug–gene–disease motif prediction model using a m
 Run training with default parameters:
 
 ```bash
-python main_tri_binary.py
+python main.py
 ```
 
 ## Model Architecture
@@ -80,5 +80,5 @@ The cold start module handles unseen drugs, genes, and diseases using an inducti
 Run transfer training with default parameters:
 
 ```bash
-python transfer_main_tri_binary.py
+python transfer.py
 ```
