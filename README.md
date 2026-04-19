@@ -80,5 +80,5 @@ The cold start module handles unseen drugs, genes, and diseases using an inducti
 Run transfer training with default parameters:
 
 ```bash
-python transfer.py
+python transfer_main.py
 ```
