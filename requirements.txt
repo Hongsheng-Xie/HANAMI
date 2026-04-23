@@ -1,0 +1,14 @@
+Bio==1.8.1
+biopython==1.85
+borzoi_pytorch==0.4.3
+chemprop==2.2.3
+enformer_pytorch==0.8.11
+networkx==3.5
+numpy==2.4.4
+pandas==3.0.2
+pubchempy==1.0.4
+scikit_learn==1.8.0
+torch==2.11.0
+torch_geometric==2.7.0
+tqdm==4.67.1
+transformers==4.50.3

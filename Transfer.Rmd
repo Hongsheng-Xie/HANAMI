@@ -1,0 +1,654 @@
+---
+title: "Plot example"
+output: pdf_document
+date: "2026-01-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Transfer Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(readr)
+library(stringr)
+library(readxl) 
+library(patchwork)
+library(ggsignif)
+library(grid)
+```
+
+```{r 1}
+filename <- "" #The path to the .xlsx result file
+
+if (!file.exists(filename)) {
+  stop(paste("File not found at:", filename, "\nPlease check the path and filename."))
+}
+
+all_sheets <- excel_sheets(filename)
+
+if (!("Transfer" %in% all_sheets)) {
+  potential_match <- all_sheets[grepl("Transfer", all_sheets, ignore.case = TRUE)]
+  
+  if (length(potential_match) > 0) {
+    print(paste("Exact sheet 'Transfer' not found. Did you mean:", potential_match[1], "? Using that instead."))
+    target_sheet <- potential_match[1]
+  } else {
+    stop(paste("Sheet 'Transfer' not found. Please update the script to use one of these:", paste(all_sheets, collapse = ", ")))
+  }
+} else {
+  target_sheet <- "Transfer"
+}
+```
+
+```{r 2}
+raw_data <- read_excel(filename, sheet = target_sheet, col_names = FALSE)
+raw_data <- as.data.frame(raw_data)
+
+extract_block <- function(data, header_row, model_label, offset = 1) {
+  Start_row <- header_row + offset
+  end_row <- Start_row + 9
+
+  if (end_row > nrow(data)) end_row <- nrow(data)
+
+  sub_df <- data[Start_row:end_row, 2:8]
+  
+  colnames(sub_df) <- c("Triangle", "Disease-Star", "Drug-Star", 
+                        "Gene-Star", "Drug-Disease", "Gene-Disease", "Gene-Drug")
+  
+  sub_df[] <- lapply(sub_df, function(x) as.numeric(as.character(x)))
+  
+  sub_df$Model <- model_label
+
+  sub_df$Trial <- 1:nrow(sub_df)
+  
+  return(sub_df)
+}
+
+header_indices <- which(str_trim(raw_data[, 2]) == "Triangle")
+if (length(header_indices) == 1) header_indices <- c(header_indices, header_indices + 13) 
+
+df_trimogcl <- extract_block(raw_data, header_indices[1], "TriMoGCL", offset = 1)
+df_method <- extract_block(raw_data, header_indices[2], "HANAMI", offset = 1)
+
+all_data_wide <- rbind(df_trimogcl, df_method)
+
+find_and_extract <- function(data, keyword, model_label) {
+  idx <- which(str_detect(as.character(data[,1]), regex(keyword, ignore_case = TRUE)))
+  if (length(idx) > 0) {
+    val <- suppressWarnings(as.numeric(as.character(data[idx[1], 2])))
+    off <- 1
+    if (!is.na(val)) {
+       off <- 0 # Data Starts on the same line as the label
+    }
+    return(extract_block(data, idx[1], model_label, offset = off))
+  }
+  return(NULL)
+}
+
+df_trinet <- find_and_extract(raw_data, "TriNet", "TriNet")
+df_n2v <- find_and_extract(raw_data, "N2V", "N2V-MLP")
+df_rf <- find_and_extract(raw_data, "RF", "RF") 
+
+if (!is.null(df_trinet)) all_data_wide <- rbind(all_data_wide, df_trinet)
+if (!is.null(df_n2v)) all_data_wide <- rbind(all_data_wide, df_n2v)
+if (!is.null(df_rf)) all_data_wide <- rbind(all_data_wide, df_rf) 
+
+
+df_long <- all_data_wide %>%
+  pivot_longer(
+    cols = c("Triangle", "Disease-Star", "Drug-Star", "Gene-Star", 
+             "Drug-Disease", "Gene-Disease", "Gene-Drug"),
+    names_to = "Metric",
+    values_to = "Score"
+  )
+
+df_long$Score <- df_long$Score / 100
+df_long$Metric <- str_replace(df_long$Metric, "dsie", "Disease")
+
+motifs <- c("Triangle", "Disease-Star", "Drug-Star", "Gene-Star", 
+            "Drug-Disease", "Gene-Disease", "Gene-Drug")
+df_long$Metric <- factor(df_long$Metric, levels = motifs)
+
+methods <- c("RF", "TriNet", "N2V-MLP", "TriMoGCL", "HANAMI")
+df_long$Model <- factor(df_long$Model, levels = methods)
+
+method_colors_Transfer <- c(
+  "HANAMI" = "#E28B62",  
+  "N2V-MLP" = "#92B1B6",     
+  "TriMoGCL" = "#CAD0BD",    
+  "TriNet" = "#E1A6AD",
+  "RF" = "#2C8C99" 
+)
+
+method_borders_Transfer <- c(
+  "HANAMI" = "#B8552D", 
+  "N2V-MLP" = "#59858C",    
+  "TriMoGCL" = "#8E9F76",   
+  "TriNet" = "#C46B7C",
+  "RF" = "#1D5A63"
+)
+
+create_single_panel_Transfer <- function(data, motif_title, tag_label, colors, borders) {
+  
+  y_label_text <- if(tag_label %in% c("a", "e")) "AUROC" else NULL
+
+  custom_theme <- theme_bw(base_size = 14) +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "plain", margin = margin(b = 10)),
+      axis.text.x = element_blank(), 
+      axis.ticks.x = element_blank(),
+      axis.title.x = element_blank(),
+      axis.title.y = element_text(size = 18, face = "plain", margin = margin(r = 15)), 
+      axis.text.y = element_text(size = 16, face = "plain", color="black"),
+      axis.ticks.y = element_line(color = "black", size = 0.5),
+      
+      axis.line = element_blank(),
+      axis.line.x = element_blank(),
+      axis.line.y = element_blank(),
+      
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
+      legend.position = "none",
+      plot.margin = margin(10, 5, 5, 5),
+      aspect.ratio = 1 
+    )
+  
+  breaks <- numeric(0)
+  if (motif_title == "Triangle") {
+    breaks <- c(42, 53, 64, 75, 86)/ 100
+  } else if (motif_title == "Disease-Star") {
+    breaks <- c(42, 58, 74, 90)/ 100
+  } else if (motif_title == "Drug-Star") {
+    breaks <- c(46, 62, 78, 94)/ 100
+  } else if (motif_title == "Gene-Star") {
+    breaks <- c(45, 60, 75, 90) / 100
+  } else if (motif_title == "Drug-Disease") {
+    breaks <- c(43, 62, 81, 100) / 100
+  } else if (motif_title == "Gene-Disease") {
+    breaks <- c(42, 58, 74, 90) / 100
+  } else if (motif_title == "Gene-Drug") {
+    breaks <- c(34, 55, 76, 97)/ 100
+  } else {
+    breaks <- seq(floor(min(data$Score)), ceiling(max(data$Score)), length.out = 4)/ 100
+  }
+  
+model_stats <- data %>%
+    group_by(Model) %>%
+    summarize(Median = median(Score, na.rm=TRUE), Min = min(Score, na.rm=TRUE), .groups = 'drop') %>%
+    arrange(desc(Median))
+  
+  top2_models <- model_stats$Model[1:2]
+  
+  p_text <- ""
+  
+  tryCatch({
+    d_best <- subset(data, Model == top2_models[1])
+    d_second <- subset(data, Model == top2_models[2])
+    d_best <- d_best[order(d_best$Trial), ]
+    d_second <- d_second[order(d_second$Trial), ]
+    
+    if(nrow(d_best) == nrow(d_second) && nrow(d_best) >= 3) {
+      t_res <- t.test(d_best$Score, d_second$Score, paired = TRUE, alternative = "greater")
+      p_val <- t_res$p.value
+      
+      print(p_val)
+      if (p_val < 0.001) {
+        p_text <- "***"
+      } else if (p_val < 0.01) {
+        p_text <- "**"
+      } else if (p_val < 0.05) {
+        p_text <- "*"
+      } else {
+        p_text <- "" # Leave blank if > 0.05
+      }
+    }
+  }, error = function(e) { p_text <- "" })
+
+  yrange <- max(breaks) - min(breaks)
+
+  x1 <- match(top2_models[1], levels(data$Model))
+  x2 <- match(top2_models[2], levels(data$Model))
+
+  if(!is.na(x1) && !is.na(x2)) {
+    x_min_idx <- min(x1, x2)
+    x_max_idx <- max(x1, x2)
+    models_in_span <- levels(data$Model)[x_min_idx:x_max_idx]
+
+    min_val_span <- min(subset(data, Model %in% models_in_span)$Score, na.rm = TRUE)
+  } else {
+    min_val_span <- min(data$Score, na.rm=TRUE) # Fallback
+  }
+
+  y_line <- min_val_span - 0.05 * yrange
+  
+  y_limit_min <- min(min(breaks), y_line - 0.1 * yrange)
+  
+  y_limit_max <- max(breaks) 
+  
+  if(max(data$Score) > y_limit_max) y_limit_max <- max(data$Score)
+  
+  y_limits <- c(y_limit_min, y_limit_max)
+
+  # Y label: AUROC
+  y_label_text <- if(tag_label %in% c("a", "e")) "AUROC" else NULL
+  
+  p <- ggplot(data, aes(x = Model, y = Score, fill = Model, color = Model)) +
+    
+    # 1. VIOLIN (Centered)
+    geom_violin(scale = "width", trim = TRUE, alpha = 0.6, size = 0.2, color = NA) +
+    
+    # 2. BOXPLOT (Centered, narrower than violin)
+    geom_boxplot(width = 0.30, outlier.shape = NA, alpha = 0.8, size = 0.4, color = "black") +
+    
+    # 3. POINTS (Centered, jittered)
+    geom_jitter(width = 0.1, size = 1.5, alpha = 0.4, color = "grey50", shape = 16) +
+    
+    # Annotations
+    annotation_custom(
+      grob = textGrob(label = tag_label, 
+                      x = unit(-0.2, "npc"), # MOVED INSIDE textGrob
+                      y = unit(1.12, "npc"),  # MOVED INSIDE textGrob
+                      gp = gpar(fontsize = 22, fontface = "bold", col = "black")),
+      xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf
+    ) +
+    
+    scale_fill_manual(values = colors) +
+    scale_color_manual(values = borders) +
+    
+    scale_y_continuous(breaks = breaks, limits = y_limits,
+                       labels = function(x) sprintf("%g", x),
+                       expand = expansion(mult = c(0.01, 0.01))) +
+    coord_cartesian(ylim = y_limits, clip = "off") +
+    labs(title = motif_title, x = NULL, y = y_label_text) +
+    custom_theme
+  
+  # Add the Bracket and P-value annotation MANUALLY
+  if (p_text != "") {
+    tick_height <- 0.03 * yrange 
+    y_tick_end <- y_line + tick_height
+    
+    p <- p + annotate("segment", x = x1, xend = x2, y = y_line, yend = y_line, 
+                      size = 0.5, color = "black")
+    
+    p <- p + annotate("segment", x = x1, xend = x1, y = y_line, yend = y_tick_end, 
+                      size = 0.5, color = "black")
+    
+    p <- p + annotate("segment", x = x2, xend = x2, y = y_line, yend = y_tick_end, 
+                      size = 0.5, color = "black")
+    
+    p <- p + annotate("text", x = (x1 + x2)/2, y = y_line, label = p_text, 
+                      vjust = 1.5, size = 7, fontface = "plain", color = "red")
+  }
+  
+  p <- p +
+    scale_fill_manual(values = colors) +
+    scale_color_manual(values = borders) +
+
+    scale_y_continuous(breaks = breaks, limits = y_limits, 
+                       labels = function(x) sprintf("%g", x),
+                       expand = expansion(mult = c(0.01, 0.01))) +
+    labs(
+      title = motif_title, 
+      x = NULL,
+      y = y_label_text
+    ) +
+    custom_theme
+  
+  return(p)
+}
+
+# Ensure level_order and tags are defined based on motifs
+level_order <- motifs
+tags <- letters[1:length(level_order)]
+
+plots_Transfer <- list()
+for (i in 1:length(level_order)) {
+  m <- level_order[i]
+  m_data <- subset(df_long, Metric == m)
+  plots_Transfer[[i]] <- create_single_panel_Transfer(m_data, m, tags[i], method_colors_Transfer, method_borders_Transfer)
+}
+plots_Transfer[[8]] <- guide_area()
+
+plots_with_legend <- lapply(plots_Transfer, function(p) {
+  p + theme(legend.position = "right") 
+})
+# Changed to 4 columns to create a 2-row layout (4 on top, 3 on bottom)
+final_design_Transfer <- wrap_plots(plots_with_legend, ncol = 4) + 
+  plot_layout(guides = "collect") & 
+  theme(
+    legend.title = element_blank(),
+    legend.text = element_text(size = 18, face = "plain"), 
+    legend.key.size = unit(1.2, "cm"),
+    legend.box.margin = margin(l = 20), # Centers legend in the box slightly
+  )
+
+print(final_design_Transfer)
+
+output_path <- ""
+ggsave(output_path, plot = final_design_Transfer, width = 14, height = 8, dpi = 300)
+print(paste("Plot saved successfully to:", output_path))
+```
+
+```{r Transfer_AUPR 1}
+filename <- "" #The path to the .xlsx result file
+
+if (!file.exists(filename)) {
+  stop(paste("File not found at:", filename, "\nPlease check the path and filename."))
+}
+
+all_sheets <- excel_sheets(filename)
+#print(paste("Sheets found in file:", paste(all_sheets, collapse = ", ")))
+
+if (!("Transfer_AUPR" %in% all_sheets)) {
+  potential_match <- all_sheets[grepl("Transfer_AUPR", all_sheets, ignore.case = TRUE)]
+  
+  if (length(potential_match) > 0) {
+    print(paste("Exact sheet 'Transfer_AUPR' not found. Did you mean:", potential_match[1], "? Using that instead."))
+    target_sheet <- potential_match[1]
+  } else {
+    stop(paste("Sheet 'Transfer_AUPR' not found. Please update the script to use one of these:", paste(all_sheets, collapse = ", ")))
+  }
+} else {
+  target_sheet <- "Transfer_AUPR"
+}
+```
+
+```{r Transfer_AUPRC 2}
+raw_data <- read_excel(filename, sheet = target_sheet, col_names = FALSE)
+raw_data <- as.data.frame(raw_data)
+
+extract_block <- function(data, header_row, model_label, offset = 1) {
+  Start_row <- header_row + offset
+  end_row <- Start_row + 9
+
+  if (end_row > nrow(data)) end_row <- nrow(data)
+
+  sub_df <- data[Start_row:end_row, 2:8]
+  
+  colnames(sub_df) <- c("Triangle", "Disease-Star", "Drug-Star", 
+                        "Gene-Star", "Drug-Disease", "Gene-Disease", "Gene-Drug")
+  
+  sub_df[] <- lapply(sub_df, function(x) as.numeric(as.character(x)))
+  
+  sub_df$Model <- model_label
+
+  sub_df$Trial <- 1:nrow(sub_df)
+  
+  return(sub_df)
+}
+
+header_indices <- which(str_trim(raw_data[, 2]) == "Triangle")
+if (length(header_indices) == 1) header_indices <- c(header_indices, header_indices + 13) 
+
+df_trimogcl <- extract_block(raw_data, header_indices[1], "TriMoGCL", offset = 1)
+df_method <- extract_block(raw_data, header_indices[2], "HANAMI", offset = 1)
+
+all_data_wide <- rbind(df_trimogcl, df_method)
+
+find_and_extract <- function(data, keyword, model_label) {
+  idx <- which(str_detect(as.character(data[,1]), regex(keyword, ignore_case = TRUE)))
+  if (length(idx) > 0) {
+    val <- suppressWarnings(as.numeric(as.character(data[idx[1], 2])))
+    off <- 1
+    if (!is.na(val)) {
+       off <- 0 # Data Starts on the same line as the label
+    }
+    return(extract_block(data, idx[1], model_label, offset = off))
+  }
+  return(NULL)
+}
+
+df_trinet <- find_and_extract(raw_data, "TriNet", "TriNet")
+df_n2v <- find_and_extract(raw_data, "N2V", "N2V-MLP")
+df_rf <- find_and_extract(raw_data, "RF", "RF") 
+
+if (!is.null(df_trinet)) all_data_wide <- rbind(all_data_wide, df_trinet)
+if (!is.null(df_n2v)) all_data_wide <- rbind(all_data_wide, df_n2v)
+if (!is.null(df_rf)) all_data_wide <- rbind(all_data_wide, df_rf) 
+
+
+df_long <- all_data_wide %>%
+  pivot_longer(
+    cols = c("Triangle", "Disease-Star", "Drug-Star", "Gene-Star", 
+             "Drug-Disease", "Gene-Disease", "Gene-Drug"),
+    names_to = "Metric",
+    values_to = "Score"
+  )
+
+df_long$Score <- df_long$Score / 100
+df_long$Metric <- str_replace(df_long$Metric, "dsie", "Disease")
+
+motifs <- c("Triangle", "Disease-Star", "Drug-Star", "Gene-Star", 
+            "Drug-Disease", "Gene-Disease", "Gene-Drug")
+df_long$Metric <- factor(df_long$Metric, levels = motifs)
+
+methods <- c("RF", "TriNet", "N2V-MLP", "TriMoGCL", "HANAMI")
+df_long$Model <- factor(df_long$Model, levels = methods)
+
+method_colors_Transfer <- c(
+  "HANAMI" = "#E28B62",  
+  "N2V-MLP" = "#92B1B6",     
+  "TriMoGCL" = "#CAD0BD",    
+  "TriNet" = "#E1A6AD",
+  "RF" = "#2C8C99" 
+)
+
+method_borders_Transfer <- c(
+  "HANAMI" = "#B8552D", 
+  "N2V-MLP" = "#59858C",    
+  "TriMoGCL" = "#8E9F76",   
+  "TriNet" = "#C46B7C",
+  "RF" = "#1D5A63"
+)
+
+create_single_panel_Transfer <- function(data, motif_title, tag_label, colors, borders) {
+  
+  y_label_text <- if(tag_label %in% c("a", "e")) "AUPRC" else NULL
+
+  custom_theme <- theme_bw(base_size = 14) +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "plain", margin = margin(b = 10)),
+      axis.text.x = element_blank(), 
+      axis.ticks.x = element_blank(),
+      axis.title.x = element_blank(),
+      axis.title.y = element_text(size = 18, face = "plain", margin = margin(r = 15)), 
+      axis.text.y = element_text(size = 16, face = "plain", color="black"),
+      axis.ticks.y = element_line(color = "black", size = 0.5),
+      
+      axis.line = element_blank(),
+      axis.line.x = element_blank(),
+      axis.line.y = element_blank(),
+      
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
+      legend.position = "none",
+      plot.margin = margin(10, 5, 5, 5),
+      aspect.ratio = 1 
+    )
+  
+  breaks <- numeric(0)
+  if (motif_title == "Triangle") {
+    breaks <- c(42, 53, 64, 75, 86)/ 100
+  } else if (motif_title == "Disease-Star") {
+    breaks <- c(42, 58, 74, 90)/ 100
+  } else if (motif_title == "Drug-Star") {
+    breaks <- c(46, 62, 78, 94)/ 100
+  } else if (motif_title == "Gene-Star") {
+    breaks <- c(45, 60, 75, 90) / 100
+  } else if (motif_title == "Drug-Disease") {
+    breaks <- c(46, 64, 82, 100) / 100
+  } else if (motif_title == "Gene-Disease") {
+    breaks <- c(45, 60, 75, 90) / 100
+  } else if (motif_title == "Gene-Drug") {
+    breaks <- c(40, 59, 78, 97)/ 100
+  } else {
+    breaks <- seq(floor(min(data$Score)), ceiling(max(data$Score)), length.out = 4)/ 100
+  }
+  
+  model_stats <- data %>%
+    group_by(Model) %>%
+    summarize(Median = median(Score, na.rm=TRUE), Min = min(Score, na.rm=TRUE), .groups = 'drop') %>%
+    arrange(desc(Median))
+  
+  top2_models <- model_stats$Model[1:2]
+  
+  p_text <- ""
+  
+  tryCatch({
+    d_best <- subset(data, Model == top2_models[1])
+    d_second <- subset(data, Model == top2_models[2])
+    d_best <- d_best[order(d_best$Trial), ]
+    d_second <- d_second[order(d_second$Trial), ]
+    
+    if(nrow(d_best) == nrow(d_second) && nrow(d_best) >= 3) {
+      t_res <- t.test(d_best$Score, d_second$Score, paired = TRUE, alternative = "greater")
+      p_val <- t_res$p.value
+      
+      # NEW LOGIC: Use Asterisks
+      if (p_val < 0.001) {
+        p_text <- "***"
+      } else if (p_val < 0.01) {
+        p_text <- "**"
+      } else if (p_val < 0.05) {
+        p_text <- "*"
+      } else {
+        p_text <- "" # Leave blank if > 0.05
+      }
+    }
+  }, error = function(e) { p_text <- "" })
+
+  yrange <- max(breaks) - min(breaks)
+
+  x1 <- match(top2_models[1], levels(data$Model))
+  x2 <- match(top2_models[2], levels(data$Model))
+
+  if(!is.na(x1) && !is.na(x2)) {
+    x_min_idx <- min(x1, x2)
+    x_max_idx <- max(x1, x2)
+    models_in_span <- levels(data$Model)[x_min_idx:x_max_idx]
+
+    min_val_span <- min(subset(data, Model %in% models_in_span)$Score, na.rm = TRUE)
+  } else {
+    min_val_span <- min(data$Score, na.rm=TRUE) # Fallback
+  }
+
+  y_line <- min_val_span - 0.05 * yrange
+  
+  y_limit_min <- min(min(breaks), y_line - 0.1 * yrange)
+  
+  y_limit_max <- max(breaks) 
+  
+  if(max(data$Score) > y_limit_max) y_limit_max <- max(data$Score)
+  
+  y_limits <- c(y_limit_min, y_limit_max)
+
+  # Y label: AUPRC
+  y_label_text <- if(tag_label %in% c("a", "e")) "AUPRC" else NULL
+  
+  p <- ggplot(data, aes(x = Model, y = Score, fill = Model, color = Model)) +
+    
+    # 1. VIOLIN (Centered)
+    geom_violin(scale = "width", trim = TRUE, alpha = 0.6, size = 0.2, color = NA) +
+    
+    # 2. BOXPLOT (Centered, narrower than violin)
+    geom_boxplot(width = 0.30, outlier.shape = NA, alpha = 0.8, size = 0.4, color = "black") +
+    
+    # 3. POINTS (Centered, jittered)
+    geom_jitter(width = 0.1, size = 1.5, alpha = 0.4, color = "grey50", shape = 16) +
+    
+    # Annotations
+    annotation_custom(
+      grob = textGrob(label = tag_label, 
+                      x = unit(-0.2, "npc"), # MOVED INSIDE textGrob
+                      y = unit(1.12, "npc"),  # MOVED INSIDE textGrob
+                      gp = gpar(fontsize = 22, fontface = "bold", col = "black")),
+      xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf
+    ) +
+    
+    scale_fill_manual(values = colors) +
+    scale_color_manual(values = borders) +
+    
+    scale_y_continuous(breaks = breaks, limits = y_limits,
+                       labels = function(x) sprintf("%g", x),
+                       expand = expansion(mult = c(0.01, 0.01))) +
+    coord_cartesian(ylim = y_limits, clip = "off") +
+    labs(title = motif_title, x = NULL, y = y_label_text) +
+    custom_theme
+  
+  # Add the Bracket and P-value annotation MANUALLY
+  if (p_text != "") {
+    tick_height <- 0.03 * yrange 
+    y_tick_end <- y_line + tick_height
+    
+    p <- p + annotate("segment", x = x1, xend = x2, y = y_line, yend = y_line, 
+                      size = 0.5, color = "black")
+    
+    p <- p + annotate("segment", x = x1, xend = x1, y = y_line, yend = y_tick_end, 
+                      size = 0.5, color = "black")
+    
+    p <- p + annotate("segment", x = x2, xend = x2, y = y_line, yend = y_tick_end, 
+                      size = 0.5, color = "black")
+    
+    p <- p + annotate("text", x = (x1 + x2)/2, y = y_line, label = p_text, 
+                      vjust = 1.5, size = 7, fontface = "plain", color = "red")
+  }
+  
+  p <- p +
+    scale_fill_manual(values = colors) +
+    scale_color_manual(values = borders) +
+
+    scale_y_continuous(breaks = breaks, limits = y_limits, 
+                       labels = function(x) sprintf("%g", x),
+                       expand = expansion(mult = c(0.01, 0.01))) +
+    labs(
+      title = motif_title, 
+      x = NULL,
+      y = y_label_text
+    ) +
+    custom_theme
+  
+  return(p)
+}
+
+# Ensure level_order and tags are defined based on motifs
+level_order <- motifs
+tags <- letters[1:length(level_order)]
+
+plots_Transfer <- list()
+for (i in 1:length(level_order)) {
+  m <- level_order[i]
+  m_data <- subset(df_long, Metric == m)
+  plots_Transfer[[i]] <- create_single_panel_Transfer(m_data, m, tags[i], method_colors_Transfer, method_borders_Transfer)
+}
+plots_Transfer[[8]] <- guide_area()
+
+plots_with_legend <- lapply(plots_Transfer, function(p) {
+  p + theme(legend.position = "right") 
+})
+# Changed to 4 columns to create a 2-row layout (4 on top, 3 on bottom)
+final_design_Transfer <- wrap_plots(plots_with_legend, ncol = 4) + 
+  plot_layout(guides = "collect") & 
+  theme(
+    legend.title = element_blank(),
+    legend.text = element_text(size = 18, face = "plain"), 
+    legend.key.size = unit(1.2, "cm"),
+    legend.box.margin = margin(l = 20), # Centers legend in the box slightly
+  )
+
+print(final_design_Transfer)
+
+output_path <- ""
+ggsave(output_path, plot = final_design_Transfer, width = 14, height = 8, dpi = 300)
+print(paste("Plot saved successfully to:", output_path))
+```
