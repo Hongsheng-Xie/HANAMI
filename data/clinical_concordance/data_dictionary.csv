@@ -1,0 +1,162 @@
+file,field,storage_type,shape_or_values,description
+gene_star_candidates.csv,candidate_index,integer,one value per row,"Zero-based row index in the fixed 46,704-candidate gene-star pool and in every score array."
+gene_star_candidates.csv,disease_local_id,integer,one value per row,Zero-based disease-node index within the MS disease block.
+gene_star_candidates.csv,disease_global_id,integer,one value per row,Global graph node index for the disease.
+gene_star_candidates.csv,disease_mesh_id,string,one value per row,MeSH identifier of the disease node.
+gene_star_candidates.csv,disease_name,string,one value per row,MeSH display name for the disease node.
+gene_star_candidates.csv,drug_local_id,integer,one value per row,Zero-based drug-node index within the MS drug block.
+gene_star_candidates.csv,drug_global_id,integer,one value per row,Global graph node index for the drug.
+gene_star_candidates.csv,drugbank_id,string,one value per row,DrugBank identifier for the drug node.
+gene_star_candidates.csv,drug_name,string,one value per row,Canonical drug display name.
+gene_star_candidates.csv,gene_local_id,integer,one value per row,Zero-based gene-node index within the MS gene block.
+gene_star_candidates.csv,gene_global_id,integer,one value per row,Global graph node index for the gene.
+gene_star_candidates.csv,gene_entrez_id,integer,one value per row,NCBI Entrez Gene identifier.
+gene_star_candidates.csv,gene_symbol,string,one value per row,Gene symbol used for display.
+gene_star_candidates.csv,drug_gene_edge_in_ms,boolean,one value per row,Whether the drug-gene edge is present in the MS graph.
+gene_star_candidates.csv,gene_disease_edge_in_ms,boolean,one value per row,Whether the gene-disease edge is present in the MS graph.
+gene_star_candidates.csv,drug_disease_edge_in_ms,boolean,one value per row,Whether the direct drug-disease edge is present in the MS graph.
+gene_star_candidates.csv,ms_motif,string,one value per row,Observed MS topology before clique completion; gene_star in this package.
+hanami_consensus_gene_stars.csv,candidate_index,integer,one value per row,"Zero-based row index in the fixed 46,704-candidate gene-star pool and in every score array."
+hanami_consensus_gene_stars.csv,condition_group,string,one value per row,One of the six prespecified disease-area groups used in the clinical screen.
+hanami_consensus_gene_stars.csv,pool_index_zero_based,integer,one value per row,Original zero-based candidate-pool row index from the frozen screen output.
+hanami_consensus_gene_stars.csv,global_triplet_disease_drug_gene,string,one value per row,"Tuple of global graph indices ordered as disease, drug, gene."
+hanami_consensus_gene_stars.csv,disease_label,string,one value per row,Canonical display label for the MS disease node.
+hanami_consensus_gene_stars.csv,disease_cui,string,one value per row,UMLS CUI mapped to the MS disease node when resolved.
+hanami_consensus_gene_stars.csv,disease_mesh,string,one value per row,MeSH identifier of the disease node.
+hanami_consensus_gene_stars.csv,disease_local_global_id,integer,one value per row,Disease node index; diseases occupy the first MS node block so local and global IDs coincide.
+hanami_consensus_gene_stars.csv,drug_name,string,one value per row,Canonical drug display name.
+hanami_consensus_gene_stars.csv,drugbank_id,string,one value per row,DrugBank identifier for the drug node.
+hanami_consensus_gene_stars.csv,drug_local_id,integer,one value per row,Zero-based drug-node index within the MS drug block.
+hanami_consensus_gene_stars.csv,drug_global_id,integer,one value per row,Global graph node index for the drug.
+hanami_consensus_gene_stars.csv,gene_symbol,string,one value per row,Gene symbol used for display.
+hanami_consensus_gene_stars.csv,gene_entrez_id,integer,one value per row,NCBI Entrez Gene identifier.
+hanami_consensus_gene_stars.csv,gene_local_id,integer,one value per row,Zero-based gene-node index within the MS gene block.
+hanami_consensus_gene_stars.csv,gene_global_id,integer,one value per row,Global graph node index for the gene.
+hanami_consensus_gene_stars.csv,median_top_percent,number,one value per row,Median rank percentile over the ten HANAMI seeds; lower is better.
+hanami_consensus_gene_stars.csv,q1_top_percent,number,one value per row,First quartile of HANAMI rank percentiles over ten seeds.
+hanami_consensus_gene_stars.csv,q3_top_percent,number,one value per row,Third quartile of HANAMI rank percentiles over ten seeds.
+hanami_consensus_gene_stars.csv,min_top_percent,number,one value per row,Minimum HANAMI rank percentile over ten seeds.
+hanami_consensus_gene_stars.csv,max_top_percent,number,one value per row,Maximum HANAMI rank percentile over ten seeds.
+hanami_consensus_gene_stars.csv,hard_clique_positive_seeds,integer,one value per row,"Number of seeds with positive clique logit margin, out of ten."
+hanami_consensus_gene_stars.csv,min_ties,integer,one value per row,Minimum number of exact score ties encountered across seeds.
+hanami_consensus_gene_stars.csv,max_ties,integer,one value per row,Maximum number of exact score ties encountered across seeds.
+hanami_consensus_gene_stars.csv,stored_drug_gene_edge,boolean,one value per row,Explicit audit of the stored MS drug-gene edge.
+hanami_consensus_gene_stars.csv,stored_gene_disease_edge,boolean,one value per row,Explicit audit of the stored MS gene-disease edge.
+hanami_consensus_gene_stars.csv,stored_drug_disease_edge,boolean,one value per row,Explicit audit of the stored MS drug-disease edge.
+hanami_consensus_gene_stars.csv,cycles_label_present,boolean,one value per row,Whether the triplet appears in the stored clique/cycle labels.
+hanami_consensus_gene_stars.csv,supervised_any_seed,boolean,one value per row,Whether the triplet appeared in positive or negative supervision for any motif across the ten seeds.
+hanami_consensus_gene_stars.csv,raw_drug_gene_exact,boolean,one value per row,Whether the drug-gene relation is an exact raw SD1 record rather than hierarchy-only.
+hanami_consensus_gene_stars.csv,raw_gene_disease_exact_cui,boolean,one value per row,Whether the gene-disease relation is an exact raw SD2 CUI match.
+hanami_consensus_gene_stars.csv,gene_disease_provenance,string,one value per row,Provenance category of the gene-disease bridge.
+hanami_consensus_gene_stars.csv,hierarchy_specificity_flag,boolean,one value per row,True when a bridge depends on hierarchy or normalization rather than an exact raw match.
+hanami_consensus_gene_stars.csv,raw_drug_disease_exact_cui,boolean,one value per row,Whether an exact raw SD6 drug-disease CUI record exists.
+hanami_consensus_gene_stars.csv,disease_cui_source,string,one value per row,Provenance category for the disease CUI mapping.
+hanami_consensus_gene_stars.csv,candidate_conflicting_cui,number,one value per row,Candidate CUI retained for auditing when a crosswalk collision prevented assignment.
+hanami_consensus_gene_stars.csv,seed_0_top_percent,number,one value per row,HANAMI rank percentile for seed 0; lower is better.
+hanami_consensus_gene_stars.csv,seed_0_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 0."
+hanami_consensus_gene_stars.csv,seed_0_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 0.
+hanami_consensus_gene_stars.csv,seed_10_top_percent,number,one value per row,HANAMI rank percentile for seed 10; lower is better.
+hanami_consensus_gene_stars.csv,seed_10_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 10."
+hanami_consensus_gene_stars.csv,seed_10_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 10.
+hanami_consensus_gene_stars.csv,seed_20_top_percent,number,one value per row,HANAMI rank percentile for seed 20; lower is better.
+hanami_consensus_gene_stars.csv,seed_20_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 20."
+hanami_consensus_gene_stars.csv,seed_20_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 20.
+hanami_consensus_gene_stars.csv,seed_30_top_percent,number,one value per row,HANAMI rank percentile for seed 30; lower is better.
+hanami_consensus_gene_stars.csv,seed_30_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 30."
+hanami_consensus_gene_stars.csv,seed_30_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 30.
+hanami_consensus_gene_stars.csv,seed_40_top_percent,number,one value per row,HANAMI rank percentile for seed 40; lower is better.
+hanami_consensus_gene_stars.csv,seed_40_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 40."
+hanami_consensus_gene_stars.csv,seed_40_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 40.
+hanami_consensus_gene_stars.csv,seed_50_top_percent,number,one value per row,HANAMI rank percentile for seed 50; lower is better.
+hanami_consensus_gene_stars.csv,seed_50_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 50."
+hanami_consensus_gene_stars.csv,seed_50_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 50.
+hanami_consensus_gene_stars.csv,seed_60_top_percent,number,one value per row,HANAMI rank percentile for seed 60; lower is better.
+hanami_consensus_gene_stars.csv,seed_60_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 60."
+hanami_consensus_gene_stars.csv,seed_60_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 60.
+hanami_consensus_gene_stars.csv,seed_70_top_percent,number,one value per row,HANAMI rank percentile for seed 70; lower is better.
+hanami_consensus_gene_stars.csv,seed_70_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 70."
+hanami_consensus_gene_stars.csv,seed_70_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 70.
+hanami_consensus_gene_stars.csv,seed_80_top_percent,number,one value per row,HANAMI rank percentile for seed 80; lower is better.
+hanami_consensus_gene_stars.csv,seed_80_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 80."
+hanami_consensus_gene_stars.csv,seed_80_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 80.
+hanami_consensus_gene_stars.csv,seed_90_top_percent,number,one value per row,HANAMI rank percentile for seed 90; lower is better.
+hanami_consensus_gene_stars.csv,seed_90_rank,number,one value per row,"Tie-aware HANAMI rank within 46,704 candidates for seed 90."
+hanami_consensus_gene_stars.csv,seed_90_hard_clique,boolean,one value per row,Whether HANAMI's clique logit margin is positive for seed 90.
+hanami_consensus_gene_stars.csv,high_priority_top10_percent,boolean,one value per row,Whether the HANAMI median rank percentile is at most 10 percent.
+hanami_consensus_gene_stars.csv,validation_pair_id,string,one value per row,"Stable hash identifier for one condition-group, disease-node, and drug pair."
+clinically_documented_405.csv,clinical_set_index,integer,one value per row,Zero-based row index within the packaged 405-association clinical set.
+clinically_documented_405.csv,validation_pair_id,string,one value per row,"Stable hash identifier for one condition-group, disease-node, and drug pair."
+clinically_documented_405.csv,evidence_subset,string,one value per row,Whether inclusion came from the 401 automatic matches or four manual strong reviews.
+clinically_documented_405.csv,evidence_review_status,string,one value per row,Automatic-not-manually-verified or manually-reviewed-strong evidence status.
+clinically_documented_405.csv,condition_group,string,one value per row,One of the six prespecified disease-area groups used in the clinical screen.
+clinically_documented_405.csv,disease_local_id,integer,one value per row,Zero-based disease-node index within the MS disease block.
+clinically_documented_405.csv,disease_label,string,one value per row,Canonical display label for the MS disease node.
+clinically_documented_405.csv,disease_cui,string,one value per row,UMLS CUI mapped to the MS disease node when resolved.
+clinically_documented_405.csv,disease_mesh_id,string,one value per row,MeSH identifier of the disease node.
+clinically_documented_405.csv,drug_local_id,integer,one value per row,Zero-based drug-node index within the MS drug block.
+clinically_documented_405.csv,drug_global_id,integer,one value per row,Global graph node index for the drug.
+clinically_documented_405.csv,drugbank_id,string,one value per row,DrugBank identifier for the drug node.
+clinically_documented_405.csv,drug_name,string,one value per row,Canonical drug display name.
+clinically_documented_405.csv,gene_intermediaries,string,one value per row,"Semicolon-separated gene symbol, Entrez ID, and candidate-pool index records."
+clinically_documented_405.csv,gene_symbols,string,one value per row,Semicolon-separated gene symbols for all shared-gene configurations of the pair.
+clinically_documented_405.csv,gene_entrez_ids,string,one value per row,Semicolon-separated Entrez identifiers for all shared-gene configurations of the pair.
+clinically_documented_405.csv,candidate_indices,string,one value per row,Semicolon-separated candidate-pool indices for the pair's shared-gene configurations.
+clinically_documented_405.csv,n_gene_bridges,integer,one value per row,Number of shared-gene configurations for the drug-disease pair.
+clinically_documented_405.csv,hanami_median_top_percent,number,one value per row,Ten-seed median HANAMI rank percentile; lower is better.
+clinically_documented_405.csv,hanami_q1_top_percent,number,one value per row,First quartile of HANAMI rank percentile across seeds.
+clinically_documented_405.csv,hanami_q3_top_percent,number,one value per row,Third quartile of HANAMI rank percentile across seeds.
+clinically_documented_405.csv,hard_clique_positive_seeds,integer,one value per row,"Number of seeds with positive clique logit margin, out of ten."
+clinically_documented_405.csv,ms_drug_disease_edge_present,boolean,one value per row,False for the packaged MS-unlabeled drug-disease completions.
+clinically_documented_405.csv,has_exact_raw_drug_disease_bridge,boolean,one value per row,Whether an exact raw drug-disease record was detected during auditing.
+clinically_documented_405.csv,hierarchy_specificity_flag,boolean,one value per row,True when a bridge depends on hierarchy or normalization rather than an exact raw match.
+clinically_documented_405.csv,condition_match_kind,string,one value per row,Qualifier describing how the trial condition maps to the MS disease node.
+clinically_documented_405.csv,n_phase2_3_trials,integer,one value per row,Number of supporting Phase II/III registry records retained for the pair.
+clinically_documented_405.csv,phase2_3_phases,string,one value per row,Semicolon-separated ClinicalTrials.gov phase labels.
+clinically_documented_405.csv,nct_ids,string,one value per row,Semicolon-separated ClinicalTrials.gov NCT identifiers.
+clinically_documented_405.csv,source_urls,string,one value per row,Semicolon-separated public ClinicalTrials.gov study URLs.
+clinically_documented_405.csv,example_trial_title,string,one value per row,Representative ClinicalTrials.gov study title when available.
+clinically_documented_405.csv,evidence_notes,string,one value per row,Scope and limitations of the registry evidence or manual review.
+clinically_documented_405.csv,source_table,string,one value per row,Frozen local source table from which the evidence row was derived.
+figure5_cases_7.csv,panel,string,one value per row,Fig. 5 panel letter.
+figure5_cases_7.csv,candidate_index,integer,one value per row,"Zero-based row index in the fixed 46,704-candidate gene-star pool and in every score array."
+figure5_cases_7.csv,motif,string,one value per row,Display label formatted as drug-gene-disease.
+figure5_cases_7.csv,disease_type,string,one value per row,Disease-area label used for the selected case.
+figure5_cases_7.csv,drug_name,string,one value per row,Canonical drug display name.
+figure5_cases_7.csv,drugbank_id,string,one value per row,DrugBank identifier for the drug node.
+figure5_cases_7.csv,gene_symbol,string,one value per row,Gene symbol used for display.
+figure5_cases_7.csv,gene_entrez_id,integer,one value per row,NCBI Entrez Gene identifier.
+figure5_cases_7.csv,disease_name,string,one value per row,MeSH display name for the disease node.
+figure5_cases_7.csv,disease_mesh_id,string,one value per row,MeSH identifier of the disease node.
+figure5_cases_7.csv,clinical_evidence,string,one value per row,Evidence category stated for the selected case.
+figure5_cases_7.csv,clinical_reference,string,one value per row,ClinicalTrials.gov identifier or peer-reviewed reference note used for the case.
+figure5_cases_7.csv,hanami_median_top_percent,number,one value per row,Ten-seed median HANAMI rank percentile; lower is better.
+figure5_cases_7.csv,trimogcl_median_top_percent,number,one value per row,Ten-seed median TriMoGCL rank percentile; lower is better.
+figure5_cases_7.csv,trinet_median_top_percent,number,one value per row,Ten-seed median TriNet rank percentile; lower is better.
+figure5_cases_7.csv,n2v_mlp_median_top_percent,number,one value per row,Ten-seed median N2V-MLP rank percentile; lower is better.
+figure5_cases_7.csv,rf_median_top_percent,number,one value per row,Ten-seed median RF rank percentile; lower is better.
+figure5_cases_7.csv,best_baseline,string,one value per row,Baseline with the lowest ten-seed median percentile for this case.
+figure5_cases_7.csv,best_baseline_median_top_percent,number,one value per row,Lowest ten-seed median percentile among the four baselines.
+figure5_cases_7.csv,in_clinically_documented_405,boolean,one value per row,Whether the exact drug-disease case belongs to the packaged 405-association set.
+figure5_cases_7.csv,clinical_405_validation_pair_id,string,one value per row,405-set pair identifier when the case is included; empty otherwise.
+figure5_cases_7.csv,ms_motif,string,one value per row,Observed MS topology before clique completion; gene_star in this package.
+figure5_cases_7.csv,ms_drug_disease_edge_present,boolean,one value per row,False for the packaged MS-unlabeled drug-disease completions.
+clinicaltrials_snapshot.csv.gz,source_disease_local_id,integer,one value per row,MS disease-node index whose ClinicalTrials.gov query produced this snapshot row.
+clinicaltrials_snapshot.csv.gz,source_disease_label,string,one value per row,MS disease label used for the query.
+clinicaltrials_snapshot.csv.gz,source_condition_group,string,one value per row,Prespecified disease-area group of the source query.
+clinicaltrials_snapshot.csv.gz,source_cache_file,string,one value per row,Frozen raw ClinicalTrials.gov export filename.
+clinicaltrials_snapshot.csv.gz,source_query_file,string,one value per row,JSON file recording the query and retrieval provenance.
+clinicaltrials_snapshot.csv.gz,source_row_number,integer,one value per row,One-based row number within the frozen source CSV export.
+clinicaltrials_snapshot.csv.gz,nct_id,string,one value per row,ClinicalTrials.gov NCT identifier.
+clinicaltrials_snapshot.csv.gz,phases,string,one value per row,Study phase field from ClinicalTrials.gov.
+clinicaltrials_snapshot.csv.gz,study_type,string,one value per row,Study type field from ClinicalTrials.gov.
+clinicaltrials_snapshot.csv.gz,interventions,string,one value per row,Intervention field used for drug matching.
+clinicaltrials_snapshot.csv.gz,conditions,string,one value per row,Condition field used for disease matching.
+clinicaltrials_snapshot.csv.gz,study_title,string,one value per row,ClinicalTrials.gov study title used for contextual flags.
+clinicaltrials_snapshot.csv.gz,brief_summary,string,one value per row,ClinicalTrials.gov brief summary used for contextual flags.
+gene_star_scores_10seeds.npz,seeds,int64,"(10,)",Ten random seeds in score-array row order.
+gene_star_scores_10seeds.npz,candidate_index,int64,"(46704,)",Candidate indices in score-array column order; aligns with gene_star_candidates.csv.
+gene_star_scores_10seeds.npz,hanami,float64,"(10, 46704)","HANAMI ranking scores; class-1 logit margins, shape (10, 46704)."
+gene_star_scores_10seeds.npz,trimogcl,float64,"(10, 46704)","TriMoGCL ranking scores; class-1 logit margins, shape (10, 46704)."
+gene_star_scores_10seeds.npz,trinet,float64,"(10, 46704)","TriNet ranking scores; class-1 logit margins, shape (10, 46704)."
+gene_star_scores_10seeds.npz,n2v_mlp,float64,"(10, 46704)","N2V-MLP ranking scores; class-1 logit margins, shape (10, 46704)."
+gene_star_scores_10seeds.npz,rf,float64,"(10, 46704)","Random-forest class-1 probabilities, shape (10, 46704)."
