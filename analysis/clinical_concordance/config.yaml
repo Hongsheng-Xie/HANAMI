@@ -1,0 +1,51 @@
+version: 1
+
+# Every relative path is resolved from the repository root (two directories
+# above this file), not from the user's current working directory.
+paths:
+  gene_star_pool: data/clinical_concordance/gene_star_candidates.csv
+  score_archive: data/clinical_concordance/gene_star_scores_10seeds.npz
+  automatic_pairs: data/clinical_concordance/frozen_inputs/automatic_phase23_pairs_401.csv
+  manual_reviews: data/clinical_concordance/frozen_inputs/manually_reviewed_key_cases.csv
+  frozen_pair_universe: data/clinical_concordance/frozen_inputs/consensus_drug_disease_pairs_hard9of10.csv
+  documented_pairs: data/clinical_concordance/clinically_documented_405.csv
+  rebuilt_documented_pairs: results/clinical_concordance/clinically_documented_405_rebuilt.csv
+  case_studies: data/clinical_concordance/figure5_cases_7.csv
+  results_dir: results/clinical_concordance
+
+expected:
+  pool_size: 46704
+  automatic_pairs: 401
+  manual_positive_pairs: 4
+  documented_pairs: 405
+  case_studies: 7
+
+seeds: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+# Keys are publication display names; values are keys in score_archive.
+score_keys:
+  HANAMI: hanami
+  TriMoGCL: trimogcl
+  TriNet: trinet
+  N2V-MLP: n2v_mlp
+  RF: rf
+
+analysis:
+  score_direction: higher_is_better
+  rank_formula: tie-aware midrank
+  percentile_formula: 100 * rank / 46704
+  best_gene_rule: lowest_ten_seed_median_rank_percentile
+  reference_method: HANAMI
+  figure_significance_baseline: TriMoGCL
+  manual_positive_column: classification
+  manual_positive_value: strong
+  wilcoxon_alternative: two-sided
+  multiple_testing: holm
+
+figure:
+  aggregate_panel: a
+  aggregate_method_order: [RF, TriNet, N2V-MLP, TriMoGCL, HANAMI]
+  columns: 4
+  width_inches: 13.5
+  height_inches: 6.6
+  dpi: 300
