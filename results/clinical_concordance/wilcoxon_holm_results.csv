@@ -1,0 +1,5 @@
+reference_method,comparison_method,n_pairs,wilcoxon_statistic,p_raw,median_paired_difference_reference_minus_comparison,mean_paired_difference_reference_minus_comparison,p_holm,significance,test,multiplicity_correction
+HANAMI,TriMoGCL,405,31648.0,5.9943245942480335e-05,-0.9346094552929092,-1.8723777591683268,5.9943245942480335e-05,***,paired two-sided Wilcoxon signed-rank,Holm
+HANAMI,TriNet,405,11690.0,9.613079395589466e-36,-10.877012675573829,-13.909235045825772,3.8452317582357863e-35,***,paired two-sided Wilcoxon signed-rank,Holm
+HANAMI,N2V-MLP,405,25721.0,6.68924357576067e-11,-3.4707947927372373,-4.400446573957765,1.337848715152134e-10,***,paired two-sided Wilcoxon signed-rank,Holm
+HANAMI,RF,405,19090.0,9.583068471929079e-21,-6.739786742034944,-10.42032511556892,2.874920541578724e-20,***,paired two-sided Wilcoxon signed-rank,Holm

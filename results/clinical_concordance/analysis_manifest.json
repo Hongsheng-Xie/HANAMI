@@ -1,0 +1,78 @@
+{
+  "stage": "analyze_clinical_concordance",
+  "created_utc": "2026-08-15T07:07:07.580929+00:00",
+  "config": "analysis/clinical_concordance/config.yaml",
+  "inputs": {
+    "clinically_documented_405.csv": {
+      "path": "data/clinical_concordance/clinically_documented_405.csv",
+      "sha256": "7bfb4e7207bd0e7a1649c514c0c4a8f35c21bd8285ed7eddd5b348dd2ae18d86"
+    },
+    "gene_star_candidates.csv": {
+      "path": "data/clinical_concordance/gene_star_candidates.csv",
+      "sha256": "34a20324567d94f2b4d7ddbf3c5a0f0a570685f0ffd06391aae757e97e0b1a6b"
+    },
+    "gene_star_scores_10seeds.npz": {
+      "path": "data/clinical_concordance/gene_star_scores_10seeds.npz",
+      "sha256": "7504696c54b3353fdad316abe9b84d584fc2bc9f76e000b92c6dd7b20dba2d18"
+    },
+    "figure5_cases_7.csv": {
+      "path": "data/clinical_concordance/figure5_cases_7.csv",
+      "sha256": "0cf6dd3ca6674f1812ca72371ddc793dae56d2036f638d04ae5b2210c9c9d0b8"
+    }
+  },
+  "score_archive_schema": {
+    "seeds": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "candidate_count": 46704,
+    "methods": {
+      "HANAMI": "hanami",
+      "TriMoGCL": "trimogcl",
+      "TriNet": "trinet",
+      "N2V-MLP": "n2v_mlp",
+      "RF": "rf"
+    }
+  },
+  "best_gene_rule": "lowest_ten_seed_median_rank_percentile",
+  "statistical_test": "paired two-sided Wilcoxon signed-rank with Holm correction",
+  "outputs": {
+    "pair_gene_rank_percentiles.csv": {
+      "rows": 5295,
+      "sha256": "694ec3e6cc78903f2fe0183310d8d63b2ace936ce3cd8c0e9797d7a4e5c9e0fb"
+    },
+    "pair_level_rank_percentiles.csv": {
+      "rows": 2025,
+      "sha256": "695f1cabe1ed1f1dc3ab280f76cb16849a04c2429b345a4011b57e84dadf0d65"
+    },
+    "aggregate_method_summary.csv": {
+      "rows": 5,
+      "sha256": "4ce0be3eaafdb64f6bc5d6db93351c6ac8a08679e89eac4122ae0f2a3f81bca9"
+    },
+    "wilcoxon_holm_results.csv": {
+      "rows": 4,
+      "sha256": "053cdf50cba316733c88c282c21f107660105ab053402849423654241ae895c2"
+    },
+    "case_study_rank_percentiles.csv": {
+      "rows": 35,
+      "sha256": "c13ff6a07c71744ff3c51227798eac014a806f0685a82e9d9b39841f2796a06f"
+    },
+    "figure5_source_data.csv": {
+      "rows": 19,
+      "sha256": "ffb4c8f0504c33dc4cbed9d5f3596f1dd0b3cafdf673186f643e8f50be6af961"
+    }
+  },
+  "limitations": [
+    "The 405 pairs were selected using HANAMI outputs and are not an independent benchmark.",
+    "Clinical registry concordance does not establish efficacy or a causal role for the shared gene.",
+    "The shared gene is an observed MS relation; HANAMI ranks the missing relation rather than discovering the gene."
+  ]
+}

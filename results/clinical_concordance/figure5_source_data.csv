@@ -1,0 +1,20 @@
+panel,panel_type,panel_title,method,rank_percentile,bar_order,comparison_method,reference_method,p_holm,significance
+a,aggregate,Mean across 405 clinically documented associations,HANAMI,15.752684889125735,4,TriMoGCL,HANAMI,5.9943245942480335e-05,***
+a,aggregate,Mean across 405 clinically documented associations,TriMoGCL,17.62506264829406,3,TriMoGCL,HANAMI,5.9943245942480335e-05,***
+a,aggregate,Mean across 405 clinically documented associations,TriNet,29.661919934951513,1,TriMoGCL,HANAMI,5.9943245942480335e-05,***
+a,aggregate,Mean across 405 clinically documented associations,N2V-MLP,20.1531314630835,2,TriMoGCL,HANAMI,5.9943245942480335e-05,***
+a,aggregate,Mean across 405 clinically documented associations,RF,26.17301000469466,0,TriMoGCL,HANAMI,5.9943245942480335e-05,***
+b,case_study,Propranolol-ADRB2-Prostatic Neoplasms,HANAMI,2.7267471736896196,1,TriMoGCL,HANAMI,,
+b,case_study,Propranolol-ADRB2-Prostatic Neoplasms,TriMoGCL,5.008136348064406,0,TriMoGCL,HANAMI,,
+c,case_study,Aspirin-PTGS2-Colorectal Neoplasms,HANAMI,7.981115107913669,1,TriMoGCL,HANAMI,,
+c,case_study,Aspirin-PTGS2-Colorectal Neoplasms,TriMoGCL,12.66379753340185,0,TriMoGCL,HANAMI,,
+d,case_study,Chloroquine-TNF-Breast Neoplasms,HANAMI,5.283273381294964,1,TriMoGCL,HANAMI,,
+d,case_study,Chloroquine-TNF-Breast Neoplasms,TriMoGCL,17.159129838985955,0,TriMoGCL,HANAMI,,
+e,case_study,Pentoxifylline-TNF-Parkinson Disease,HANAMI,4.440733127783488,1,TriMoGCL,HANAMI,,
+e,case_study,Pentoxifylline-TNF-Parkinson Disease,TriMoGCL,11.582519698526893,0,TriMoGCL,HANAMI,,
+f,case_study,Celecoxib-PTGS2-Depressive Disorder,HANAMI,5.592668722165126,1,TriMoGCL,HANAMI,,
+f,case_study,Celecoxib-PTGS2-Depressive Disorder,TriMoGCL,11.855515587529975,0,TriMoGCL,HANAMI,,
+g,case_study,Mifepristone-NR3C1-Bipolar Disorder,HANAMI,9.429599177800617,1,N2V-MLP,HANAMI,,
+g,case_study,Mifepristone-NR3C1-Bipolar Disorder,N2V-MLP,14.141187050359711,0,N2V-MLP,HANAMI,,
+h,case_study,Dexamethasone-NR3C2-Heart Failure,HANAMI,6.518713600548133,1,N2V-MLP,HANAMI,,
+h,case_study,Dexamethasone-NR3C2-Heart Failure,N2V-MLP,21.409301130524153,0,N2V-MLP,HANAMI,,

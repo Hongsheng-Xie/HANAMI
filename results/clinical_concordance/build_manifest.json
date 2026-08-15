@@ -1,0 +1,34 @@
+{
+  "stage": "build_clinical_concordance",
+  "created_utc": "2026-08-15T07:07:04.761960+00:00",
+  "config": "analysis/clinical_concordance/config.yaml",
+  "inputs": {
+    "automatic_pairs": {
+      "path": "data/clinical_concordance/frozen_inputs/automatic_phase23_pairs_401.csv",
+      "sha256": "7041ea2771fbe343a533177d6b1147ba576f18d313f95d0ac15ffaafb582ac7e"
+    },
+    "manual_reviews": {
+      "path": "data/clinical_concordance/frozen_inputs/manually_reviewed_key_cases.csv",
+      "sha256": "984f16bc9a46bafcf1d8906d2d7ae4bbbd43ca32b6032f94f34561d6a544e715"
+    },
+    "frozen_pair_universe": {
+      "path": "data/clinical_concordance/frozen_inputs/consensus_drug_disease_pairs_hard9of10.csv",
+      "sha256": "65f85b28159e5ba3c6b070a14148f69428c1aec1e302a48d82f5b72bd91d3711"
+    }
+  },
+  "selection": {
+    "automatic_rows": 401,
+    "manual_positive_column": "classification",
+    "manual_positive_value": "strong",
+    "manual_positive_rows": 4,
+    "combined_rows": 405
+  },
+  "output": {
+    "path": "results/clinical_concordance/clinically_documented_405_rebuilt.csv",
+    "sha256": "ffe251c3dc3047267cae3740cb762d8df61592e2f4516f919fd7ece9fd1d1eb9"
+  },
+  "canonical_membership_check": {
+    "path": "data/clinical_concordance/clinically_documented_405.csv",
+    "matched": true
+  }
+}
