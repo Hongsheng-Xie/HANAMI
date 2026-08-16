@@ -22,7 +22,7 @@ SHA-256 checksums for the required frozen inputs are listed below.
 | `gene_star_scores_10seeds.npz` | `7504696c54b3353fdad316abe9b84d584fc2bc9f76e000b92c6dd7b20dba2d18` |
 | `clinically_documented_405.csv` | `7bfb4e7207bd0e7a1649c514c0c4a8f35c21bd8285ed7eddd5b348dd2ae18d86` |
 | `figure5_cases_7.csv` | `0cf6dd3ca6674f1812ca72371ddc793dae56d2036f638d04ae5b2210c9c9d0b8` |
-| `data_dictionary.csv` | `e1605db36a367ab59b0849ba47c9791d87fe5c679e454a6f7a9175572f783108` |
+| `data_dictionary.csv` | `b757283627ee85c5ac92d2f160286f4082f4d4c7e2b650dcd34fd2c115f47cd9` |
 | `frozen_inputs/automatic_phase23_pairs_401.csv` | `7041ea2771fbe343a533177d6b1147ba576f18d313f95d0ac15ffaafb582ac7e` |
 | `frozen_inputs/manually_reviewed_key_cases.csv` | `984f16bc9a46bafcf1d8906d2d7ae4bbbd43ca32b6032f94f34561d6a544e715` |
 | `frozen_inputs/consensus_drug_disease_pairs_hard9of10.csv` | `65f85b28159e5ba3c6b070a14148f69428c1aec1e302a48d82f5b72bd91d3711` |
