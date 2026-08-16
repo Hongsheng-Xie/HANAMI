@@ -1,0 +1,15 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated clinical-concordance outputs
+results/clinical_concordance/*
+!results/clinical_concordance/.gitkeep
+
+# Platform and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp

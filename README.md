@@ -66,22 +66,42 @@ Input data should be in NumPy (.npy) and PyTorch (.pth) format containing:
 - `subgraph_gene.npy`: Gene indexes for transfer learning subgraph
 
 - `dise_All.pth`: Disease feature embeddings
+- `drug_All.pth`: Drug feature embeddings
+- `gene_All.pth`: Gene feature embeddings
+- `DRKG_MS_dise_Rev.pth`: Disease feature embeddings for the subgraph of DRKG excluding MS
+- `DRKG_MS_drug_Rev.pth`: Drug feature embeddings for the subgraph of DRKG excluding MS
+- `DRKG_MS_gene_Rev.pth`: Gene feature embeddings for the subgraph of DRKG excluding MS
+## Cold Start
 
-## Biological context and clinical concordance
+### Overview
+The cold start module handles unseen drugs, genes, and diseases using an inductive transfer learning strategy that maps novel entities into a shared latent space via specialized encoders. The framework is built upon a DRKG subgraph for training and validation, which is strictly isolated from the MS dataset. All overlapping nodes and edges are removed to prevent data leakage. 
 
-The repository includes a post hoc analysis of HANAMI-ranked gene-star configurations from the MS dataset. Each configuration links a drug and a disease through an existing shared gene while the direct drug-disease relation is absent from MS. HANAMI ranks completion of the missing relation; it does not infer the shared gene or establish a causal mechanism.
-
-The analysis package contains the frozen clinical records, ten-seed rank calculations, seven manually reviewed examples, statistical analysis, and source data for Fig. 5. Five of the examples belong to the 405-association aggregate set; two are separate illustrations and are marked as such in the source table.
-
-- [Analysis instructions](analysis/clinical_concordance/README.md)
-- [Clinical-concordance data](data/clinical_concordance/)
-- [Fig. 5 source data and results](results/clinical_concordance/)
-- [Fig. 5 PDF](results/clinical_concordance/figure5.pdf)
-
-Run the complete analysis from the repository root:
+### Usage
+Run transfer training with default parameters:
 
 ```bash
-python analysis/clinical_concordance/run_all.py
+python transfer_main.py
 ```
 
-The 405 clinically documented associations were selected through a post hoc process that depended on HANAMI predictions. The analysis provides clinical concordance and explicit network context for these outputs, not an independent benchmark, model-level attribution, causal validation, or evidence of efficacy.
+## Clinical concordance analysis
+
+### Overview
+
+This post hoc analysis evaluates MS gene-star configurations in which a drug and disease share a gene but lack a direct drug-disease relation. It uses ten-seed candidate scores and frozen clinical-match tables to construct clinically documented associations.
+
+### Files
+
+- [Analysis code and instructions](analysis/clinical_concordance/)
+- [Clinical-concordance data](data/clinical_concordance/)
+- [Data dictionary](data/clinical_concordance/data_dictionary.csv)
+- [Data provenance](data/clinical_concordance/PROVENANCE.md)
+
+### Usage
+
+Run the analysis from the repository root:
+
+```bash
+python analysis/clinical_concordance/run_all.py --config analysis/clinical_concordance/config.yaml
+```
+
+The shared gene is an existing MS relation, not a causal mechanism inferred by HANAMI; the post hoc set is not an independent benchmark.
