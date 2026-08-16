@@ -32,13 +32,19 @@ From the repository root:
 
 ```bash
 pip install -r analysis/clinical_concordance/requirements.txt
-python analysis/clinical_concordance/run_all.py
+python analysis/clinical_concordance/run_clinical_concordance.py
+```
+
+Rendering Fig. 5 also requires R with the `ggplot2` and `patchwork` packages:
+
+```r
+install.packages(c("ggplot2", "patchwork"))
 ```
 
 To calculate the numerical results without rendering Fig. 5:
 
 ```bash
-python analysis/clinical_concordance/run_all.py --skip-plot
+python analysis/clinical_concordance/run_clinical_concordance.py --skip-plot
 ```
 
 The stages can also be run separately:
@@ -46,10 +52,13 @@ The stages can also be run separately:
 ```bash
 python analysis/clinical_concordance/build_clinical_concordance.py
 python analysis/clinical_concordance/analyze_clinical_concordance.py
-python analysis/clinical_concordance/plot_figure5.py
+Rscript analysis/clinical_concordance/plot_figure5.R \
+  --source results/clinical_concordance/figure5_source_data.csv \
+  --output-pdf results/clinical_concordance/figure5.pdf \
+  --output-png results/clinical_concordance/figure5.png
 ```
 
-The plotting script is optional. It reads the generated `figure5_source_data.csv` and writes PDF and PNG versions of Fig. 5.
+The plotting script is the data-driven version of the original R code used to create Fig. 5. It reads the generated `figure5_source_data.csv`; no plotted result values are hard-coded.
 
 ## Generated outputs
 
