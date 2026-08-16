@@ -49,6 +49,7 @@ def write_run_manifest(config_path: Path, stages: list[str]) -> None:
         "figure5_source_data.csv",
         "figure5.pdf",
         "figure5.png",
+        "figure5_render.html",
         "build_manifest.json",
         "analysis_manifest.json",
     ]
@@ -89,29 +90,33 @@ def run_figure5(config_path: Path) -> None:
     rscript = shutil.which("Rscript") or shutil.which("Rscript.exe")
     if rscript is None:
         raise RuntimeError(
-            "Rscript was not found. Install R and the ggplot2 and patchwork packages, "
+            "Rscript was not found. Install R and the rmarkdown, ggplot2, and "
+            "patchwork packages, "
             "or rerun with --skip-plot."
         )
 
     config = load_config(config_path)
     results_dir = resolve_repo_path(config["paths"]["results_dir"])
     figure = config.get("figure", {})
-    command = [
-        rscript,
-        str(SCRIPT_DIR / "plot_figure5.R"),
-        "--source",
-        str(results_dir / "figure5_source_data.csv"),
-        "--output-pdf",
-        str(results_dir / "figure5.pdf"),
-        "--output-png",
-        str(results_dir / "figure5.png"),
-        "--width",
-        str(figure.get("width_inches", 13.5)),
-        "--height",
-        str(figure.get("height_inches", 6.6)),
-        "--dpi",
-        str(figure.get("dpi", 300)),
-    ]
+    def r_string(value: str | Path) -> str:
+        return '"' + Path(value).as_posix().replace('"', '\\"') + '"'
+
+    report_path = results_dir / "figure5_render.html"
+    render_expression = (
+        "rmarkdown::render("
+        f"input={r_string(SCRIPT_DIR / 'plot_figure5.Rmd')},"
+        f"output_file={r_string(report_path.name)},"
+        f"output_dir={r_string(results_dir)},"
+        "params=list("
+        f"source={r_string(results_dir / 'figure5_source_data.csv')},"
+        f"output_pdf={r_string(results_dir / 'figure5.pdf')},"
+        f"output_png={r_string(results_dir / 'figure5.png')},"
+        f"width={float(figure.get('width_inches', 13.5))},"
+        f"height={float(figure.get('height_inches', 6.6))},"
+        f"dpi={int(figure.get('dpi', 300))}"
+        "),quiet=TRUE,envir=new.env(parent=globalenv()))"
+    )
+    command = [rscript, "-e", render_expression]
     print("RUN", " ".join(command), flush=True)
     subprocess.run(command, check=True)
 

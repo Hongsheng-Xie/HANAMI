@@ -35,10 +35,10 @@ pip install -r analysis/clinical_concordance/requirements.txt
 python analysis/clinical_concordance/run_clinical_concordance.py
 ```
 
-Rendering Fig. 5 also requires R with the `ggplot2` and `patchwork` packages:
+Rendering Fig. 5 also requires R with the `rmarkdown`, `ggplot2`, and `patchwork` packages:
 
 ```r
-install.packages(c("ggplot2", "patchwork"))
+install.packages(c("rmarkdown", "ggplot2", "patchwork"))
 ```
 
 To calculate the numerical results without rendering Fig. 5:
@@ -52,10 +52,7 @@ The stages can also be run separately:
 ```bash
 python analysis/clinical_concordance/build_clinical_concordance.py
 python analysis/clinical_concordance/analyze_clinical_concordance.py
-Rscript analysis/clinical_concordance/plot_figure5.R \
-  --source results/clinical_concordance/figure5_source_data.csv \
-  --output-pdf results/clinical_concordance/figure5.pdf \
-  --output-png results/clinical_concordance/figure5.png
+Rscript -e "rmarkdown::render('analysis/clinical_concordance/plot_figure5.Rmd')"
 ```
 
 The plotting script is the data-driven version of the original R code used to create Fig. 5. It reads the generated `figure5_source_data.csv`; no plotted result values are hard-coded.
@@ -69,7 +66,7 @@ Running the workflow creates files under `results/clinical_concordance/`, includ
 - aggregate method summaries;
 - paired Wilcoxon results with Holm-adjusted P values;
 - seven-case rank summaries and Fig. 5 source data;
-- optional PDF and PNG figure files.
+- optional PDF and PNG figure files and an R Markdown rendering report.
 
 These files are generated artifacts and do not need to be committed. The frozen inputs above are sufficient to reproduce them.
 
