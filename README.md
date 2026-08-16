@@ -36,6 +36,9 @@ This project implements a drug–gene–disease motif prediction model using a m
 - `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
 - `main.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
 - `utils.py`: Utility functions for graph processing and logging
+- `analysis/ms_validation/`: R Markdown workflow used to prepare the MS benchmark plots
+- `analysis/drkg_validation/`: R Markdown workflow used to prepare the DRKG benchmark plots
+- `analysis/transfer_validation/`: R Markdown workflow used to prepare the transfer and cold-start plots
 - `analysis/clinical_concordance/`: Scripts and configuration for the post hoc clinical-concordance analysis
 - `data/clinical_concordance/`: Frozen candidate scores, clinical-match tables, and data provenance
 
@@ -96,7 +99,7 @@ This post hoc analysis evaluates MS gene-star configurations in which a drug and
 Run the analysis from the repository root:
 
 ```bash
-python analysis/clinical_concordance/run_all.py --config analysis/clinical_concordance/config.yaml
+python analysis/clinical_concordance/run_clinical_concordance.py --config analysis/clinical_concordance/config.yaml
 ```
 
 The shared gene is an existing MS relation, not a causal mechanism inferred by HANAMI; the post hoc set is not an independent benchmark.
