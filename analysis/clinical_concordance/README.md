@@ -32,7 +32,7 @@ From the repository root:
 
 ```bash
 pip install -r analysis/clinical_concordance/requirements.txt
-python analysis/clinical_concordance/run_clinical_concordance.py
+python run_clinical_concordance.py
 ```
 
 Rendering Fig. 5 also requires R with the `rmarkdown`, `ggplot2`, and `patchwork` packages:
@@ -44,7 +44,7 @@ install.packages(c("rmarkdown", "ggplot2", "patchwork"))
 To calculate the numerical results without rendering Fig. 5:
 
 ```bash
-python analysis/clinical_concordance/run_clinical_concordance.py --skip-plot
+python run_clinical_concordance.py --skip-plot
 ```
 
 The stages can also be run separately:
