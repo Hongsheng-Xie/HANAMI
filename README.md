@@ -36,6 +36,8 @@ This project implements a drug–gene–disease motif prediction model using a m
 - `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
 - `main.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
 - `utils.py`: Utility functions for graph processing and logging
+- `analysis/clinical_concordance/`: Scripts and configuration for the post hoc clinical-concordance analysis
+- `data/clinical_concordance/`: Frozen candidate scores, clinical-match tables, and data provenance
 
 ## Usage
 
@@ -87,14 +89,7 @@ python transfer_main.py
 
 ### Overview
 
-This post hoc analysis evaluates MS gene-star configurations in which a drug and disease share a gene but lack a direct drug-disease relation. It uses ten-seed candidate scores and frozen clinical-match tables to construct clinically documented associations.
-
-### Files
-
-- [Analysis code and instructions](analysis/clinical_concordance/)
-- [Clinical-concordance data](data/clinical_concordance/)
-- [Data dictionary](data/clinical_concordance/data_dictionary.csv)
-- [Data provenance](data/clinical_concordance/PROVENANCE.md)
+This post hoc analysis evaluates MS gene-star configurations in which a drug and disease share a gene but lack a direct drug-disease relation. It uses ten-seed candidate scores and frozen clinical-match tables to construct clinically documented associations. See the [analysis instructions](analysis/clinical_concordance/) and [data guide](data/clinical_concordance/) for details.
 
 ### Usage
 
