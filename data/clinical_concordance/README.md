@@ -29,8 +29,8 @@ The packaged workflow begins from these frozen tables. It does not repeat the or
 |---|---|
 | `data_dictionary.csv` | Field definitions for the runtime and frozen clinical-set inputs. |
 | `PROVENANCE.md` | Input checksums, construction boundary, and scope limitations. |
-| `clinicaltrials_snapshot.csv.gz` | Frozen registry snapshot retained for audit purposes; it is not read by `run_all.py`. |
+| `clinicaltrials_snapshot.csv.gz` | Frozen registry snapshot retained for audit purposes; it is not read by `run_clinical_concordance.py`. |
 | `clinicaltrials_metadata.json` | Query dates, source information, and snapshot metadata. |
-| `hanami_consensus_gene_stars.csv` | Supporting candidate-selection provenance; it is not read by `run_all.py`. |
+| `hanami_consensus_gene_stars.csv` | Supporting candidate-selection provenance; it is not read by `run_clinical_concordance.py`. |
 
 For execution instructions, see [`analysis/clinical_concordance/README.md`](../../analysis/clinical_concordance/README.md). Clinical registry concordance does not establish efficacy, regulatory approval, or a causal role for the shared gene.
