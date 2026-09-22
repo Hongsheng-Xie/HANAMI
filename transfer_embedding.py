@@ -1,73 +1,87 @@
-import xml.etree.ElementTree as ET
+"""Select the published DRKG-minus-MS features from the supplied matrices.
+
+This script subsets existing features; it does not run or retrain encoders.
+"""
+
+import argparse
+from pathlib import Path
+
 import numpy as np
-import pandas as pd
-from openpyxl import Workbook
 import torch
-df_drug_drkg = np.load('./data/drkg/id2drug.npy', allow_pickle=True).item()
-df_dise_drkg = np.load('./data/drkg/id2dise.npy', allow_pickle=True).item()
-df_gene_drkg = np.load('./data/drkg/id2gene.npy', allow_pickle=True).item()
-
-df_drug_ms = np.load('./data/ms/id2drug.npy', allow_pickle=True).item()
-df_dise_ms = np.load('./data/ms/id2dise.npy', allow_pickle=True).item()
-df_gene_ms = np.load('./data/ms/id2gene.npy', allow_pickle=True).item()
-
-drug_ms = set(df_drug_ms.values())
-filtered_drug = {k: v for k, v in df_drug_drkg.items() if v not in drug_ms}
-
-dise_ms = set(df_dise_ms.values())
-filtered_dise = {k: v for k, v in df_dise_drkg.items() if v not in dise_ms}
-
-gene_ms = set(df_gene_ms.values())
-filtered_gene = {k: v for k, v in df_gene_drkg.items() if v not in gene_ms}
 
 
-drkg_dise_feat = torch.load('./data/drkg/dise_feat.pth')
-drkg_dise = list(filtered_dise.keys())
-drkg_dise_feat_selected = drkg_dise_feat[drkg_dise,:]
-drkg_dise_feat_selected = drkg_dise_feat_selected[:,drkg_dise]
-torch.save(drkg_dise_feat_selected, 'C:/Users/xiehs/Downloads/TriMoGCL-main/TriMoGCL-main/data/drkg/DRKG_MS_dise_Base.pth')
-
-drkg_dise_feat = torch.load('./data/drkg/dise_Bio.pth')
-drkg_dise = list(filtered_dise.keys())
-drkg_dise_feat_selected = drkg_dise_feat[drkg_dise,:]
-torch.save(drkg_dise_feat_selected, 'C:/Users/xiehs/Downloads/TriMoGCL-main/TriMoGCL-main/data/drkg/DRKG_MS_dise_Rev.pth')
-l_dise = len(drkg_dise)
-dise_dict = {}
-for i in range(l_dise):
-    dise_dict[drkg_dise[i]] = i
-np.save('./data/drkg/subgraph_dise.npy', dise_dict)
-#print(drkg_dise_feat_selected.shape) #[1551,1792]
-
-drkg_drug_feat = torch.load('./data/drkg/drug_feat.pth')
-drkg_drug = list(filtered_drug.keys())
-drkg_drug_feat_selected = drkg_drug_feat[drkg_drug,:]
-torch.save(drkg_drug_feat_selected, 'C:/Users/xiehs/Downloads/TriMoGCL-main/TriMoGCL-main/data/drkg/DRKG_MS_drug_Base.pth')
-drkg_drug_feat = torch.load('./data/drkg/drug_ALL.pth')
-drkg_drug = list(filtered_drug.keys())
-drkg_drug_feat_selected = drkg_drug_feat[drkg_drug,:]
-torch.save(drkg_drug_feat_selected, 'C:/Users/xiehs/Downloads/TriMoGCL-main/TriMoGCL-main/data/drkg/DRKG_MS_drug_Rev.pth')
-l_drug = len(drkg_drug)
-drug_dict = {}
-for i in range(l_drug):
-    drug_dict[drkg_drug[i]] = i
-np.save('./data/drkg/subgraph_drug.npy', drug_dict)
-#print(drkg_drug_feat_selected.shape) #[1636,1452]
-
-drkg_gene_feat = torch.load('./data/drkg/gene_feat.pth')
-drkg_gene = list(filtered_gene.keys())
-drkg_gene_feat_selected = drkg_gene_feat[drkg_gene,:]
-torch.save(drkg_gene_feat_selected, 'C:/Users/xiehs/Downloads/TriMoGCL-main/TriMoGCL-main/data/drkg/DRKG_MS_gene_Base.pth')
-drkg_gene_feat = torch.load('./data/drkg/gene_feat.pth')
-drkg_gene = list(filtered_gene.keys())
-drkg_gene_feat_selected = drkg_gene_feat[drkg_gene,:]
-torch.save(drkg_gene_feat_selected, 'C:/Users/xiehs/Downloads/TriMoGCL-main/TriMoGCL-main/data/drkg/DRKG_MS_gene_Rev.pth')
-l_gene = len(drkg_gene)
-gene_dict = {}
-for i in range(l_gene):
-    gene_dict[drkg_gene[i]] = i
-np.save('./data/drkg/subgraph_gene.npy', gene_dict)
-#print(drkg_gene_feat_selected.shape) #[5291,1024]
+def require_materialized(path):
+    with path.open("rb") as stream:
+        if stream.read(43).startswith(b"version https://git-lfs.github.com/spec/v1"):
+            raise RuntimeError(f"{path} is a Git LFS pointer. Run git lfs pull first.")
 
 
+def load_tensor(path):
+    require_materialized(path)
+    return torch.load(path, map_location="cpu", weights_only=True)
 
 
+def load_mapping(path):
+    require_materialized(path)
+    return np.load(path, allow_pickle=True).item()
+
+
+def build_transfer_features(data_root):
+    """Preserve the original DRKG ID order while excluding shared entity IDs."""
+    features = {}
+    mappings = {}
+    for entity in ("dise", "drug", "gene"):
+        source_ids = load_mapping(data_root / "drkg" / f"id2{entity}.npy")
+        target_ids = set(load_mapping(data_root / "ms" / f"id2{entity}.npy").values())
+        rows = [index for index, identifier in source_ids.items()
+                if identifier not in target_ids]
+        mappings[f"subgraph_{entity}.npy"] = {
+            old_index: new_index for new_index, old_index in enumerate(rows)
+        }
+
+        for source_suffix, output_suffix in (("feat", "Base"), ("All", "Rev")):
+            matrix = load_tensor(data_root / "drkg" / f"{entity}_{source_suffix}.pth")
+            selected = matrix[rows, :]
+            if entity == "dise" and source_suffix == "feat":
+                # Baseline disease features are a square similarity matrix.
+                selected = selected[:, rows]
+            features[f"DRKG_MS_{entity}_{output_suffix}.pth"] = selected
+    return features, mappings
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--data-root", type=Path,
+                        default=Path(__file__).resolve().parent / "data")
+    parser.add_argument("--output-dir", type=Path,
+                        help="Destination or comparison directory (default: DATA_ROOT/drkg).")
+    parser.add_argument("--check", action="store_true",
+                        help="Compare against existing files without writing anything.")
+    args = parser.parse_args()
+    output_dir = args.output_dir or args.data_root / "drkg"
+    features, mappings = build_transfer_features(args.data_root)
+
+    if args.check:
+        for filename, tensor in features.items():
+            existing = load_tensor(output_dir / filename)
+            if tensor.dtype != existing.dtype or not torch.equal(tensor, existing):
+                raise ValueError(f"Feature values differ: {filename}")
+            print(f"MATCH {filename}: {tuple(tensor.shape)}")
+        for filename, mapping in mappings.items():
+            existing = load_mapping(output_dir / filename)
+            if mapping != existing:
+                raise ValueError(f"Entity mapping differs: {filename}")
+            print(f"MATCH {filename}: {len(mapping)} entities")
+        return
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for filename, tensor in features.items():
+        torch.save(tensor, output_dir / filename)
+        print(f"WROTE {filename}: {tuple(tensor.shape)}")
+    for filename, mapping in mappings.items():
+        np.save(output_dir / filename, mapping)
+        print(f"WROTE {filename}: {len(mapping)} entities")
+
+
+if __name__ == "__main__":
+    main()

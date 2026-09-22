@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "hanami_root": ".",
+  "output_dir": "results/clinical_concordance/bio_allgene_control",
+  "runner": "analysis/clinical_concordance/score_generation/run_bio_allgene_hanami.py",
+  "seeds": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "epochs": 150,
+  "pool_file": "data/ms/tup_cenofgene.npy",
+  "pool_sha256": "96fb682138f648b377d14a55c02c75d2396746406995a6e00a06084a9858cbc2",
+  "pool_size": 46704,
+  "torch_version": "2.7.0+cu126",
+  "cuda_runtime": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "data_loader": "utils_our_bio_allgene.prepare_data",
+  "paper_runner": "main_tri_binary10.py",
+  "provisional_extractor": "extract_repurposing_candidates.py",
+  "notes": [
+    "Provisional extractor was not used.",
+    "Exact full pool is byte-identical to the four-baseline pool.",
+    "Only the clique binary classifier is trained because it is first and independent in the paper's seven-motif loop."
+  ],
+  "completed_seed_count": 10,
+  "packaging_provenance": {
+    "original_file_sha256": "4c8870ffb9ccdc54702156f51fc1a4d6b3538772aab15096df80dcf01d32db68",
+    "sanitized_fields": [
+      "hanami_root",
+      "output_dir",
+      "runner",
+      "pool_file",
+      "paper_runner",
+      "provisional_extractor"
+    ],
+    "path_note": "Repository-relative paths replace machine-specific paths. paper_runner and provisional_extractor are historical source basenames, not bundled files."
+  }
+}

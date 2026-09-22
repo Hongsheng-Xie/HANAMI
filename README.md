@@ -5,7 +5,6 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 - Message Passing GraphSAGE Convolutional Networks
 - Structure-Aware Pooling module
-- Attention-based fusion
 - N-pair Contrastive Learning strategy
 
 ---
@@ -16,7 +15,7 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 | Resource | Purpose in HANAMI | Link |
 | -------- | ------------------- | ---- |
-| **ChemBERTa (ZINC100M, MLM & v1 base-zinc)** | 1152-dim SMILES embeddings for small-molecule drugs | [`DeepChem/ChemBERTa-100M-MLM`](https://huggingface.co/DeepChem/ChemBERTa-100M-MLM)&[`seyonec/ChemBERTa-zinc-base-v1`](https://huggingface.co/seyonec/ChemBERTa-zinc-base-v1)|
+| **ChemBERTa (77M-MLM & zinc-base-v1)** | 1152-dim SMILES embeddings for small-molecule drugs | [`DeepChem/ChemBERTa-77M-MLM`](https://huggingface.co/DeepChem/ChemBERTa-77M-MLM) & [`seyonec/ChemBERTa-zinc-base-v1`](https://huggingface.co/seyonec/ChemBERTa-zinc-base-v1)|
 | **MPNN** | 300-dim SMILES embeddings for small-molecule drugs | [`MPNN Class`](https://github.com/chemprop/chemprop/blob/main/chemprop/models/model.py)|
 | **BioBERT (v1.1 large-cased-squad)** | 1024-dim biomedical text embeddings for disease terms | [`dmis-lab/biobert-large-cased-v1.1-squad`](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad)|
 | **ClinicalBERT (base-cased-clinical)** | 768-dim biomedical text embeddings for disease terms | [`emilyalsentzer/Bio_ClinicalBERT`](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)|
@@ -30,18 +29,20 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 ## Files Description
 
-- `Attention.py`: Implements a PyTorch-based attention mechanism
+- `Attention.py`: Retained attention utility; not called by the current GraphSAGE forward path
 - `base_gcn.py`: Defines the neural network architectures and custom layers, including GraphSAGE layers, Structure-Aware Poolings, Multi-Layer Perceptrons (MLPs), and Decoders
 - `create_data.py`: Manages the logic of assembling valid drug-gene-disease motifs and generating corresponding negative samples
 - `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
 - `main.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
-- `run_clinical_concordance.py`: Entry point for reproducing the post hoc clinical-concordance analysis
+- `run_clinical_concordance.py`: Reproduces current Figure 5 from frozen scores, without training
 - `utils.py`: Utility functions for graph processing and logging
 - [`analysis/ms_validation/`](analysis/ms_validation/): R Markdown workflow used to prepare the MS benchmark plots
 - [`analysis/drkg_validation/`](analysis/drkg_validation/): R Markdown workflow used to prepare the DRKG benchmark plots
 - [`analysis/transfer_validation/`](analysis/transfer_validation/): R Markdown workflow used to prepare the transfer and cold-start plots
-- [`analysis/clinical_concordance/`](analysis/clinical_concordance/): Scripts and configuration for the post hoc clinical-concordance analysis
-- [`data/clinical_concordance/`](data/clinical_concordance/): Frozen candidate scores, clinical-match tables, and data provenance
+- [`analysis/clinical_concordance/`](analysis/clinical_concordance/): Current complete-cohort Figure 5 Rmd, builders and tests
+- [`data/clinical_concordance/`](data/clinical_concordance/): Frozen candidate scores, clinical cohort, five cases and provenance
+- [`analysis/computational_cost/`](analysis/computational_cost/): Cost instrumentation, archived-record reconstruction and provenance limits
+- [`data/README.md`](data/README.md): Feature dimensions, Git LFS setup and transfer-subset reconstruction
 
 ## Usage
 
@@ -57,9 +58,8 @@ python main.py
 
 1. **Message Passing GraphSAGE Convolution module**: Processes the drug-gene-disease interaction graph by aggregating relational and topological contexts from neighboring nodes.
 2. **Structure-Aware Pooling module**: Processes triplet embeddings through combined globally and locally consolidated representations.
-3. **Attention-based fusion**: Combines different feature representations within the network.
-4. **N-pair Contrastive Learning**: Regularizes the latent space and optimizes structural motif representations
-5. **MLP Decoder**: Predicts association scores
+3. **N-pair Contrastive Learning**: Regularizes the latent space and optimizes structural motif representations
+4. **MLP Decoder**: Predicts association scores
 
 ## Data Format
 
@@ -93,7 +93,7 @@ python transfer_main.py
 
 ### Overview
 
-This post hoc analysis evaluates MS gene-star configurations in which a drug and disease share a gene but lack a direct drug-disease relation. It uses ten-seed candidate scores and frozen clinical-match tables to construct clinically documented associations. See the [analysis instructions](analysis/clinical_concordance/) and [data guide](data/clinical_concordance/) for details.
+Current Figure 5 evaluates all 1,630 clinically supported MS gene-star motifs from 785 drug–disease pairs and 109 disease labels. Each method ranks the same 46,704 candidates. Motif values are arithmetic means across ten seeds, not medians. Panels a–b report the percentage ranked best and the cohort mean percentile; panels c–g show the five current cases with error bars and exploratory paired tests. See the [analysis instructions](analysis/clinical_concordance/) and [data guide](data/clinical_concordance/) for inputs, significance tests and clinical-evidence qualifications.
 
 ### Usage
 
@@ -103,4 +103,14 @@ Run the analysis from the repository root:
 python run_clinical_concordance.py
 ```
 
-The shared gene is an existing MS relation, not a causal mechanism inferred by HANAMI; the post hoc set is not an independent benchmark.
+The shared gene is an existing MS structural connection, not a causal mechanism established by this analysis. Clinical trial records indicate investigation, not proof of efficacy or regulatory approval. The old 405-pair consensus workflow is archived under `analysis/clinical_concordance/legacy_405/` and is not used for current Figure 5.
+
+## Computational cost
+
+The [cost package](analysis/computational_cost/) includes the measurement scripts, archived runs, timing-review records and a non-training reconstruction command:
+
+```bash
+python analysis/computational_cost/rebuild_recorded_tables.py
+```
+
+DRKG Supplementary Table 2 is reproduced from its complete recorded seven-task, seed-1 runs. The available MS records do not fully establish the manuscript's final Table 1 averages; this unresolved provenance is documented rather than replaced with inferred or selectively reconstructed numbers. New timing runs require the baseline source directory described in the cost package.

@@ -1,0 +1,129 @@
+{
+  "method": "HANAMI",
+  "seed": 10,
+  "epochs": 150,
+  "best_epoch_zero_based": 33,
+  "best_epoch_one_based": 34,
+  "best_validation_auc": 0.893455922120065,
+  "runtime_seconds": 312.5865409374237,
+  "score": "class-1 logit margin z1-z0",
+  "rank_formula": "1 + count(score>target) + 0.5*(count(score==target)-1)",
+  "top_percent_formula": "100*rank/46704; lower is better",
+  "checkpoint_rule": "earliest strict maximum validation AUROC",
+  "data_loader": "utils_our_bio_allgene.prepare_data",
+  "feature_shape": [
+    6485,
+    1792
+  ],
+  "feature_files": [
+    "dise_Bio.pth",
+    "drug_All.pth",
+    "gene_All.pth"
+  ],
+  "architecture": "GCN_binary_SAGE: SAGEConv(max), SAGEConv(sum), node and edge pooling",
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.00001
+  },
+  "contrastive_loss": "paper npair_loss, lambda=0.1",
+  "edge_masking": "cumulative across 10 minibatches, matching final paper runner",
+  "message_passing_graph": "data.train_graph as coded in final paper runner",
+  "discarded_outer_initialization_mirrored": true,
+  "score_file": "data/clinical_concordance/current/hanami_scores/scores_seed10.npy",
+  "checkpoint_file": "checkpoint_seed10.pt",
+  "targets": [
+    {
+      "target": "Cariprazine-DRD2-Depressive Disorder",
+      "global_triplet": [
+        162,
+        1507,
+        3372
+      ],
+      "pool_index_zero_based": 18891,
+      "pool_size": 46704,
+      "score": 5.561832427978516,
+      "rank": 8203,
+      "top_percent": 17.56380609797876,
+      "ties": 1
+    },
+    {
+      "target": "Propranolol-ADRB2-Prostatic Neoplasms",
+      "global_triplet": [
+        2,
+        961,
+        3910
+      ],
+      "pool_index_zero_based": 26436,
+      "pool_size": 46704,
+      "score": 7.656643390655518,
+      "rank": 4386,
+      "top_percent": 9.391058581706064,
+      "ties": 1
+    },
+    {
+      "target": "Lasofoxifene-ESR1-Breast Neoplasms",
+      "global_triplet": [
+        6,
+        1907,
+        2038
+      ],
+      "pool_index_zero_based": 2296,
+      "pool_size": 46704,
+      "score": 10.056866645812988,
+      "rank": 1626,
+      "top_percent": 3.4815005138746145,
+      "ties": 1
+    },
+    {
+      "target": "Prednisolone-NR3C1-Endometriosis",
+      "global_triplet": [
+        1,
+        1142,
+        2047
+      ],
+      "pool_index_zero_based": 2998,
+      "pool_size": 46704,
+      "score": 9.326026916503906,
+      "rank": 1957,
+      "top_percent": 4.190219253168894,
+      "ties": 1
+    },
+    {
+      "target": "Diazepam-GABRA1-Seizures",
+      "global_triplet": [
+        112,
+        1121,
+        4504
+      ],
+      "pool_index_zero_based": 33823,
+      "pool_size": 46704,
+      "score": 9.213323593139648,
+      "rank": 2040,
+      "top_percent": 4.367934224049332,
+      "ties": 1
+    },
+    {
+      "target": "Esmolol-ADRB1-Hypertension",
+      "global_triplet": [
+        93,
+        729,
+        1983
+      ],
+      "pool_index_zero_based": 147,
+      "pool_size": 46704,
+      "score": 6.74781608581543,
+      "rank": 5853,
+      "top_percent": 12.532117163412128,
+      "ties": 1
+    }
+  ],
+  "packaging_provenance": {
+    "original_file_sha256": "add7861b5ae02884dc6f0864e7152ad1f3232bf87fc707de11f90cf9a1e605ed",
+    "sanitized_fields": [
+      "score_file",
+      "checkpoint_file"
+    ],
+    "path_note": "score_file points to the frozen packaged score. checkpoint_file is a historical basename; checkpoints are not included. Original feature filenames and historical diagnostic targets are retained."
+  }
+}

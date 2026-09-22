@@ -1,0 +1,42 @@
+[
+  {
+    "seed": 30,
+    "method": "RF",
+    "training_minutes": 4.664044966666067,
+    "inference_ms": 262.98286002420355,
+    "peak_ram_gib": 3.6692161560058594,
+    "peak_gpu_gib": 0.0018572807312011719,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 30,
+    "method": "TriNet",
+    "training_minutes": 0.40890257166562755,
+    "inference_ms": 4.907855004421435,
+    "peak_ram_gib": 1.2819252014160156,
+    "peak_gpu_gib": 0.36542415618896484,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 30,
+    "method": "N2V-MLP",
+    "training_minutes": 3.7386620316567134,
+    "inference_ms": 15.019890005351044,
+    "peak_ram_gib": 1.6696853637695312,
+    "peak_gpu_gib": 2.526853084564209,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 30,
+    "method": "TriMoGCL",
+    "training_minutes": 66.43135716166192,
+    "inference_ms": 225.7462749897968,
+    "peak_ram_gib": 1.6638259887695312,
+    "peak_gpu_gib": 1.4708251953125,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  }
+]

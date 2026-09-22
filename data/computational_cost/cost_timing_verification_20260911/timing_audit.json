@@ -1,0 +1,84 @@
+{
+  "original_measurements": "<HANAMI_ROOT>\\results\\computational_cost\\ms_seed1_full_20260911\\measurements.json",
+  "replacement": "Only TriMoGCL task 2-star 2 replaced by the complete 150-epoch repeated run.",
+  "reason": "Initial task contained training calls of approximately 543, 53 and 24 seconds, while ordinary calls took about one second. Cause not established.",
+  "limits": "Descriptive single-seed costs, native feature/graph processing retained. The repeated task was run independently with seed 1, rather than after the preceding task sequence; it is timing verification, not a replacement accuracy estimate.",
+  "old_task": {
+    "time": "2026-09-11 11:10:33",
+    "method": "TriMoGCL",
+    "seed": 1,
+    "task": "2-star 2",
+    "event": "end",
+    "task_wall_seconds": 727.56577690001,
+    "stages": {
+      "train": {
+        "calls": 150,
+        "total_seconds": 725.1371087001462,
+        "mean_seconds": 4.834247391334308
+      },
+      "ttest": {
+        "calls": 183,
+        "total_seconds": 2.0963816000439692,
+        "mean_seconds": 0.011455637158710215
+      }
+    },
+    "inference_mean_seconds": 0.00563850500038825,
+    "inference_sd_seconds": 0.0005079026456429567,
+    "inference_repeats": 20,
+    "test_motifs": 332,
+    "train_motifs": 2674,
+    "input_graph_edges": 49454,
+    "feature_width": 1200,
+    "parameter_count": 2412386,
+    "best_validation_auroc": 0.9308861953839455,
+    "test_metrics": [
+      0.7688172043010753,
+      0.8614457831325302,
+      0.8012048192771084,
+      0.899985484105095,
+      0.9000070502000898
+    ],
+    "peak_process_ram_mib": 1687.96875,
+    "peak_gpu_allocated_mib": 1490.4580078125,
+    "peak_gpu_reserved_mib": 1634.0
+  },
+  "new_task": {
+    "time": "2026-09-11 11:55:54",
+    "method": "TriMoGCL",
+    "seed": 1,
+    "task": "2-star 2",
+    "event": "end",
+    "task_wall_seconds": 103.70914720001747,
+    "stages": {
+      "train": {
+        "calls": 150,
+        "total_seconds": 101.03030110007967,
+        "mean_seconds": 0.6735353406671978
+      },
+      "ttest": {
+        "calls": 190,
+        "total_seconds": 2.3195294001488946,
+        "mean_seconds": 0.012208049474467866
+      }
+    },
+    "inference_mean_seconds": 0.007655534998048097,
+    "inference_sd_seconds": 0.0021537773002988426,
+    "inference_repeats": 20,
+    "test_motifs": 332,
+    "train_motifs": 2674,
+    "input_graph_edges": 49454,
+    "feature_width": 1200,
+    "parameter_count": 2412386,
+    "best_validation_auroc": 0.938634054289447,
+    "test_metrics": [
+      0.7722222222222223,
+      0.8373493975903614,
+      0.7951807228915663,
+      0.8884453476556828,
+      0.8856087904723058
+    ],
+    "peak_process_ram_mib": 1678.79296875,
+    "peak_gpu_allocated_mib": 1489.2744140625,
+    "peak_gpu_reserved_mib": 1628.0
+  }
+}

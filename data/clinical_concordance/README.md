@@ -1,36 +1,30 @@
-# Clinical concordance data
+# Clinical concordance inputs
 
-This directory contains the fixed inputs and provenance files for the post hoc MS gene-star analysis. Generated statistics, rank tables, and figures are written locally to `results/clinical_concordance/` and are not committed.
+The current Figure 5 uses the complete cohort of 1,630 motifs from 785
+drug–disease pairs and 109 disease labels. Its canonical inputs are under
+[current](current/), with relative paths and SHA256 checks in
+[current/manifest.json](current/manifest.json).
 
-## Runtime inputs
-
-| File | Role |
+| Input | Purpose |
 |---|---|
-| `gene_star_candidates.csv` | Fixed, ordered pool of 46,704 MS gene-star candidates. |
-| `gene_star_scores_10seeds.npz` | Full candidate-score arrays for HANAMI and four baselines across ten seeds. |
-| `clinically_documented_405.csv` | Canonical 405-pair analysis table used to verify the reconstructed clinical set. |
-| `figure5_cases_7.csv` | Identities, evidence, and set-membership metadata for the seven illustrative cases. Method ranks are recalculated from the score archive. |
+| `gene_star_candidates.csv` | Fixed 46,704-candidate MS gene-star pool and topology fields |
+| `gene_star_scores_10seeds.npz` | Four baseline score arrays; its old HANAMI array is not used |
+| `current/hanami_scores/` | Current ten HANAMI score arrays, seeds 0,10,…,90 |
+| `current/cohort_metadata.tsv` | Frozen strict-plus-manual cohort, pair IDs and trial evidence |
+| `current/validated_gene_star_motifs_1630_mean10.tsv` | Released arithmetic-mean percentiles, independently reconstructed by the builder |
+| `current/figure5_cases_5.csv` | Current five cases and their qualified clinical evidence |
 
-## Frozen clinical-set inputs
+This is a reproduction from saved scores and the completed clinical review,
+not a new clinical-trial audit. See the [workflow documentation](../../analysis/clinical_concordance/)
+for aggregation, tests, evidence limits and commands.
 
-The workflow reconstructs the 405-pair set from the following files in `frozen_inputs/`.
+## Historical materials
 
-| File | Role |
-|---|---|
-| `automatic_phase23_pairs_401.csv` | Frozen set of 401 automatic Phase II or III registry matches. |
-| `manually_reviewed_key_cases.csv` | Six manually reviewed records, including the four accepted additions. |
-| `consensus_drug_disease_pairs_hard9of10.csv` | HANAMI consensus-pair universe used to recover candidate identifiers. |
-
-The packaged workflow begins from these frozen tables. It does not repeat the original condition matching and disease crosswalk against the raw ClinicalTrials.gov exports.
-
-## Documentation and provenance
-
-| File | Role |
-|---|---|
-| `data_dictionary.csv` | Field definitions for the runtime and frozen clinical-set inputs. |
-| `PROVENANCE.md` | Input checksums, construction boundary, and scope limitations. |
-| `clinicaltrials_snapshot.csv.gz` | Frozen registry snapshot retained for audit purposes; it is not read by `run_clinical_concordance.py`. |
-| `clinicaltrials_metadata.json` | Query dates, source information, and snapshot metadata. |
-| `hanami_consensus_gene_stars.csv` | Supporting candidate-selection provenance; it is not read by `run_clinical_concordance.py`. |
-
-For execution instructions, see [`analysis/clinical_concordance/README.md`](../../analysis/clinical_concordance/README.md). Clinical registry concordance does not establish efficacy, regulatory approval, or a causal role for the shared gene.
+`clinically_documented_405.csv`, `figure5_cases_7.csv`,
+`hanami_consensus_gene_stars.csv`, `frozen_inputs/`, `data_dictionary.csv`
+and `PROVENANCE.md` describe the superseded 405-pair/consensus analysis.
+They do not define the current cohort, cases or HANAMI scores.
+The registry snapshot and its metadata are retained as historical provenance.
+Historical scripts are under
+[analysis/clinical_concordance/legacy_405](../../analysis/clinical_concordance/legacy_405/).
+These inputs are retained for audit, not substituted for the current release.

@@ -1,0 +1,15 @@
+{
+  "state": "running",
+  "seed": 30,
+  "method": "HANAMI",
+  "current_task": "2-star 1",
+  "completed_epochs": 125,
+  "worker_pid": 36300,
+  "completed_tasks": 2,
+  "total_tasks": 7,
+  "completed_jobs": 0,
+  "total_jobs": 1,
+  "flagged_tasks": 0,
+  "updated": "2026-09-14T17:56:30.887808",
+  "elapsed_seconds": 462.95912089999996
+}

@@ -1,0 +1,106 @@
+{
+  "source_directory_name": "ms_seed10_fresh_20260912_112757",
+  "transformation": "JSON reserialization and local path-root substitution only; numeric values unchanged.",
+  "files": [
+    {
+      "path": "completed_tasks.json",
+      "original_sha256": "0259eaf784eddd21bae261b695c4d0709857873debf61fa02e4537604e8b1758",
+      "published_sha256": "5edc841f06e0029e02b831307e42c28107fe847746640e4b8daea5354fb24713"
+    },
+    {
+      "path": "configuration.json",
+      "original_sha256": "b8a28b2d1e8207ab0acac2922bc8fb88f97b8ec6ee1910e33321e499bf2d40d3",
+      "published_sha256": "d017e22149799a99355985877021da0325fd9782ecb8567dad2f593de0616e66"
+    },
+    {
+      "path": "seed_10/HANAMI/events.jsonl",
+      "original_sha256": "af0fe2075204226577eb5503d1b5138d302f9b920c1bab4453baab22657e7e23",
+      "published_sha256": "18cad66a4fe262c746b184bfcefd3781b7ba6659a07433c49ad1d8a9c1e89880"
+    },
+    {
+      "path": "seed_10/HANAMI/provenance.json",
+      "original_sha256": "b498feab461a4add1b7d06ccfb6d4bb2b11bfbe218755cab31df59d479c7abd9",
+      "published_sha256": "e00ee39e007cc3f4ae90f2840e4a1b896a69c3ae42a38312c963d77d30fbf147"
+    },
+    {
+      "path": "seed_10/HANAMI/success.json",
+      "original_sha256": "0858bb84897f1c1234cfc4cab52e0c243670a2cc443c74af82e686dcc3280f97",
+      "published_sha256": "eabeb7fe5ea298c14d21f7c5524a580f06785815e08ecf74c78022b8be8dd0f3"
+    },
+    {
+      "path": "seed_10/N2V-MLP/events.jsonl",
+      "original_sha256": "19ad5b691baaa1b678e7ce6bb2daae2451a5b8a134f078b0ea92d3c41a75da38",
+      "published_sha256": "85e98eb11d1a32e939776132d7e3f6e4c92d245995527a31a8ff28918c8f3505"
+    },
+    {
+      "path": "seed_10/N2V-MLP/provenance.json",
+      "original_sha256": "033caae8aeacd25706c9c45cd1d8859e2e27ff6fa2c26f8ca24831e1d3cdc883",
+      "published_sha256": "ad59c01d1209975b61b4808742e2d63bd0e6f538e6818a424e94fd1907b27635"
+    },
+    {
+      "path": "seed_10/N2V-MLP/success.json",
+      "original_sha256": "d95a070b8dbd64d42c3178e8b088dcbfccd01a3337dcd48c780d6d3122285450",
+      "published_sha256": "7ba066252c6eb4918188fd636473ab70dc2cf321c468dc08b776205b193c0519"
+    },
+    {
+      "path": "seed_10/RF/events.jsonl",
+      "original_sha256": "71b2ec487f755fa7813e7a01ebe56d2c0ea9f6ec8d60f8e46456e3f987510f06",
+      "published_sha256": "4732d9aabc12a749b486e8644cb8e6dc982ed2356ce8e727adb05a2f431c7764"
+    },
+    {
+      "path": "seed_10/RF/provenance.json",
+      "original_sha256": "4e0cdacf021465df49e1b75607640da744fda4e121f22c1485849adb87f760e9",
+      "published_sha256": "3e51d05a9685f69841ea98e8db074c774cd9ecfd3c558a060ba2130b1662ebe0"
+    },
+    {
+      "path": "seed_10/RF/success.json",
+      "original_sha256": "08ac6abef139592f1b393beae7332ebbc221a2a3d722d14dbe03046c9cb2f53e",
+      "published_sha256": "b3d183e14c0d74cbcf4fcde21cebbc43f841c34227101a4a1c99fe050c66e15d"
+    },
+    {
+      "path": "seed_10/TriMoGCL/events.jsonl",
+      "original_sha256": "6bbab924f9f88be40fdde5be3afcc189f4209136fc5c4398bbeb77a91509819d",
+      "published_sha256": "fc54585c9fb2267b6d3d9d5e66745ab7b104a77f95fb79fb8a65b8d68cf62dde"
+    },
+    {
+      "path": "seed_10/TriMoGCL/provenance.json",
+      "original_sha256": "52abdb834c781dea1c625dd7a6aa07ecad29e62357b2143c7a3a9afce18adb18",
+      "published_sha256": "8c37971973f6eeb7b8e705848ecfaa35b4668170ba4a94d4dd86a74f574b6bfe"
+    },
+    {
+      "path": "seed_10/TriMoGCL/success.json",
+      "original_sha256": "8f245df42012612ea85e14e3f696ada644341fc59c6b4abae529170160f366e1",
+      "published_sha256": "c664ddfc8829e42514f4f95e9d34734aa09bf469f7a1f339847ffc42cc9b6fb6"
+    },
+    {
+      "path": "seed_10/TriNet/events.jsonl",
+      "original_sha256": "864eff66dbe7589a06a429216babbe6e0589a96f7c55ed5953606c6c8eee25d1",
+      "published_sha256": "420ee9f3d011247bb791940c681d4220d6e65b0ea8f70b1d22091876423460dc"
+    },
+    {
+      "path": "seed_10/TriNet/provenance.json",
+      "original_sha256": "e22a6a96de93489e5e51fa64a51b02697c127542ab071496a8becbc63fef7acd",
+      "published_sha256": "c1be3a8dcc269bb8957db41cd7695490611054d55dd9d6b813b6cd0647d0ec07"
+    },
+    {
+      "path": "seed_10/TriNet/success.json",
+      "original_sha256": "b77f39943ff5ec1508af22d1510d5df4068b0512ccd138ef10d7634b4de48806",
+      "published_sha256": "b449bbae7da60a389b2b032842391ad4521d177398508c0d21a3fe2cd87e9e1d"
+    },
+    {
+      "path": "seed_level_costs.json",
+      "original_sha256": "20f12107a4ce020413eb5c28ee7b57767f7971eeb983fa74a4776f7d62a8a3a9",
+      "published_sha256": "ae19cabeb54f70cd6618894f3454f4f61f2b0063b39d179020cef6b4821f7731"
+    },
+    {
+      "path": "status.json",
+      "original_sha256": "6a492b0425a5e0c8f071dd7fefec799854652ca086f6c0e1dfd3a7867c982924",
+      "published_sha256": "7a84e29a650b2c947a38fb8e3ed99a0ccda6ca191667e857e42bf754d98032fe"
+    },
+    {
+      "path": "timing_flags.json",
+      "original_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "published_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  ]
+}

@@ -1,0 +1,1386 @@
+{"time": "2026-09-14 17:19:01", "method": "HANAMI", "seed": 30, "task": "preparation", "event": "prepare_data", "seconds": 2.723172300029546}
+{"time": "2026-09-14 17:19:01", "method": "HANAMI", "seed": 30, "task": "preparation", "event": "data", "feature_shape": [6485, 1792], "dataset": "ms", "nodes": 6485, "prepared_graph_edges": 50116, "split_sha256": "a53431a377b17d55fe467df8d877563d7e4467515117b223c15913e184b86584", "tasks": ["clique", "2-star 0", "2-star 1", "2-star 2", "single 0", "single 1", "single 2"]}
+{"time": "2026-09-14 17:19:01", "method": "HANAMI", "seed": 30, "task": "clique", "event": "begin"}
+{"time": "2026-09-14 17:19:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 1.8704768000170588}
+{"time": "2026-09-14 17:19:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.025311300007160753}
+{"time": "2026-09-14 17:19:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017904900014400482}
+{"time": "2026-09-14 17:19:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8404941000044346}
+{"time": "2026-09-14 17:19:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015382899960968643}
+{"time": "2026-09-14 17:19:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015830400050617754}
+{"time": "2026-09-14 17:19:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8627169999526814}
+{"time": "2026-09-14 17:19:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01407669996842742}
+{"time": "2026-09-14 17:19:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014365800016094}
+{"time": "2026-09-14 17:19:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8654922000132501}
+{"time": "2026-09-14 17:19:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.02039300004253164}
+{"time": "2026-09-14 17:19:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01741009997203946}
+{"time": "2026-09-14 17:19:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8543769999523647}
+{"time": "2026-09-14 17:19:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 5, "training_seconds": 5.29355709993979}
+{"time": "2026-09-14 17:19:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016074499988462776}
+{"time": "2026-09-14 17:19:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01439079997362569}
+{"time": "2026-09-14 17:19:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8474280999507755}
+{"time": "2026-09-14 17:19:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.018383399990852922}
+{"time": "2026-09-14 17:19:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01962520001688972}
+{"time": "2026-09-14 17:19:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8446397000225261}
+{"time": "2026-09-14 17:19:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01522940001450479}
+{"time": "2026-09-14 17:19:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8380787999485619}
+{"time": "2026-09-14 17:19:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014271799998823553}
+{"time": "2026-09-14 17:19:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015812400029972196}
+{"time": "2026-09-14 17:19:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8416189000126906}
+{"time": "2026-09-14 17:19:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015227299998514354}
+{"time": "2026-09-14 17:19:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014770499954465777}
+{"time": "2026-09-14 17:19:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8599324999959208}
+{"time": "2026-09-14 17:19:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 10, "training_seconds": 9.525255099870265}
+{"time": "2026-09-14 17:19:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01429749996168539}
+{"time": "2026-09-14 17:19:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8670466000330634}
+{"time": "2026-09-14 17:19:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01500710000982508}
+{"time": "2026-09-14 17:19:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013909099972806871}
+{"time": "2026-09-14 17:19:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8264566999860108}
+{"time": "2026-09-14 17:19:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015037300006952137}
+{"time": "2026-09-14 17:19:13", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8378119999542832}
+{"time": "2026-09-14 17:19:13", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013825700036250055}
+{"time": "2026-09-14 17:19:14", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8560689999721944}
+{"time": "2026-09-14 17:19:14", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017929399968124926}
+{"time": "2026-09-14 17:19:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8472682000137866}
+{"time": "2026-09-14 17:19:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 15, "training_seconds": 13.759907599829603}
+{"time": "2026-09-14 17:19:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014236400020308793}
+{"time": "2026-09-14 17:19:16", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.870855399989523}
+{"time": "2026-09-14 17:19:16", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015483200026210397}
+{"time": "2026-09-14 17:19:17", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8390187000040896}
+{"time": "2026-09-14 17:19:17", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013706600002478808}
+{"time": "2026-09-14 17:19:18", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8601261000148952}
+{"time": "2026-09-14 17:19:18", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01396559999557212}
+{"time": "2026-09-14 17:19:18", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8402903000242077}
+{"time": "2026-09-14 17:19:19", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01698379998560995}
+{"time": "2026-09-14 17:19:19", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8519305000081658}
+{"time": "2026-09-14 17:19:19", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 20, "training_seconds": 18.022128599870484}
+{"time": "2026-09-14 17:19:19", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014721399988047779}
+{"time": "2026-09-14 17:19:20", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8582194999908097}
+{"time": "2026-09-14 17:19:20", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015179899986833334}
+{"time": "2026-09-14 17:19:21", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8357332000159658}
+{"time": "2026-09-14 17:19:21", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016873000015038997}
+{"time": "2026-09-14 17:19:22", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8451557999942452}
+{"time": "2026-09-14 17:19:22", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015052800008561462}
+{"time": "2026-09-14 17:19:23", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8542500999756157}
+{"time": "2026-09-14 17:19:23", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014982099994085729}
+{"time": "2026-09-14 17:19:24", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8446718999766745}
+{"time": "2026-09-14 17:19:24", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 25, "training_seconds": 22.260159099823795}
+{"time": "2026-09-14 17:19:24", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014203099999576807}
+{"time": "2026-09-14 17:19:25", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8435244000284001}
+{"time": "2026-09-14 17:19:25", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.0174195000436157}
+{"time": "2026-09-14 17:19:25", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8775065999943763}
+{"time": "2026-09-14 17:19:25", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.019829000055324286}
+{"time": "2026-09-14 17:19:26", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8678144000004977}
+{"time": "2026-09-14 17:19:26", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01935700001195073}
+{"time": "2026-09-14 17:19:27", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.861141899949871}
+{"time": "2026-09-14 17:19:27", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014968900009989738}
+{"time": "2026-09-14 17:19:28", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.850197300023865}
+{"time": "2026-09-14 17:19:28", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 30, "training_seconds": 26.560343699820805}
+{"time": "2026-09-14 17:19:28", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015479399997275323}
+{"time": "2026-09-14 17:19:29", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8590069999918342}
+{"time": "2026-09-14 17:19:29", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014090600016061217}
+{"time": "2026-09-14 17:19:30", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8370144999935292}
+{"time": "2026-09-14 17:19:30", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016435099998489022}
+{"time": "2026-09-14 17:19:31", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8476141999708489}
+{"time": "2026-09-14 17:19:31", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015141500043682754}
+{"time": "2026-09-14 17:19:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8490046999650076}
+{"time": "2026-09-14 17:19:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.02072790003148839}
+{"time": "2026-09-14 17:19:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.874390900018625}
+{"time": "2026-09-14 17:19:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 35, "training_seconds": 30.82737499976065}
+{"time": "2026-09-14 17:19:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015596300014294684}
+{"time": "2026-09-14 17:19:33", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8341535999788903}
+{"time": "2026-09-14 17:19:33", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016724100045394152}
+{"time": "2026-09-14 17:19:33", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01393160002771765}
+{"time": "2026-09-14 17:19:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8477821000269614}
+{"time": "2026-09-14 17:19:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016592900035902858}
+{"time": "2026-09-14 17:19:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01457609998760745}
+{"time": "2026-09-14 17:19:35", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8452827000292018}
+{"time": "2026-09-14 17:19:35", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014947400020901114}
+{"time": "2026-09-14 17:19:36", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.845012899953872}
+{"time": "2026-09-14 17:19:36", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015309199981857091}
+{"time": "2026-09-14 17:19:37", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8542408999637701}
+{"time": "2026-09-14 17:19:37", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 40, "training_seconds": 35.053847199713346}
+{"time": "2026-09-14 17:19:37", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014755599957425147}
+{"time": "2026-09-14 17:19:38", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8461625000345521}
+{"time": "2026-09-14 17:19:38", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015701399999670684}
+{"time": "2026-09-14 17:19:38", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8478135999757797}
+{"time": "2026-09-14 17:19:39", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014388400013558567}
+{"time": "2026-09-14 17:19:39", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8640311000053771}
+{"time": "2026-09-14 17:19:39", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015415000030770898}
+{"time": "2026-09-14 17:19:40", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8382049999781884}
+{"time": "2026-09-14 17:19:40", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016550300002563745}
+{"time": "2026-09-14 17:19:40", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014530299988109618}
+{"time": "2026-09-14 17:19:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8478272000211291}
+{"time": "2026-09-14 17:19:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 45, "training_seconds": 39.29788659972837}
+{"time": "2026-09-14 17:19:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.0160160000086762}
+{"time": "2026-09-14 17:19:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014356899948325008}
+{"time": "2026-09-14 17:19:42", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8291953000007197}
+{"time": "2026-09-14 17:19:42", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01756279997061938}
+{"time": "2026-09-14 17:19:43", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.836717400001362}
+{"time": "2026-09-14 17:19:43", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014626200019847602}
+{"time": "2026-09-14 17:19:44", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8386888999957591}
+{"time": "2026-09-14 17:19:44", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015642300015315413}
+{"time": "2026-09-14 17:19:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8278505000052974}
+{"time": "2026-09-14 17:19:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014875799999572337}
+{"time": "2026-09-14 17:19:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8472226000158116}
+{"time": "2026-09-14 17:19:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 50, "training_seconds": 43.47756129974732}
+{"time": "2026-09-14 17:19:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013854200020432472}
+{"time": "2026-09-14 17:19:46", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8179301000200212}
+{"time": "2026-09-14 17:19:46", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015837399987503886}
+{"time": "2026-09-14 17:19:47", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8241094999830239}
+{"time": "2026-09-14 17:19:47", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015245500020682812}
+{"time": "2026-09-14 17:19:48", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8345235000015236}
+{"time": "2026-09-14 17:19:48", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015061100013554096}
+{"time": "2026-09-14 17:19:49", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8324879999854602}
+{"time": "2026-09-14 17:19:49", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015268700022716075}
+{"time": "2026-09-14 17:19:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8424310999689624}
+{"time": "2026-09-14 17:19:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 55, "training_seconds": 47.62904349970631}
+{"time": "2026-09-14 17:19:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014040699985343963}
+{"time": "2026-09-14 17:19:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8342870000051335}
+{"time": "2026-09-14 17:19:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01439379999646917}
+{"time": "2026-09-14 17:19:51", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8426069000270218}
+{"time": "2026-09-14 17:19:51", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014349200006108731}
+{"time": "2026-09-14 17:19:52", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8317289000260644}
+{"time": "2026-09-14 17:19:52", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.019567899988032877}
+{"time": "2026-09-14 17:19:53", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8422644999809563}
+{"time": "2026-09-14 17:19:53", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015126100042834878}
+{"time": "2026-09-14 17:19:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8237783999647945}
+{"time": "2026-09-14 17:19:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 60, "training_seconds": 51.80370919971028}
+{"time": "2026-09-14 17:19:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013869699963834137}
+{"time": "2026-09-14 17:19:55", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8289858999778517}
+{"time": "2026-09-14 17:19:55", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015734199958387762}
+{"time": "2026-09-14 17:19:56", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8471347000449896}
+{"time": "2026-09-14 17:19:56", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013956399983726442}
+{"time": "2026-09-14 17:19:56", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.847355299978517}
+{"time": "2026-09-14 17:19:56", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014142800006084144}
+{"time": "2026-09-14 17:19:57", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.842999399988912}
+{"time": "2026-09-14 17:19:57", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.013873600051738322}
+{"time": "2026-09-14 17:19:58", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8328023999929428}
+{"time": "2026-09-14 17:19:58", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 65, "training_seconds": 56.0029868996935}
+{"time": "2026-09-14 17:19:58", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014910700032487512}
+{"time": "2026-09-14 17:19:59", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8455592999816872}
+{"time": "2026-09-14 17:19:59", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014117899991106242}
+{"time": "2026-09-14 17:20:00", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.829995600041002}
+{"time": "2026-09-14 17:20:00", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014623700000811368}
+{"time": "2026-09-14 17:20:01", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8513856999925338}
+{"time": "2026-09-14 17:20:01", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016571299987845123}
+{"time": "2026-09-14 17:20:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8487282999558374}
+{"time": "2026-09-14 17:20:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016339899972081184}
+{"time": "2026-09-14 17:20:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8384722000337206}
+{"time": "2026-09-14 17:20:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 70, "training_seconds": 60.21712799969828}
+{"time": "2026-09-14 17:20:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015405200014356524}
+{"time": "2026-09-14 17:20:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8362799999886192}
+{"time": "2026-09-14 17:20:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014672399964183569}
+{"time": "2026-09-14 17:20:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8317586000193842}
+{"time": "2026-09-14 17:20:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014822500001173466}
+{"time": "2026-09-14 17:20:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8525689999805763}
+{"time": "2026-09-14 17:20:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016698500025086105}
+{"time": "2026-09-14 17:20:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8459760000114329}
+{"time": "2026-09-14 17:20:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014857799978926778}
+{"time": "2026-09-14 17:20:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8525045000133105}
+{"time": "2026-09-14 17:20:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 75, "training_seconds": 64.4362160997116}
+{"time": "2026-09-14 17:20:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016023300006054342}
+{"time": "2026-09-14 17:20:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.851495300012175}
+{"time": "2026-09-14 17:20:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01628699997672811}
+{"time": "2026-09-14 17:20:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8626972999772988}
+{"time": "2026-09-14 17:20:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01402930001495406}
+{"time": "2026-09-14 17:20:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8354680999764241}
+{"time": "2026-09-14 17:20:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017209300014656037}
+{"time": "2026-09-14 17:20:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8335372000001371}
+{"time": "2026-09-14 17:20:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014332699996884912}
+{"time": "2026-09-14 17:20:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8503804000210948}
+{"time": "2026-09-14 17:20:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 80, "training_seconds": 68.66979439969873}
+{"time": "2026-09-14 17:20:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014280000003054738}
+{"time": "2026-09-14 17:20:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8365149999735877}
+{"time": "2026-09-14 17:20:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017350800044368953}
+{"time": "2026-09-14 17:20:13", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8363671000115573}
+{"time": "2026-09-14 17:20:13", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01522919995477423}
+{"time": "2026-09-14 17:20:14", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8522537999670021}
+{"time": "2026-09-14 17:20:14", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014177199976984411}
+{"time": "2026-09-14 17:20:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8344124000286683}
+{"time": "2026-09-14 17:20:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014311700011603534}
+{"time": "2026-09-14 17:20:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8479637999553233}
+{"time": "2026-09-14 17:20:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 85, "training_seconds": 72.87730649963487}
+{"time": "2026-09-14 17:20:15", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01489019999280572}
+{"time": "2026-09-14 17:20:16", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8502259000088088}
+{"time": "2026-09-14 17:20:16", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01455239998176694}
+{"time": "2026-09-14 17:20:17", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8481853000121191}
+{"time": "2026-09-14 17:20:17", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01622629998018965}
+{"time": "2026-09-14 17:20:18", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8409948000335135}
+{"time": "2026-09-14 17:20:18", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015687900013290346}
+{"time": "2026-09-14 17:20:19", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8581032999791205}
+{"time": "2026-09-14 17:20:19", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014098600018769503}
+{"time": "2026-09-14 17:20:20", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8516663000336848}
+{"time": "2026-09-14 17:20:20", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 90, "training_seconds": 77.12648209970212}
+{"time": "2026-09-14 17:20:20", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01488259999314323}
+{"time": "2026-09-14 17:20:21", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8528616999974474}
+{"time": "2026-09-14 17:20:21", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014827099977992475}
+{"time": "2026-09-14 17:20:21", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8526612000423484}
+{"time": "2026-09-14 17:20:21", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01596109999809414}
+{"time": "2026-09-14 17:20:22", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8384131999919191}
+{"time": "2026-09-14 17:20:22", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01666059996932745}
+{"time": "2026-09-14 17:20:23", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8352928999811411}
+{"time": "2026-09-14 17:20:23", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015446999983396381}
+{"time": "2026-09-14 17:20:24", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8475528000271879}
+{"time": "2026-09-14 17:20:24", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 95, "training_seconds": 81.35326389974216}
+{"time": "2026-09-14 17:20:24", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01443100004689768}
+{"time": "2026-09-14 17:20:25", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8322925000102259}
+{"time": "2026-09-14 17:20:25", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015810700017027557}
+{"time": "2026-09-14 17:20:26", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.843504499993287}
+{"time": "2026-09-14 17:20:26", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015496900014113635}
+{"time": "2026-09-14 17:20:27", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8745021999930032}
+{"time": "2026-09-14 17:20:27", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015996400034055114}
+{"time": "2026-09-14 17:20:27", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8472547000274062}
+{"time": "2026-09-14 17:20:27", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014689600036945194}
+{"time": "2026-09-14 17:20:28", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.857572800014168}
+{"time": "2026-09-14 17:20:28", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 100, "training_seconds": 85.60839059978025}
+{"time": "2026-09-14 17:20:28", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015461599978152663}
+{"time": "2026-09-14 17:20:29", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8345004000002518}
+{"time": "2026-09-14 17:20:29", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01525149994995445}
+{"time": "2026-09-14 17:20:30", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8503417000174522}
+{"time": "2026-09-14 17:20:30", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.0181513000279665}
+{"time": "2026-09-14 17:20:31", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8619907999527641}
+{"time": "2026-09-14 17:20:31", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015184599964413792}
+{"time": "2026-09-14 17:20:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8565883999690413}
+{"time": "2026-09-14 17:20:32", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014459299971349537}
+{"time": "2026-09-14 17:20:33", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8524961000075564}
+{"time": "2026-09-14 17:20:33", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 105, "training_seconds": 89.86430799972732}
+{"time": "2026-09-14 17:20:33", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017834600002970546}
+{"time": "2026-09-14 17:20:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8517837999970652}
+{"time": "2026-09-14 17:20:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01645759999519214}
+{"time": "2026-09-14 17:20:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.866763899975922}
+{"time": "2026-09-14 17:20:34", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017162400006782264}
+{"time": "2026-09-14 17:20:35", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8551486000069417}
+{"time": "2026-09-14 17:20:35", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014822099998127669}
+{"time": "2026-09-14 17:20:36", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8473076000227593}
+{"time": "2026-09-14 17:20:36", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014354099985212088}
+{"time": "2026-09-14 17:20:37", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8514949000091292}
+{"time": "2026-09-14 17:20:37", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 110, "training_seconds": 94.13680679973913}
+{"time": "2026-09-14 17:20:37", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014486300002317876}
+{"time": "2026-09-14 17:20:38", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8473712999839336}
+{"time": "2026-09-14 17:20:38", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01636409998172894}
+{"time": "2026-09-14 17:20:39", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8447566999820992}
+{"time": "2026-09-14 17:20:39", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016241000033915043}
+{"time": "2026-09-14 17:20:40", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8456241000094451}
+{"time": "2026-09-14 17:20:40", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014597200031857938}
+{"time": "2026-09-14 17:20:40", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.841268600022886}
+{"time": "2026-09-14 17:20:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01529299997491762}
+{"time": "2026-09-14 17:20:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8477593999705277}
+{"time": "2026-09-14 17:20:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 115, "training_seconds": 98.36358689970803}
+{"time": "2026-09-14 17:20:41", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015140100033022463}
+{"time": "2026-09-14 17:20:42", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8518094000173733}
+{"time": "2026-09-14 17:20:42", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01530660002026707}
+{"time": "2026-09-14 17:20:43", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.841756500012707}
+{"time": "2026-09-14 17:20:43", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014671100012492388}
+{"time": "2026-09-14 17:20:44", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8406780999503098}
+{"time": "2026-09-14 17:20:44", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.022076499997638166}
+{"time": "2026-09-14 17:20:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8373476000269875}
+{"time": "2026-09-14 17:20:45", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01572440000018105}
+{"time": "2026-09-14 17:20:46", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8513221000321209}
+{"time": "2026-09-14 17:20:46", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 120, "training_seconds": 102.58650059974752}
+{"time": "2026-09-14 17:20:46", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014107400027569383}
+{"time": "2026-09-14 17:20:47", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8377000999753363}
+{"time": "2026-09-14 17:20:47", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015698400035034865}
+{"time": "2026-09-14 17:20:47", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8510946999886073}
+{"time": "2026-09-14 17:20:47", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014677500003017485}
+{"time": "2026-09-14 17:20:48", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8489122000173666}
+{"time": "2026-09-14 17:20:48", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014388699957635254}
+{"time": "2026-09-14 17:20:49", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8347965000430122}
+{"time": "2026-09-14 17:20:49", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.018768200010526925}
+{"time": "2026-09-14 17:20:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8768925999756902}
+{"time": "2026-09-14 17:20:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 125, "training_seconds": 106.83589669974754}
+{"time": "2026-09-14 17:20:50", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017595099983736873}
+{"time": "2026-09-14 17:20:51", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8672947000013664}
+{"time": "2026-09-14 17:20:51", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.018571199965663254}
+{"time": "2026-09-14 17:20:52", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8499024999910034}
+{"time": "2026-09-14 17:20:52", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.016091299999970943}
+{"time": "2026-09-14 17:20:53", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.842624299984891}
+{"time": "2026-09-14 17:20:53", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01720300002489239}
+{"time": "2026-09-14 17:20:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.878779900027439}
+{"time": "2026-09-14 17:20:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015950300032272935}
+{"time": "2026-09-14 17:20:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8818152999738231}
+{"time": "2026-09-14 17:20:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 130, "training_seconds": 111.15631339972606}
+{"time": "2026-09-14 17:20:54", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.021943800034932792}
+{"time": "2026-09-14 17:20:55", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.855571800027974}
+{"time": "2026-09-14 17:20:55", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.014966200047638267}
+{"time": "2026-09-14 17:20:56", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8443757999921218}
+{"time": "2026-09-14 17:20:56", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015040400030557066}
+{"time": "2026-09-14 17:20:57", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8503547000000253}
+{"time": "2026-09-14 17:20:57", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.018196099961642176}
+{"time": "2026-09-14 17:20:58", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.9144857000210322}
+{"time": "2026-09-14 17:20:58", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.020543199963867664}
+{"time": "2026-09-14 17:20:59", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8758548000478186}
+{"time": "2026-09-14 17:20:59", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 135, "training_seconds": 115.49695619981503}
+{"time": "2026-09-14 17:20:59", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01997039996786043}
+{"time": "2026-09-14 17:21:00", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.86840310000116}
+{"time": "2026-09-14 17:21:00", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015926400024909526}
+{"time": "2026-09-14 17:21:01", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.877800100017339}
+{"time": "2026-09-14 17:21:01", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01566629996523261}
+{"time": "2026-09-14 17:21:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.9019985999912024}
+{"time": "2026-09-14 17:21:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01948590000392869}
+{"time": "2026-09-14 17:21:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8736079999944195}
+{"time": "2026-09-14 17:21:02", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.023022400040645152}
+{"time": "2026-09-14 17:21:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8601969999726862}
+{"time": "2026-09-14 17:21:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 140, "training_seconds": 119.87896299979184}
+{"time": "2026-09-14 17:21:03", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01661910000257194}
+{"time": "2026-09-14 17:21:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8590622999472544}
+{"time": "2026-09-14 17:21:04", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.017084999999497086}
+{"time": "2026-09-14 17:21:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8823085999465548}
+{"time": "2026-09-14 17:21:05", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.029011000005993992}
+{"time": "2026-09-14 17:21:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8764348999829963}
+{"time": "2026-09-14 17:21:06", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.015608299989253283}
+{"time": "2026-09-14 17:21:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8641738999867812}
+{"time": "2026-09-14 17:21:07", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01727840001694858}
+{"time": "2026-09-14 17:21:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8594859000295401}
+{"time": "2026-09-14 17:21:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 145, "training_seconds": 124.22042859968496}
+{"time": "2026-09-14 17:21:08", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01688559999456629}
+{"time": "2026-09-14 17:21:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.862144700018689}
+{"time": "2026-09-14 17:21:09", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.018571000022348017}
+{"time": "2026-09-14 17:21:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8572294000186957}
+{"time": "2026-09-14 17:21:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.021989600034430623}
+{"time": "2026-09-14 17:21:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8833037000149488}
+{"time": "2026-09-14 17:21:10", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01765789999626577}
+{"time": "2026-09-14 17:21:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8833480000030249}
+{"time": "2026-09-14 17:21:11", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01869060000171885}
+{"time": "2026-09-14 17:21:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "train", "seconds": 0.8768227999680676}
+{"time": "2026-09-14 17:21:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "progress", "epochs": 150, "training_seconds": 128.5832771997084}
+{"time": "2026-09-14 17:21:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "ttest", "seconds": 0.01637770002707839}
+{"time": "2026-09-14 17:21:12", "method": "HANAMI", "seed": 30, "task": "clique", "event": "end", "task_wall_seconds": 131.4970831000246, "timing_flags": [], "stages": {"train": {"calls": 150, "total_seconds": 128.5832771997084, "mean_seconds": 0.8572218479980559}, "ttest": {"calls": 163, "total_seconds": 2.618257800466381, "mean_seconds": 0.016062931291204792}}, "inference_mean_seconds": 0.009295729993027635, "inference_sd_seconds": 0.00024656267538158695, "inference_repeats": 20, "test_motifs": 86, "train_motifs": 698, "input_graph_edges": 50116, "feature_width": 1792, "parameter_count": 3089410, "best_validation_auroc": 0.9048134126554894, "test_metrics": [0.875, 0.813953488372093, 0.8488372093023255, 0.9204975662520282, 0.9297283117794268, 0.8433734939759037], "peak_process_ram_mib": 1736.37109375, "peak_gpu_allocated_mib": 1204.421875, "peak_gpu_reserved_mib": 1772.0}
+{"time": "2026-09-14 17:21:12", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "begin"}
+{"time": "2026-09-14 17:21:13", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.914238800003659}
+{"time": "2026-09-14 17:21:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02223870001034811}
+{"time": "2026-09-14 17:21:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02143719996092841}
+{"time": "2026-09-14 17:21:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8503414000151679}
+{"time": "2026-09-14 17:21:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02084770001238212}
+{"time": "2026-09-14 17:21:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.032704000012017787}
+{"time": "2026-09-14 17:21:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9331499999971129}
+{"time": "2026-09-14 17:21:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020328800019342452}
+{"time": "2026-09-14 17:21:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018845400016289204}
+{"time": "2026-09-14 17:21:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8870328000048175}
+{"time": "2026-09-14 17:21:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016753399977460504}
+{"time": "2026-09-14 17:21:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017340199963655323}
+{"time": "2026-09-14 17:21:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8637885000207461}
+{"time": "2026-09-14 17:21:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 5, "training_seconds": 4.4485515000415035}
+{"time": "2026-09-14 17:21:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.027460500015877187}
+{"time": "2026-09-14 17:21:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01774649997241795}
+{"time": "2026-09-14 17:21:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8614937999518588}
+{"time": "2026-09-14 17:21:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01693189999787137}
+{"time": "2026-09-14 17:21:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016265899990685284}
+{"time": "2026-09-14 17:21:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8720067000249401}
+{"time": "2026-09-14 17:21:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020843999984208494}
+{"time": "2026-09-14 17:21:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8634651999454945}
+{"time": "2026-09-14 17:21:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019583799992688}
+{"time": "2026-09-14 17:21:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8845328000024892}
+{"time": "2026-09-14 17:21:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016974200028926134}
+{"time": "2026-09-14 17:21:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017787699995096773}
+{"time": "2026-09-14 17:21:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8982501999707893}
+{"time": "2026-09-14 17:21:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 10, "training_seconds": 8.828300199937075}
+{"time": "2026-09-14 17:21:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017821499961428344}
+{"time": "2026-09-14 17:21:23", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9068811000324786}
+{"time": "2026-09-14 17:21:23", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018864499987103045}
+{"time": "2026-09-14 17:21:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.883073000004515}
+{"time": "2026-09-14 17:21:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016585499979555607}
+{"time": "2026-09-14 17:21:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8747368999756873}
+{"time": "2026-09-14 17:21:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019968400010839105}
+{"time": "2026-09-14 17:21:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8667680000071414}
+{"time": "2026-09-14 17:21:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019043500011321157}
+{"time": "2026-09-14 17:21:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9019686999963596}
+{"time": "2026-09-14 17:21:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 15, "training_seconds": 13.261727899953257}
+{"time": "2026-09-14 17:21:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017806900024879724}
+{"time": "2026-09-14 17:21:27", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8610575000056997}
+{"time": "2026-09-14 17:21:27", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.015830599993932992}
+{"time": "2026-09-14 17:21:28", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8657984000165015}
+{"time": "2026-09-14 17:21:28", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016923400049563497}
+{"time": "2026-09-14 17:21:29", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8793846999760717}
+{"time": "2026-09-14 17:21:29", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019141500000841916}
+{"time": "2026-09-14 17:21:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8913298999541439}
+{"time": "2026-09-14 17:21:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019011600001249462}
+{"time": "2026-09-14 17:21:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8727205999894068}
+{"time": "2026-09-14 17:21:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 20, "training_seconds": 17.63201899989508}
+{"time": "2026-09-14 17:21:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018604099983349442}
+{"time": "2026-09-14 17:21:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9057705000159331}
+{"time": "2026-09-14 17:21:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019036700017750263}
+{"time": "2026-09-14 17:21:33", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9228442999883555}
+{"time": "2026-09-14 17:21:33", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018482099985703826}
+{"time": "2026-09-14 17:21:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8735268000164069}
+{"time": "2026-09-14 17:21:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018964199989568442}
+{"time": "2026-09-14 17:21:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8781248000450432}
+{"time": "2026-09-14 17:21:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01606649998575449}
+{"time": "2026-09-14 17:21:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8785701000015251}
+{"time": "2026-09-14 17:21:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 25, "training_seconds": 22.090855499962345}
+{"time": "2026-09-14 17:21:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016455499979201704}
+{"time": "2026-09-14 17:21:36", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8670194000005722}
+{"time": "2026-09-14 17:21:36", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020302999997511506}
+{"time": "2026-09-14 17:21:37", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8752888000453822}
+{"time": "2026-09-14 17:21:37", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018664799979887903}
+{"time": "2026-09-14 17:21:38", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8882675999775529}
+{"time": "2026-09-14 17:21:38", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016612500010523945}
+{"time": "2026-09-14 17:21:39", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8770599999697879}
+{"time": "2026-09-14 17:21:39", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017976000031922013}
+{"time": "2026-09-14 17:21:40", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8682903000153601}
+{"time": "2026-09-14 17:21:40", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 30, "training_seconds": 26.466781599971}
+{"time": "2026-09-14 17:21:40", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018027699959930032}
+{"time": "2026-09-14 17:21:41", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.899269399989862}
+{"time": "2026-09-14 17:21:41", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01914369995938614}
+{"time": "2026-09-14 17:21:42", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8743568999925628}
+{"time": "2026-09-14 17:21:42", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017541300039738417}
+{"time": "2026-09-14 17:21:42", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8755623999750242}
+{"time": "2026-09-14 17:21:43", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01776160002918914}
+{"time": "2026-09-14 17:21:43", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8681349999969825}
+{"time": "2026-09-14 17:21:43", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017191499995533377}
+{"time": "2026-09-14 17:21:44", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9125217000255361}
+{"time": "2026-09-14 17:21:44", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 35, "training_seconds": 30.896626999950968}
+{"time": "2026-09-14 17:21:44", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016810400004033}
+{"time": "2026-09-14 17:21:45", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8900501999887638}
+{"time": "2026-09-14 17:21:45", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.015853699995204806}
+{"time": "2026-09-14 17:21:46", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8759450000361539}
+{"time": "2026-09-14 17:21:46", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018046699988190085}
+{"time": "2026-09-14 17:21:47", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8660831000306644}
+{"time": "2026-09-14 17:21:47", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021795100008603185}
+{"time": "2026-09-14 17:21:48", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8770134000224061}
+{"time": "2026-09-14 17:21:48", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017205499985720962}
+{"time": "2026-09-14 17:21:48", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.0175495000439696}
+{"time": "2026-09-14 17:21:49", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.87784059997648}
+{"time": "2026-09-14 17:21:49", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 40, "training_seconds": 35.283559300005436}
+{"time": "2026-09-14 17:21:49", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019901799969375134}
+{"time": "2026-09-14 17:21:50", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8695477999863215}
+{"time": "2026-09-14 17:21:50", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016930999991018325}
+{"time": "2026-09-14 17:21:51", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.881391100003384}
+{"time": "2026-09-14 17:21:51", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017381799989379942}
+{"time": "2026-09-14 17:21:51", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8729350000503473}
+{"time": "2026-09-14 17:21:52", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.026241300045512617}
+{"time": "2026-09-14 17:21:52", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8631419999874197}
+{"time": "2026-09-14 17:21:52", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017003500019200146}
+{"time": "2026-09-14 17:21:52", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.015320500009693205}
+{"time": "2026-09-14 17:21:53", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9017737000249326}
+{"time": "2026-09-14 17:21:53", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 45, "training_seconds": 39.67234890005784}
+{"time": "2026-09-14 17:21:53", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018627899989951402}
+{"time": "2026-09-14 17:21:54", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9194927000207826}
+{"time": "2026-09-14 17:21:54", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.0170343000208959}
+{"time": "2026-09-14 17:21:55", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8869911999790929}
+{"time": "2026-09-14 17:21:55", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017163500015158206}
+{"time": "2026-09-14 17:21:56", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9033177999663167}
+{"time": "2026-09-14 17:21:56", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.015845000045374036}
+{"time": "2026-09-14 17:21:57", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9181455000070855}
+{"time": "2026-09-14 17:21:57", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.022341899981256574}
+{"time": "2026-09-14 17:21:58", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.864519199996721}
+{"time": "2026-09-14 17:21:58", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 50, "training_seconds": 44.16481530002784}
+{"time": "2026-09-14 17:21:58", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019387100008316338}
+{"time": "2026-09-14 17:21:59", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.88427960005356}
+{"time": "2026-09-14 17:21:59", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01806229999056086}
+{"time": "2026-09-14 17:22:00", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8855091000441462}
+{"time": "2026-09-14 17:22:00", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01842489995760843}
+{"time": "2026-09-14 17:22:01", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8711662000278011}
+{"time": "2026-09-14 17:22:01", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02564210002310574}
+{"time": "2026-09-14 17:22:02", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9345415999996476}
+{"time": "2026-09-14 17:22:02", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01712450000923127}
+{"time": "2026-09-14 17:22:02", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.900756300019566}
+{"time": "2026-09-14 17:22:02", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 55, "training_seconds": 48.64106810017256}
+{"time": "2026-09-14 17:22:03", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02608229999896139}
+{"time": "2026-09-14 17:22:04", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9892453000065871}
+{"time": "2026-09-14 17:22:04", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016497200005687773}
+{"time": "2026-09-14 17:22:04", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9059190000407398}
+{"time": "2026-09-14 17:22:04", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02060180000262335}
+{"time": "2026-09-14 17:22:05", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8976296999608167}
+{"time": "2026-09-14 17:22:05", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02008459996432066}
+{"time": "2026-09-14 17:22:06", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9080247999518178}
+{"time": "2026-09-14 17:22:06", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018396499974187464}
+{"time": "2026-09-14 17:22:07", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8961046000476927}
+{"time": "2026-09-14 17:22:07", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 60, "training_seconds": 53.237991500180215}
+{"time": "2026-09-14 17:22:07", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017180300026666373}
+{"time": "2026-09-14 17:22:08", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.894888799986802}
+{"time": "2026-09-14 17:22:08", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018376699998043478}
+{"time": "2026-09-14 17:22:09", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8881149999797344}
+{"time": "2026-09-14 17:22:09", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019561099994461983}
+{"time": "2026-09-14 17:22:10", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8871451999875717}
+{"time": "2026-09-14 17:22:10", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01824470004066825}
+{"time": "2026-09-14 17:22:11", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9339217999950051}
+{"time": "2026-09-14 17:22:11", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.024047499988228083}
+{"time": "2026-09-14 17:22:12", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9386979999835603}
+{"time": "2026-09-14 17:22:12", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 65, "training_seconds": 57.78076030011289}
+{"time": "2026-09-14 17:22:12", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02390989998821169}
+{"time": "2026-09-14 17:22:13", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8962189000449143}
+{"time": "2026-09-14 17:22:13", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.022173400036990643}
+{"time": "2026-09-14 17:22:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.1097488999948837}
+{"time": "2026-09-14 17:22:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021202499978244305}
+{"time": "2026-09-14 17:22:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9200429000193253}
+{"time": "2026-09-14 17:22:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016781000012997538}
+{"time": "2026-09-14 17:22:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8788413000293076}
+{"time": "2026-09-14 17:22:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016796600015368313}
+{"time": "2026-09-14 17:22:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8998254000325687}
+{"time": "2026-09-14 17:22:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 70, "training_seconds": 62.48543770023389}
+{"time": "2026-09-14 17:22:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017595000041183084}
+{"time": "2026-09-14 17:22:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8842797999968752}
+{"time": "2026-09-14 17:22:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017761200026143342}
+{"time": "2026-09-14 17:22:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9103483000071719}
+{"time": "2026-09-14 17:22:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01991109998198226}
+{"time": "2026-09-14 17:22:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8909459999995306}
+{"time": "2026-09-14 17:22:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01912170002469793}
+{"time": "2026-09-14 17:22:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9038906999630854}
+{"time": "2026-09-14 17:22:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017699000018183142}
+{"time": "2026-09-14 17:22:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8755120999994688}
+{"time": "2026-09-14 17:22:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 75, "training_seconds": 66.95041460020002}
+{"time": "2026-09-14 17:22:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02090389997465536}
+{"time": "2026-09-14 17:22:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.893988800002262}
+{"time": "2026-09-14 17:22:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019549299962818623}
+{"time": "2026-09-14 17:22:23", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.928669799992349}
+{"time": "2026-09-14 17:22:23", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01791990001220256}
+{"time": "2026-09-14 17:22:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9199645000044256}
+{"time": "2026-09-14 17:22:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02084610000019893}
+{"time": "2026-09-14 17:22:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9290121999802068}
+{"time": "2026-09-14 17:22:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019024199980776757}
+{"time": "2026-09-14 17:22:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9145122999907471}
+{"time": "2026-09-14 17:22:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 80, "training_seconds": 71.53656220017001}
+{"time": "2026-09-14 17:22:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016940300003625453}
+{"time": "2026-09-14 17:22:27", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.8932126000290737}
+{"time": "2026-09-14 17:22:27", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019542599970009178}
+{"time": "2026-09-14 17:22:28", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9446708000032231}
+{"time": "2026-09-14 17:22:28", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017033499956596643}
+{"time": "2026-09-14 17:22:29", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9255137000000104}
+{"time": "2026-09-14 17:22:29", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016348999983165413}
+{"time": "2026-09-14 17:22:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9126507000182755}
+{"time": "2026-09-14 17:22:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01743549999082461}
+{"time": "2026-09-14 17:22:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.015539599990006536}
+{"time": "2026-09-14 17:22:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.880181500047911}
+{"time": "2026-09-14 17:22:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 85, "training_seconds": 76.0927915002685}
+{"time": "2026-09-14 17:22:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02169650001451373}
+{"time": "2026-09-14 17:22:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9149075000314042}
+{"time": "2026-09-14 17:22:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019995000038761646}
+{"time": "2026-09-14 17:22:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9113863999955356}
+{"time": "2026-09-14 17:22:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018067200027871877}
+{"time": "2026-09-14 17:22:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.0205219000345096}
+{"time": "2026-09-14 17:22:33", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9068582999752834}
+{"time": "2026-09-14 17:22:33", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.016829999978654087}
+{"time": "2026-09-14 17:22:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.934071599971503}
+{"time": "2026-09-14 17:22:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019452199980150908}
+{"time": "2026-09-14 17:22:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9260378999751993}
+{"time": "2026-09-14 17:22:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 90, "training_seconds": 80.68605320021743}
+{"time": "2026-09-14 17:22:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02019110001856461}
+{"time": "2026-09-14 17:22:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.015744599979370832}
+{"time": "2026-09-14 17:22:36", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9196013999753632}
+{"time": "2026-09-14 17:22:36", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02205669996328652}
+{"time": "2026-09-14 17:22:37", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9229829999967478}
+{"time": "2026-09-14 17:22:37", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021522300026845187}
+{"time": "2026-09-14 17:22:38", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.921095099998638}
+{"time": "2026-09-14 17:22:38", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020450100011657923}
+{"time": "2026-09-14 17:22:39", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9306270000524819}
+{"time": "2026-09-14 17:22:39", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01783089997479692}
+{"time": "2026-09-14 17:22:40", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9179699000087567}
+{"time": "2026-09-14 17:22:40", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 95, "training_seconds": 85.29832960024942}
+{"time": "2026-09-14 17:22:40", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018670299963559955}
+{"time": "2026-09-14 17:22:41", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9286375000374392}
+{"time": "2026-09-14 17:22:41", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017203599971253425}
+{"time": "2026-09-14 17:22:42", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9561367999995127}
+{"time": "2026-09-14 17:22:42", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020848900021519512}
+{"time": "2026-09-14 17:22:43", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9733214000007138}
+{"time": "2026-09-14 17:22:43", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021181500051170588}
+{"time": "2026-09-14 17:22:44", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9870217000134289}
+{"time": "2026-09-14 17:22:44", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.026779200008604676}
+{"time": "2026-09-14 17:22:45", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9530088999890722}
+{"time": "2026-09-14 17:22:45", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 100, "training_seconds": 90.09645590028958}
+{"time": "2026-09-14 17:22:45", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021577299979981035}
+{"time": "2026-09-14 17:22:46", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.002107700041961}
+{"time": "2026-09-14 17:22:46", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020902000018395483}
+{"time": "2026-09-14 17:22:47", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0508051000069827}
+{"time": "2026-09-14 17:22:47", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.022984600043855608}
+{"time": "2026-09-14 17:22:47", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020135500002652407}
+{"time": "2026-09-14 17:22:48", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.031135199998971}
+{"time": "2026-09-14 17:22:48", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.03017420001560822}
+{"time": "2026-09-14 17:22:49", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0640320000238717}
+{"time": "2026-09-14 17:22:49", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.024029200023505837}
+{"time": "2026-09-14 17:22:50", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9809960999991745}
+{"time": "2026-09-14 17:22:50", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 105, "training_seconds": 95.22553200036054}
+{"time": "2026-09-14 17:22:50", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.028068699990399182}
+{"time": "2026-09-14 17:22:51", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0950448000221513}
+{"time": "2026-09-14 17:22:51", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02412359998561442}
+{"time": "2026-09-14 17:22:52", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9625932999770157}
+{"time": "2026-09-14 17:22:52", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017730700026731938}
+{"time": "2026-09-14 17:22:53", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9485423000296578}
+{"time": "2026-09-14 17:22:53", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.028264000022318214}
+{"time": "2026-09-14 17:22:54", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0016244999715127}
+{"time": "2026-09-14 17:22:54", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02772370004095137}
+{"time": "2026-09-14 17:22:55", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9920885000028647}
+{"time": "2026-09-14 17:22:55", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 110, "training_seconds": 100.22542540036375}
+{"time": "2026-09-14 17:22:55", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.023910399992018938}
+{"time": "2026-09-14 17:22:56", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.981326800014358}
+{"time": "2026-09-14 17:22:56", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.022221699997317046}
+{"time": "2026-09-14 17:22:57", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0050902999937534}
+{"time": "2026-09-14 17:22:57", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.026810400013346225}
+{"time": "2026-09-14 17:22:58", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9611903000040911}
+{"time": "2026-09-14 17:22:58", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02344050002284348}
+{"time": "2026-09-14 17:22:58", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01759850000962615}
+{"time": "2026-09-14 17:22:59", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9194852000218816}
+{"time": "2026-09-14 17:22:59", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021811400016304106}
+{"time": "2026-09-14 17:23:00", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9321204000152647}
+{"time": "2026-09-14 17:23:00", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 115, "training_seconds": 105.0246384004131}
+{"time": "2026-09-14 17:23:00", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01971740002045408}
+{"time": "2026-09-14 17:23:01", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9486414000275545}
+{"time": "2026-09-14 17:23:01", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021111100038979203}
+{"time": "2026-09-14 17:23:02", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0119318999932148}
+{"time": "2026-09-14 17:23:02", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019415899994783103}
+{"time": "2026-09-14 17:23:03", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9824399999924935}
+{"time": "2026-09-14 17:23:03", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02050529996631667}
+{"time": "2026-09-14 17:23:04", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.928874499979429}
+{"time": "2026-09-14 17:23:04", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018172299955040216}
+{"time": "2026-09-14 17:23:05", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9882129999459721}
+{"time": "2026-09-14 17:23:05", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 120, "training_seconds": 109.88473920035176}
+{"time": "2026-09-14 17:23:05", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02799620002042502}
+{"time": "2026-09-14 17:23:06", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.005089999991469}
+{"time": "2026-09-14 17:23:06", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01797510002506897}
+{"time": "2026-09-14 17:23:07", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9277852000086568}
+{"time": "2026-09-14 17:23:07", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019557600026018918}
+{"time": "2026-09-14 17:23:08", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9801420999574475}
+{"time": "2026-09-14 17:23:08", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020091200014576316}
+{"time": "2026-09-14 17:23:09", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9501033000415191}
+{"time": "2026-09-14 17:23:09", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.0317580999690108}
+{"time": "2026-09-14 17:23:10", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9273906000307761}
+{"time": "2026-09-14 17:23:10", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 125, "training_seconds": 114.67525040038163}
+{"time": "2026-09-14 17:23:10", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02093520003836602}
+{"time": "2026-09-14 17:23:10", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018813000002410263}
+{"time": "2026-09-14 17:23:11", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9948535000439733}
+{"time": "2026-09-14 17:23:11", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.021362800034694374}
+{"time": "2026-09-14 17:23:12", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9850298999808729}
+{"time": "2026-09-14 17:23:12", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020814699993934482}
+{"time": "2026-09-14 17:23:13", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9415824000025168}
+{"time": "2026-09-14 17:23:13", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019451099971774966}
+{"time": "2026-09-14 17:23:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9254830999998376}
+{"time": "2026-09-14 17:23:14", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.023594799975398928}
+{"time": "2026-09-14 17:23:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9005624999990687}
+{"time": "2026-09-14 17:23:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 130, "training_seconds": 119.4227618004079}
+{"time": "2026-09-14 17:23:15", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020342800009530038}
+{"time": "2026-09-14 17:23:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9530352000147104}
+{"time": "2026-09-14 17:23:16", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017448000027798116}
+{"time": "2026-09-14 17:23:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9577304999693297}
+{"time": "2026-09-14 17:23:17", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01860889996169135}
+{"time": "2026-09-14 17:23:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9367017999757081}
+{"time": "2026-09-14 17:23:18", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.017200600006617606}
+{"time": "2026-09-14 17:23:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9982630999875255}
+{"time": "2026-09-14 17:23:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02282280003419146}
+{"time": "2026-09-14 17:23:19", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019885700021404773}
+{"time": "2026-09-14 17:23:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9831523000029847}
+{"time": "2026-09-14 17:23:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 135, "training_seconds": 124.25164470035816}
+{"time": "2026-09-14 17:23:20", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01931890001287684}
+{"time": "2026-09-14 17:23:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.001743400003761}
+{"time": "2026-09-14 17:23:21", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020267099956981838}
+{"time": "2026-09-14 17:23:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9638546999776736}
+{"time": "2026-09-14 17:23:22", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020587399951182306}
+{"time": "2026-09-14 17:23:23", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9264334000181407}
+{"time": "2026-09-14 17:23:23", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01894090004498139}
+{"time": "2026-09-14 17:23:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.0580457999603823}
+{"time": "2026-09-14 17:23:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.035767900000792}
+{"time": "2026-09-14 17:23:24", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02691210003104061}
+{"time": "2026-09-14 17:23:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 1.105195299955085}
+{"time": "2026-09-14 17:23:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 140, "training_seconds": 129.3069173002732}
+{"time": "2026-09-14 17:23:25", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.025417299999389797}
+{"time": "2026-09-14 17:23:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9316729999845847}
+{"time": "2026-09-14 17:23:26", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019361099984962493}
+{"time": "2026-09-14 17:23:27", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9491468999767676}
+{"time": "2026-09-14 17:23:27", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02015110000502318}
+{"time": "2026-09-14 17:23:28", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9360282000270672}
+{"time": "2026-09-14 17:23:28", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.02200479997554794}
+{"time": "2026-09-14 17:23:29", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.990379499970004}
+{"time": "2026-09-14 17:23:29", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.020907400001306087}
+{"time": "2026-09-14 17:23:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9634959000395611}
+{"time": "2026-09-14 17:23:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 145, "training_seconds": 134.07764080027118}
+{"time": "2026-09-14 17:23:30", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.01900319999549538}
+{"time": "2026-09-14 17:23:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9629432000219822}
+{"time": "2026-09-14 17:23:31", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.0180149000370875}
+{"time": "2026-09-14 17:23:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.955436899967026}
+{"time": "2026-09-14 17:23:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018439000006765127}
+{"time": "2026-09-14 17:23:32", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.019561099994461983}
+{"time": "2026-09-14 17:23:33", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9288071999908425}
+{"time": "2026-09-14 17:23:33", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018904500000644475}
+{"time": "2026-09-14 17:23:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9873988999752328}
+{"time": "2026-09-14 17:23:34", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.023168199986685067}
+{"time": "2026-09-14 17:23:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "train", "seconds": 0.9418776000384241}
+{"time": "2026-09-14 17:23:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "progress", "epochs": 150, "training_seconds": 138.8541046002647}
+{"time": "2026-09-14 17:23:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "ttest", "seconds": 0.018067199969664216}
+{"time": "2026-09-14 17:23:35", "method": "HANAMI", "seed": 30, "task": "2-star 0", "event": "end", "task_wall_seconds": 142.5939795000013, "timing_flags": [], "stages": {"train": {"calls": 150, "total_seconds": 138.8541046002647, "mean_seconds": 0.9256940306684313}, "ttest": {"calls": 168, "total_seconds": 3.361643900279887, "mean_seconds": 0.020009785120713615}}, "inference_mean_seconds": 0.011450064997188748, "inference_sd_seconds": 0.00038105406225228793, "inference_repeats": 20, "test_motifs": 328, "train_motifs": 2636, "input_graph_edges": 50116, "feature_width": 1792, "parameter_count": 3089410, "best_validation_auroc": 0.9424821534800714, "test_metrics": [0.9171974522292994, 0.8780487804878049, 0.899390243902439, 0.9563875669244497, 0.9528929358127475, 0.897196261682243], "peak_process_ram_mib": 1744.23046875, "peak_gpu_allocated_mib": 1205.89306640625, "peak_gpu_reserved_mib": 1784.0}
+{"time": "2026-09-14 17:23:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "begin"}
+{"time": "2026-09-14 17:23:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9541741000139154}
+{"time": "2026-09-14 17:23:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017692200024612248}
+{"time": "2026-09-14 17:23:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.016705799964256585}
+{"time": "2026-09-14 17:23:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.944644299976062}
+{"time": "2026-09-14 17:23:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018484100000932813}
+{"time": "2026-09-14 17:23:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.023681599996052682}
+{"time": "2026-09-14 17:23:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9451879999833182}
+{"time": "2026-09-14 17:23:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021026200032792985}
+{"time": "2026-09-14 17:23:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02679650002392009}
+{"time": "2026-09-14 17:23:39", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9616172999958508}
+{"time": "2026-09-14 17:23:39", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018933799990918487}
+{"time": "2026-09-14 17:23:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9436556000146084}
+{"time": "2026-09-14 17:23:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 5, "training_seconds": 4.749279299983755}
+{"time": "2026-09-14 17:23:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.024834999989252537}
+{"time": "2026-09-14 17:23:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02012180001474917}
+{"time": "2026-09-14 17:23:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9387618000037037}
+{"time": "2026-09-14 17:23:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019763699965551496}
+{"time": "2026-09-14 17:23:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017097399977501482}
+{"time": "2026-09-14 17:23:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9233237000298686}
+{"time": "2026-09-14 17:23:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01640880003105849}
+{"time": "2026-09-14 17:23:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02117049996741116}
+{"time": "2026-09-14 17:23:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9580812000203878}
+{"time": "2026-09-14 17:23:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020359499962069094}
+{"time": "2026-09-14 17:23:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018240500008687377}
+{"time": "2026-09-14 17:23:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9407662999583408}
+{"time": "2026-09-14 17:23:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019215300038922578}
+{"time": "2026-09-14 17:23:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02129980002064258}
+{"time": "2026-09-14 17:23:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9971670999657363}
+{"time": "2026-09-14 17:23:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 10, "training_seconds": 9.507379399961792}
+{"time": "2026-09-14 17:23:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019979800039436668}
+{"time": "2026-09-14 17:23:46", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9832389000221156}
+{"time": "2026-09-14 17:23:46", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019398099975660443}
+{"time": "2026-09-14 17:23:47", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9985046999645419}
+{"time": "2026-09-14 17:23:47", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02062560000922531}
+{"time": "2026-09-14 17:23:48", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9356159999733791}
+{"time": "2026-09-14 17:23:48", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02003839996177703}
+{"time": "2026-09-14 17:23:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.901684100041166}
+{"time": "2026-09-14 17:23:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019023300032131374}
+{"time": "2026-09-14 17:23:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017360300000291318}
+{"time": "2026-09-14 17:23:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9454190999967977}
+{"time": "2026-09-14 17:23:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 15, "training_seconds": 14.271842199959792}
+{"time": "2026-09-14 17:23:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01796879997709766}
+{"time": "2026-09-14 17:23:51", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9238779000006616}
+{"time": "2026-09-14 17:23:51", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017335499986074865}
+{"time": "2026-09-14 17:23:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.920182499976363}
+{"time": "2026-09-14 17:23:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021435999951791018}
+{"time": "2026-09-14 17:23:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.025415699987206608}
+{"time": "2026-09-14 17:23:53", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9789500999613665}
+{"time": "2026-09-14 17:23:53", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01734080002643168}
+{"time": "2026-09-14 17:23:54", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9262054999708198}
+{"time": "2026-09-14 17:23:54", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.023128999979235232}
+{"time": "2026-09-14 17:23:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.950974200037308}
+{"time": "2026-09-14 17:23:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 20, "training_seconds": 18.97203239990631}
+{"time": "2026-09-14 17:23:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.026791099982801825}
+{"time": "2026-09-14 17:23:56", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0273409999790601}
+{"time": "2026-09-14 17:23:56", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020474899967666715}
+{"time": "2026-09-14 17:23:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9477689000195824}
+{"time": "2026-09-14 17:23:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022374799998942763}
+{"time": "2026-09-14 17:23:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021775899978820235}
+{"time": "2026-09-14 17:23:58", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9194363999995403}
+{"time": "2026-09-14 17:23:58", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019154900044668466}
+{"time": "2026-09-14 17:23:59", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9096602000063285}
+{"time": "2026-09-14 17:23:59", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017022899992298335}
+{"time": "2026-09-14 17:24:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.93993309995858}
+{"time": "2026-09-14 17:24:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 25, "training_seconds": 23.716171999869402}
+{"time": "2026-09-14 17:24:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019772400031797588}
+{"time": "2026-09-14 17:24:01", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9826872000121512}
+{"time": "2026-09-14 17:24:01", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.023937299964018166}
+{"time": "2026-09-14 17:24:02", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9388035000301898}
+{"time": "2026-09-14 17:24:02", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02071120002074167}
+{"time": "2026-09-14 17:24:03", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9780877999728546}
+{"time": "2026-09-14 17:24:03", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020632200001273304}
+{"time": "2026-09-14 17:24:04", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9356813000049442}
+{"time": "2026-09-14 17:24:04", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02015280001796782}
+{"time": "2026-09-14 17:24:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9584967000409961}
+{"time": "2026-09-14 17:24:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 30, "training_seconds": 28.50992849993054}
+{"time": "2026-09-14 17:24:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022605600010138005}
+{"time": "2026-09-14 17:24:06", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9610227000084706}
+{"time": "2026-09-14 17:24:06", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017946099978871644}
+{"time": "2026-09-14 17:24:07", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.936327799980063}
+{"time": "2026-09-14 17:24:07", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01975409995066002}
+{"time": "2026-09-14 17:24:08", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.001082899980247}
+{"time": "2026-09-14 17:24:08", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021005899994634092}
+{"time": "2026-09-14 17:24:09", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9610927000176162}
+{"time": "2026-09-14 17:24:09", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017332800023723394}
+{"time": "2026-09-14 17:24:10", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9940234000096098}
+{"time": "2026-09-14 17:24:10", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 35, "training_seconds": 33.363477999926545}
+{"time": "2026-09-14 17:24:10", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020639099995605648}
+{"time": "2026-09-14 17:24:11", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9206235000165179}
+{"time": "2026-09-14 17:24:11", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017061599995940924}
+{"time": "2026-09-14 17:24:12", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0053419999894686}
+{"time": "2026-09-14 17:24:12", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020299799973145127}
+{"time": "2026-09-14 17:24:13", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9863041000207886}
+{"time": "2026-09-14 17:24:13", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020145000016782433}
+{"time": "2026-09-14 17:24:14", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0647102000075392}
+{"time": "2026-09-14 17:24:14", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01877500000409782}
+{"time": "2026-09-14 17:24:15", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0578154000104405}
+{"time": "2026-09-14 17:24:15", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 40, "training_seconds": 38.3982731999713}
+{"time": "2026-09-14 17:24:15", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.023074899974744767}
+{"time": "2026-09-14 17:24:16", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9701696000411175}
+{"time": "2026-09-14 17:24:16", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022140000015497208}
+{"time": "2026-09-14 17:24:17", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9565688999718986}
+{"time": "2026-09-14 17:24:17", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02660649997415021}
+{"time": "2026-09-14 17:24:18", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.007443999988027}
+{"time": "2026-09-14 17:24:18", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021895800018683076}
+{"time": "2026-09-14 17:24:19", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9462968000443652}
+{"time": "2026-09-14 17:24:19", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021891799988225102}
+{"time": "2026-09-14 17:24:20", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9355593999498524}
+{"time": "2026-09-14 17:24:20", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 45, "training_seconds": 43.21431189996656}
+{"time": "2026-09-14 17:24:20", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017790300014894456}
+{"time": "2026-09-14 17:24:21", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9703814999666065}
+{"time": "2026-09-14 17:24:21", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.0272716999752447}
+{"time": "2026-09-14 17:24:22", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9749413999961689}
+{"time": "2026-09-14 17:24:22", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02131719997851178}
+{"time": "2026-09-14 17:24:23", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.960495000006631}
+{"time": "2026-09-14 17:24:23", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021184700017329305}
+{"time": "2026-09-14 17:24:24", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9582899999804795}
+{"time": "2026-09-14 17:24:24", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019365700019989163}
+{"time": "2026-09-14 17:24:25", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9699087999761105}
+{"time": "2026-09-14 17:24:25", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 50, "training_seconds": 48.04832859989256}
+{"time": "2026-09-14 17:24:25", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.016967999981716275}
+{"time": "2026-09-14 17:24:26", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9389532000059262}
+{"time": "2026-09-14 17:24:26", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018831799970939755}
+{"time": "2026-09-14 17:24:27", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0063889999873936}
+{"time": "2026-09-14 17:24:27", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02318560000276193}
+{"time": "2026-09-14 17:24:28", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.947542899986729}
+{"time": "2026-09-14 17:24:28", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018110300006810576}
+{"time": "2026-09-14 17:24:29", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9375610999995843}
+{"time": "2026-09-14 17:24:29", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02573240001220256}
+{"time": "2026-09-14 17:24:30", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9819112999830395}
+{"time": "2026-09-14 17:24:30", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 55, "training_seconds": 52.86068609985523}
+{"time": "2026-09-14 17:24:30", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017583100008778274}
+{"time": "2026-09-14 17:24:31", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9828745000413619}
+{"time": "2026-09-14 17:24:31", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02532230003271252}
+{"time": "2026-09-14 17:24:32", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9847403000458144}
+{"time": "2026-09-14 17:24:32", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01950700004817918}
+{"time": "2026-09-14 17:24:33", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9566162999835797}
+{"time": "2026-09-14 17:24:33", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018262600002344698}
+{"time": "2026-09-14 17:24:34", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0090187000459991}
+{"time": "2026-09-14 17:24:34", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019116799987386912}
+{"time": "2026-09-14 17:24:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9902468000072986}
+{"time": "2026-09-14 17:24:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 60, "training_seconds": 57.78418269997928}
+{"time": "2026-09-14 17:24:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017653800023254007}
+{"time": "2026-09-14 17:24:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9722071000142023}
+{"time": "2026-09-14 17:24:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021813300030771643}
+{"time": "2026-09-14 17:24:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9443916999734938}
+{"time": "2026-09-14 17:24:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01690100005362183}
+{"time": "2026-09-14 17:24:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0064241999643855}
+{"time": "2026-09-14 17:24:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02156500000273809}
+{"time": "2026-09-14 17:24:39", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9861473999917507}
+{"time": "2026-09-14 17:24:39", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021119800047017634}
+{"time": "2026-09-14 17:24:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.985595399979502}
+{"time": "2026-09-14 17:24:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 65, "training_seconds": 62.67894849990262}
+{"time": "2026-09-14 17:24:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021659100020769984}
+{"time": "2026-09-14 17:24:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9649419999914244}
+{"time": "2026-09-14 17:24:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018685500021092594}
+{"time": "2026-09-14 17:24:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9813280999660492}
+{"time": "2026-09-14 17:24:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019335400022100657}
+{"time": "2026-09-14 17:24:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9783723999862559}
+{"time": "2026-09-14 17:24:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.0221843000035733}
+{"time": "2026-09-14 17:24:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9758333000354469}
+{"time": "2026-09-14 17:24:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02018110000062734}
+{"time": "2026-09-14 17:24:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9800757000339217}
+{"time": "2026-09-14 17:24:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 70, "training_seconds": 67.55949999991572}
+{"time": "2026-09-14 17:24:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020208599977195263}
+{"time": "2026-09-14 17:24:46", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9365221000043675}
+{"time": "2026-09-14 17:24:46", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017180000024382025}
+{"time": "2026-09-14 17:24:47", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9363614000030793}
+{"time": "2026-09-14 17:24:47", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01856439997209236}
+{"time": "2026-09-14 17:24:48", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9779622999485582}
+{"time": "2026-09-14 17:24:48", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01959280000301078}
+{"time": "2026-09-14 17:24:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0013407999649644}
+{"time": "2026-09-14 17:24:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021296199993230402}
+{"time": "2026-09-14 17:24:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9913038999657147}
+{"time": "2026-09-14 17:24:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 75, "training_seconds": 72.4029904998024}
+{"time": "2026-09-14 17:24:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01993820001371205}
+{"time": "2026-09-14 17:24:51", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.960959299991373}
+{"time": "2026-09-14 17:24:51", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01988320000236854}
+{"time": "2026-09-14 17:24:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9983747000223957}
+{"time": "2026-09-14 17:24:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021430899971164763}
+{"time": "2026-09-14 17:24:53", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9785962000023574}
+{"time": "2026-09-14 17:24:53", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01982520002638921}
+{"time": "2026-09-14 17:24:54", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0524225999834016}
+{"time": "2026-09-14 17:24:54", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.025360400031786412}
+{"time": "2026-09-14 17:24:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9814797000144608}
+{"time": "2026-09-14 17:24:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 80, "training_seconds": 77.37482299981639}
+{"time": "2026-09-14 17:24:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01944910001475364}
+{"time": "2026-09-14 17:24:56", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0211041000438854}
+{"time": "2026-09-14 17:24:56", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02572520001558587}
+{"time": "2026-09-14 17:24:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9823533999733627}
+{"time": "2026-09-14 17:24:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020389299956150353}
+{"time": "2026-09-14 17:24:58", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9753755999845453}
+{"time": "2026-09-14 17:24:58", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018879900046158582}
+{"time": "2026-09-14 17:24:59", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9749312999774702}
+{"time": "2026-09-14 17:24:59", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01969340001232922}
+{"time": "2026-09-14 17:25:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.024007599975448}
+{"time": "2026-09-14 17:25:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 85, "training_seconds": 82.3525949997711}
+{"time": "2026-09-14 17:25:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019932900031562895}
+{"time": "2026-09-14 17:25:01", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9759489999851212}
+{"time": "2026-09-14 17:25:01", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.028883199964184314}
+{"time": "2026-09-14 17:25:02", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.000746399979107}
+{"time": "2026-09-14 17:25:02", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022225199965760112}
+{"time": "2026-09-14 17:25:03", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0042608000221662}
+{"time": "2026-09-14 17:25:03", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018291199987288564}
+{"time": "2026-09-14 17:25:04", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0043405999895185}
+{"time": "2026-09-14 17:25:04", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.024357300018891692}
+{"time": "2026-09-14 17:25:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0202430000063032}
+{"time": "2026-09-14 17:25:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 90, "training_seconds": 87.35813479975332}
+{"time": "2026-09-14 17:25:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022124400013126433}
+{"time": "2026-09-14 17:25:06", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9762039000052027}
+{"time": "2026-09-14 17:25:06", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021777399990241975}
+{"time": "2026-09-14 17:25:07", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9862062000320293}
+{"time": "2026-09-14 17:25:07", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01969319995259866}
+{"time": "2026-09-14 17:25:08", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9415291999466717}
+{"time": "2026-09-14 17:25:08", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01836450002156198}
+{"time": "2026-09-14 17:25:09", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9684928999631666}
+{"time": "2026-09-14 17:25:09", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022660600021481514}
+{"time": "2026-09-14 17:25:10", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9735849999706261}
+{"time": "2026-09-14 17:25:10", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 95, "training_seconds": 92.20415199967101}
+{"time": "2026-09-14 17:25:10", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018559300049673766}
+{"time": "2026-09-14 17:25:11", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9724836000241339}
+{"time": "2026-09-14 17:25:11", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02787809999426827}
+{"time": "2026-09-14 17:25:12", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9637940999818966}
+{"time": "2026-09-14 17:25:12", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01871089998167008}
+{"time": "2026-09-14 17:25:13", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9572195000364445}
+{"time": "2026-09-14 17:25:13", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01856739999493584}
+{"time": "2026-09-14 17:25:14", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9350293999887072}
+{"time": "2026-09-14 17:25:14", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017927900014910847}
+{"time": "2026-09-14 17:25:15", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.08263740001712}
+{"time": "2026-09-14 17:25:15", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 100, "training_seconds": 97.11531599971931}
+{"time": "2026-09-14 17:25:15", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02322719997027889}
+{"time": "2026-09-14 17:25:16", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0172544000088237}
+{"time": "2026-09-14 17:25:16", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02005230000941083}
+{"time": "2026-09-14 17:25:17", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9705758999916725}
+{"time": "2026-09-14 17:25:17", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02428050001617521}
+{"time": "2026-09-14 17:25:18", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.95220669999253}
+{"time": "2026-09-14 17:25:18", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02090080000925809}
+{"time": "2026-09-14 17:25:19", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9982409999938682}
+{"time": "2026-09-14 17:25:19", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019115899980533868}
+{"time": "2026-09-14 17:25:20", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.027554800035432}
+{"time": "2026-09-14 17:25:20", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 105, "training_seconds": 102.08114879974164}
+{"time": "2026-09-14 17:25:20", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017893999989610165}
+{"time": "2026-09-14 17:25:21", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9719483999651857}
+{"time": "2026-09-14 17:25:21", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.0205022000009194}
+{"time": "2026-09-14 17:25:22", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9979792000376619}
+{"time": "2026-09-14 17:25:22", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018663000024389476}
+{"time": "2026-09-14 17:25:23", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9665055000223219}
+{"time": "2026-09-14 17:25:23", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019885300018358976}
+{"time": "2026-09-14 17:25:24", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9645560000208206}
+{"time": "2026-09-14 17:25:24", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017655099974945188}
+{"time": "2026-09-14 17:25:25", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9337311999988742}
+{"time": "2026-09-14 17:25:25", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 110, "training_seconds": 106.9158690997865}
+{"time": "2026-09-14 17:25:25", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.022561400022823364}
+{"time": "2026-09-14 17:25:26", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9904287999961525}
+{"time": "2026-09-14 17:25:26", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018744500004686415}
+{"time": "2026-09-14 17:25:27", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9604647999512963}
+{"time": "2026-09-14 17:25:27", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019381099962629378}
+{"time": "2026-09-14 17:25:28", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9724656000034884}
+{"time": "2026-09-14 17:25:28", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02434549998724833}
+{"time": "2026-09-14 17:25:29", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.921310400008224}
+{"time": "2026-09-14 17:25:29", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01880449999589473}
+{"time": "2026-09-14 17:25:30", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9438843000098132}
+{"time": "2026-09-14 17:25:30", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 115, "training_seconds": 111.70442299975548}
+{"time": "2026-09-14 17:25:30", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01833620003890246}
+{"time": "2026-09-14 17:25:31", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9599444000050426}
+{"time": "2026-09-14 17:25:31", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019347399997059256}
+{"time": "2026-09-14 17:25:32", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0637547000078484}
+{"time": "2026-09-14 17:25:32", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01991740002995357}
+{"time": "2026-09-14 17:25:33", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9381699999794364}
+{"time": "2026-09-14 17:25:33", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01720900001237169}
+{"time": "2026-09-14 17:25:34", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9587959999917075}
+{"time": "2026-09-14 17:25:34", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021694299997761846}
+{"time": "2026-09-14 17:25:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9817886999808252}
+{"time": "2026-09-14 17:25:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 120, "training_seconds": 116.60687679972034}
+{"time": "2026-09-14 17:25:35", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017570000025443733}
+{"time": "2026-09-14 17:25:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9768137999926694}
+{"time": "2026-09-14 17:25:36", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.024981700000353158}
+{"time": "2026-09-14 17:25:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9872814000118524}
+{"time": "2026-09-14 17:25:37", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02089349995367229}
+{"time": "2026-09-14 17:25:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9655173000064678}
+{"time": "2026-09-14 17:25:38", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01896150002721697}
+{"time": "2026-09-14 17:25:39", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9857459000195377}
+{"time": "2026-09-14 17:25:39", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.023893299978226423}
+{"time": "2026-09-14 17:25:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9594936000066809}
+{"time": "2026-09-14 17:25:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 125, "training_seconds": 121.48172879975755}
+{"time": "2026-09-14 17:25:40", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020408699987456203}
+{"time": "2026-09-14 17:25:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.998824100010097}
+{"time": "2026-09-14 17:25:41", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.019476299989037216}
+{"time": "2026-09-14 17:25:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9809097000397742}
+{"time": "2026-09-14 17:25:42", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020682699978351593}
+{"time": "2026-09-14 17:25:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9587578999926336}
+{"time": "2026-09-14 17:25:43", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02127889997791499}
+{"time": "2026-09-14 17:25:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.974618099979125}
+{"time": "2026-09-14 17:25:44", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01929349999409169}
+{"time": "2026-09-14 17:25:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.003249200002756}
+{"time": "2026-09-14 17:25:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 130, "training_seconds": 126.39808779978193}
+{"time": "2026-09-14 17:25:45", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020323700038716197}
+{"time": "2026-09-14 17:25:46", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9836124999565072}
+{"time": "2026-09-14 17:25:46", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020036200003232807}
+{"time": "2026-09-14 17:25:47", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0318629000103101}
+{"time": "2026-09-14 17:25:47", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.016467100009322166}
+{"time": "2026-09-14 17:25:48", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.932459999981802}
+{"time": "2026-09-14 17:25:48", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02085339999757707}
+{"time": "2026-09-14 17:25:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9880985000054352}
+{"time": "2026-09-14 17:25:49", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017995900008827448}
+{"time": "2026-09-14 17:25:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.940067799994722}
+{"time": "2026-09-14 17:25:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 135, "training_seconds": 131.2741894997307}
+{"time": "2026-09-14 17:25:50", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.017930699978023767}
+{"time": "2026-09-14 17:25:51", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9859370000194758}
+{"time": "2026-09-14 17:25:51", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02221219998318702}
+{"time": "2026-09-14 17:25:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0112185000325553}
+{"time": "2026-09-14 17:25:52", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01974399999016896}
+{"time": "2026-09-14 17:25:53", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9922881000093184}
+{"time": "2026-09-14 17:25:53", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02209799998672679}
+{"time": "2026-09-14 17:25:54", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0044729000073858}
+{"time": "2026-09-14 17:25:54", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.0204342000070028}
+{"time": "2026-09-14 17:25:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9966737000504509}
+{"time": "2026-09-14 17:25:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 140, "training_seconds": 136.2647796998499}
+{"time": "2026-09-14 17:25:55", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.021029199997428805}
+{"time": "2026-09-14 17:25:56", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9851421999628656}
+{"time": "2026-09-14 17:25:56", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.024696100037544966}
+{"time": "2026-09-14 17:25:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0027163999620825}
+{"time": "2026-09-14 17:25:57", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02010989998234436}
+{"time": "2026-09-14 17:25:58", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9925597999827005}
+{"time": "2026-09-14 17:25:58", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.018672999984119087}
+{"time": "2026-09-14 17:25:59", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9453893999452703}
+{"time": "2026-09-14 17:25:59", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020196299999952316}
+{"time": "2026-09-14 17:26:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.0002850000164472}
+{"time": "2026-09-14 17:26:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 145, "training_seconds": 141.19087249971926}
+{"time": "2026-09-14 17:26:00", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.01822959998389706}
+{"time": "2026-09-14 17:26:01", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.962198699999135}
+{"time": "2026-09-14 17:26:01", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02028459997382015}
+{"time": "2026-09-14 17:26:02", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9879800000344403}
+{"time": "2026-09-14 17:26:02", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02041649998864159}
+{"time": "2026-09-14 17:26:03", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 1.051129600033164}
+{"time": "2026-09-14 17:26:03", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02101189998211339}
+{"time": "2026-09-14 17:26:04", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.933089199999813}
+{"time": "2026-09-14 17:26:04", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.020762200001627207}
+{"time": "2026-09-14 17:26:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "train", "seconds": 0.9533274000277743}
+{"time": "2026-09-14 17:26:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "progress", "epochs": 150, "training_seconds": 146.0785973998136}
+{"time": "2026-09-14 17:26:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "ttest", "seconds": 0.02482719998806715}
+{"time": "2026-09-14 17:26:05", "method": "HANAMI", "seed": 30, "task": "2-star 1", "event": "end", "task_wall_seconds": 149.66617310000584, "timing_flags": [], "stages": {"train": {"calls": 150, "total_seconds": 146.0785973998136, "mean_seconds": 0.9738573159987572}, "ttest": {"calls": 161, "total_seconds": 3.3011659000767395, "mean_seconds": 0.020504136025321362}}, "inference_mean_seconds": 0.012119524998706766, "inference_sd_seconds": 0.00025497401767883413, "inference_repeats": 20, "test_motifs": 446, "train_motifs": 3574, "input_graph_edges": 50116, "feature_width": 1792, "parameter_count": 3089410, "best_validation_auroc": 0.9484405477689075, "test_metrics": [0.8936170212765957, 0.7533632286995515, 0.8318385650224215, 0.9349876329707012, 0.9292336937893249, 0.8175182481751825], "peak_process_ram_mib": 1742.80078125, "peak_gpu_allocated_mib": 1206.34228515625, "peak_gpu_reserved_mib": 1790.0}
+{"time": "2026-09-14 17:26:05", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "begin"}
+{"time": "2026-09-14 17:26:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9712949999957345}
+{"time": "2026-09-14 17:26:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02424030000111088}
+{"time": "2026-09-14 17:26:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021687100001145154}
+{"time": "2026-09-14 17:26:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0183997999993153}
+{"time": "2026-09-14 17:26:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.028335200040601194}
+{"time": "2026-09-14 17:26:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02776369999628514}
+{"time": "2026-09-14 17:26:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9727184000075795}
+{"time": "2026-09-14 17:26:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02359630004502833}
+{"time": "2026-09-14 17:26:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018861699965782464}
+{"time": "2026-09-14 17:26:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0102261999854818}
+{"time": "2026-09-14 17:26:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01710950001142919}
+{"time": "2026-09-14 17:26:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.029844400007277727}
+{"time": "2026-09-14 17:26:10", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9567405999987386}
+{"time": "2026-09-14 17:26:10", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 5, "training_seconds": 4.92937999998685}
+{"time": "2026-09-14 17:26:10", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020154900033958256}
+{"time": "2026-09-14 17:26:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0079791999887675}
+{"time": "2026-09-14 17:26:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.016996399965137243}
+{"time": "2026-09-14 17:26:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01720460003707558}
+{"time": "2026-09-14 17:26:12", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9786922000348568}
+{"time": "2026-09-14 17:26:12", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020523600047454238}
+{"time": "2026-09-14 17:26:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0186206999933347}
+{"time": "2026-09-14 17:26:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020633199950680137}
+{"time": "2026-09-14 17:26:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.939105199999176}
+{"time": "2026-09-14 17:26:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.024145199975464493}
+{"time": "2026-09-14 17:26:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9885362999630161}
+{"time": "2026-09-14 17:26:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 10, "training_seconds": 9.862313599966}
+{"time": "2026-09-14 17:26:16", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021030400006566197}
+{"time": "2026-09-14 17:26:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9913057999801822}
+{"time": "2026-09-14 17:26:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01797799998894334}
+{"time": "2026-09-14 17:26:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9484225999913178}
+{"time": "2026-09-14 17:26:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020378699991852045}
+{"time": "2026-09-14 17:26:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9924880999606103}
+{"time": "2026-09-14 17:26:19", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019717699964530766}
+{"time": "2026-09-14 17:26:19", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.98732390004443}
+{"time": "2026-09-14 17:26:20", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020134399994276464}
+{"time": "2026-09-14 17:26:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9932603999623097}
+{"time": "2026-09-14 17:26:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 15, "training_seconds": 14.77511439990485}
+{"time": "2026-09-14 17:26:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019871999975293875}
+{"time": "2026-09-14 17:26:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9912018000031821}
+{"time": "2026-09-14 17:26:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02101039997069165}
+{"time": "2026-09-14 17:26:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0072640999569558}
+{"time": "2026-09-14 17:26:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019116599985864013}
+{"time": "2026-09-14 17:26:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019071799993980676}
+{"time": "2026-09-14 17:26:24", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9811987999710254}
+{"time": "2026-09-14 17:26:24", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019593300006818026}
+{"time": "2026-09-14 17:26:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.993472500005737}
+{"time": "2026-09-14 17:26:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.017583100008778274}
+{"time": "2026-09-14 17:26:26", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9267298000049777}
+{"time": "2026-09-14 17:26:26", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 20, "training_seconds": 19.67498139984673}
+{"time": "2026-09-14 17:26:26", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02096449997043237}
+{"time": "2026-09-14 17:26:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9811314000398852}
+{"time": "2026-09-14 17:26:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019356600008904934}
+{"time": "2026-09-14 17:26:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9424450999940746}
+{"time": "2026-09-14 17:26:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01888599997619167}
+{"time": "2026-09-14 17:26:29", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0196957999723963}
+{"time": "2026-09-14 17:26:29", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021398299955762923}
+{"time": "2026-09-14 17:26:30", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9841917000012472}
+{"time": "2026-09-14 17:26:30", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018285400001332164}
+{"time": "2026-09-14 17:26:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9793390000122599}
+{"time": "2026-09-14 17:26:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 25, "training_seconds": 24.581784399866592}
+{"time": "2026-09-14 17:26:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01995570003055036}
+{"time": "2026-09-14 17:26:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0016301000141539}
+{"time": "2026-09-14 17:26:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018961300025694072}
+{"time": "2026-09-14 17:26:33", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9944711999851279}
+{"time": "2026-09-14 17:26:33", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.0198637000285089}
+{"time": "2026-09-14 17:26:34", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9720121999853291}
+{"time": "2026-09-14 17:26:34", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.024678600020706654}
+{"time": "2026-09-14 17:26:35", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.025431199988816}
+{"time": "2026-09-14 17:26:35", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021405699953902513}
+{"time": "2026-09-14 17:26:36", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.015332999988459}
+{"time": "2026-09-14 17:26:36", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 30, "training_seconds": 29.590662099828478}
+{"time": "2026-09-14 17:26:36", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01978109998162836}
+{"time": "2026-09-14 17:26:37", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9699178000446409}
+{"time": "2026-09-14 17:26:37", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02047569997375831}
+{"time": "2026-09-14 17:26:37", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020727899973280728}
+{"time": "2026-09-14 17:26:38", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0105814000125974}
+{"time": "2026-09-14 17:26:38", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02032019995385781}
+{"time": "2026-09-14 17:26:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0100593999959528}
+{"time": "2026-09-14 17:26:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019737199996598065}
+{"time": "2026-09-14 17:26:40", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0011527999886312}
+{"time": "2026-09-14 17:26:40", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01869479997549206}
+{"time": "2026-09-14 17:26:41", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.981079499993939}
+{"time": "2026-09-14 17:26:41", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 35, "training_seconds": 34.56345299986424}
+{"time": "2026-09-14 17:26:41", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019861599954310805}
+{"time": "2026-09-14 17:26:42", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.004166200000327}
+{"time": "2026-09-14 17:26:42", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01877939997939393}
+{"time": "2026-09-14 17:26:43", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.992573200026527}
+{"time": "2026-09-14 17:26:43", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018913000007160008}
+{"time": "2026-09-14 17:26:44", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9773726999992505}
+{"time": "2026-09-14 17:26:44", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01866649999283254}
+{"time": "2026-09-14 17:26:45", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0125688000116497}
+{"time": "2026-09-14 17:26:45", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01786060002632439}
+{"time": "2026-09-14 17:26:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9582562999567017}
+{"time": "2026-09-14 17:26:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 40, "training_seconds": 39.508390199858695}
+{"time": "2026-09-14 17:26:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02008149999892339}
+{"time": "2026-09-14 17:26:47", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9956267000525258}
+{"time": "2026-09-14 17:26:47", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020863600017037243}
+{"time": "2026-09-14 17:26:48", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9733830999466591}
+{"time": "2026-09-14 17:26:48", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019366700027603656}
+{"time": "2026-09-14 17:26:49", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9410468999994919}
+{"time": "2026-09-14 17:26:49", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01660129998344928}
+{"time": "2026-09-14 17:26:50", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9879699000157416}
+{"time": "2026-09-14 17:26:50", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.0190059999586083}
+{"time": "2026-09-14 17:26:51", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9983282000175677}
+{"time": "2026-09-14 17:26:51", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 45, "training_seconds": 44.40474499989068}
+{"time": "2026-09-14 17:26:51", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020535800023935735}
+{"time": "2026-09-14 17:26:52", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0037948000244796}
+{"time": "2026-09-14 17:26:52", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018458999984432012}
+{"time": "2026-09-14 17:26:53", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0044681999715976}
+{"time": "2026-09-14 17:26:53", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01960770000005141}
+{"time": "2026-09-14 17:26:54", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0149033999769017}
+{"time": "2026-09-14 17:26:54", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.023379200021736324}
+{"time": "2026-09-14 17:26:55", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9716115000192076}
+{"time": "2026-09-14 17:26:55", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01881970005342737}
+{"time": "2026-09-14 17:26:56", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9487080000108108}
+{"time": "2026-09-14 17:26:56", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 50, "training_seconds": 49.34823089989368}
+{"time": "2026-09-14 17:26:56", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01808599999640137}
+{"time": "2026-09-14 17:26:57", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9843589999945834}
+{"time": "2026-09-14 17:26:57", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.022451800003182143}
+{"time": "2026-09-14 17:26:58", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0309472000226378}
+{"time": "2026-09-14 17:26:58", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019153299974277616}
+{"time": "2026-09-14 17:26:59", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9739267000113614}
+{"time": "2026-09-14 17:26:59", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020442300010472536}
+{"time": "2026-09-14 17:27:00", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9778359999763779}
+{"time": "2026-09-14 17:27:00", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01860890001989901}
+{"time": "2026-09-14 17:27:01", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9884947999962606}
+{"time": "2026-09-14 17:27:01", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 55, "training_seconds": 54.3037945998949}
+{"time": "2026-09-14 17:27:01", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020162299973890185}
+{"time": "2026-09-14 17:27:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9955162999685854}
+{"time": "2026-09-14 17:27:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020668999990448356}
+{"time": "2026-09-14 17:27:03", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9564912000205368}
+{"time": "2026-09-14 17:27:03", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.017122099990956485}
+{"time": "2026-09-14 17:27:04", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9795614000177011}
+{"time": "2026-09-14 17:27:04", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02130409999517724}
+{"time": "2026-09-14 17:27:05", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.997721099993214}
+{"time": "2026-09-14 17:27:05", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01955440000165254}
+{"time": "2026-09-14 17:27:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.022625700046774}
+{"time": "2026-09-14 17:27:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 60, "training_seconds": 59.25571029994171}
+{"time": "2026-09-14 17:27:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019339699996635318}
+{"time": "2026-09-14 17:27:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9885090999887325}
+{"time": "2026-09-14 17:27:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019119200005661696}
+{"time": "2026-09-14 17:27:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0066050000023097}
+{"time": "2026-09-14 17:27:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01999140001134947}
+{"time": "2026-09-14 17:27:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0407005000161007}
+{"time": "2026-09-14 17:27:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02223269996466115}
+{"time": "2026-09-14 17:27:10", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.00793220003834}
+{"time": "2026-09-14 17:27:10", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019961100013460964}
+{"time": "2026-09-14 17:27:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0027250000275671}
+{"time": "2026-09-14 17:27:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 65, "training_seconds": 64.30218210001476}
+{"time": "2026-09-14 17:27:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02250259998254478}
+{"time": "2026-09-14 17:27:12", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0915193999535404}
+{"time": "2026-09-14 17:27:12", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020562599995173514}
+{"time": "2026-09-14 17:27:13", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.044139300007373}
+{"time": "2026-09-14 17:27:13", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019191799976397306}
+{"time": "2026-09-14 17:27:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.040836300002411}
+{"time": "2026-09-14 17:27:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019855400023516268}
+{"time": "2026-09-14 17:27:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.010302499984391}
+{"time": "2026-09-14 17:27:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019406699982937425}
+{"time": "2026-09-14 17:27:16", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.962054600007832}
+{"time": "2026-09-14 17:27:16", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 70, "training_seconds": 69.45103419997031}
+{"time": "2026-09-14 17:27:16", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02068190003046766}
+{"time": "2026-09-14 17:27:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9407395999878645}
+{"time": "2026-09-14 17:27:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021915299992542714}
+{"time": "2026-09-14 17:27:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0266766999848187}
+{"time": "2026-09-14 17:27:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018620299990288913}
+{"time": "2026-09-14 17:27:19", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9953485999722034}
+{"time": "2026-09-14 17:27:19", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02151859999867156}
+{"time": "2026-09-14 17:27:20", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.963268399995286}
+{"time": "2026-09-14 17:27:20", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020510400005150586}
+{"time": "2026-09-14 17:27:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9956828999565914}
+{"time": "2026-09-14 17:27:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 75, "training_seconds": 74.37275039986707}
+{"time": "2026-09-14 17:27:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01784869999391958}
+{"time": "2026-09-14 17:27:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9974529999890365}
+{"time": "2026-09-14 17:27:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.022412699996493757}
+{"time": "2026-09-14 17:27:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0081486999988556}
+{"time": "2026-09-14 17:27:24", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019778700021561235}
+{"time": "2026-09-14 17:27:24", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9934975000214763}
+{"time": "2026-09-14 17:27:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019469399994704872}
+{"time": "2026-09-14 17:27:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9803730999701656}
+{"time": "2026-09-14 17:27:26", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.027292400016449392}
+{"time": "2026-09-14 17:27:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0998273000004701}
+{"time": "2026-09-14 17:27:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 80, "training_seconds": 79.45204999984708}
+{"time": "2026-09-14 17:27:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020159600011538714}
+{"time": "2026-09-14 17:27:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9583730999729596}
+{"time": "2026-09-14 17:27:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019135499955154955}
+{"time": "2026-09-14 17:27:29", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9667644999572076}
+{"time": "2026-09-14 17:27:29", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019991600012872368}
+{"time": "2026-09-14 17:27:30", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9682166000129655}
+{"time": "2026-09-14 17:27:30", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01888150000013411}
+{"time": "2026-09-14 17:27:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.030711200030055}
+{"time": "2026-09-14 17:27:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020606999984011054}
+{"time": "2026-09-14 17:27:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9635006000171416}
+{"time": "2026-09-14 17:27:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 85, "training_seconds": 84.3396159998374}
+{"time": "2026-09-14 17:27:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02235020004445687}
+{"time": "2026-09-14 17:27:33", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9953368999995291}
+{"time": "2026-09-14 17:27:33", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.023744899954181165}
+{"time": "2026-09-14 17:27:34", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0430753999971785}
+{"time": "2026-09-14 17:27:34", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020499000034760684}
+{"time": "2026-09-14 17:27:35", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0210204999893904}
+{"time": "2026-09-14 17:27:35", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018716400023549795}
+{"time": "2026-09-14 17:27:36", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9723648999934085}
+{"time": "2026-09-14 17:27:36", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020261300029233098}
+{"time": "2026-09-14 17:27:37", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0278434999636374}
+{"time": "2026-09-14 17:27:37", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 90, "training_seconds": 89.39925719978055}
+{"time": "2026-09-14 17:27:37", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.022740500047802925}
+{"time": "2026-09-14 17:27:38", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9999881000258029}
+{"time": "2026-09-14 17:27:38", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021688700013328344}
+{"time": "2026-09-14 17:27:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9638841000269167}
+{"time": "2026-09-14 17:27:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019962199963629246}
+{"time": "2026-09-14 17:27:40", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9963805000297725}
+{"time": "2026-09-14 17:27:40", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019780099974013865}
+{"time": "2026-09-14 17:27:41", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.007889200001955}
+{"time": "2026-09-14 17:27:41", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018508600012864918}
+{"time": "2026-09-14 17:27:42", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9792011000099592}
+{"time": "2026-09-14 17:27:42", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 95, "training_seconds": 94.34660019987496}
+{"time": "2026-09-14 17:27:42", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.023036700033117086}
+{"time": "2026-09-14 17:27:43", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9781441999948584}
+{"time": "2026-09-14 17:27:43", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.026920099975541234}
+{"time": "2026-09-14 17:27:44", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9822969000088051}
+{"time": "2026-09-14 17:27:44", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01917489996412769}
+{"time": "2026-09-14 17:27:45", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.00249459996121}
+{"time": "2026-09-14 17:27:45", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020327200007159263}
+{"time": "2026-09-14 17:27:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0064542000181973}
+{"time": "2026-09-14 17:27:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020887100021354854}
+{"time": "2026-09-14 17:27:47", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0134287999826483}
+{"time": "2026-09-14 17:27:47", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 100, "training_seconds": 99.32941889984068}
+{"time": "2026-09-14 17:27:47", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01866400003200397}
+{"time": "2026-09-14 17:27:48", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9841500999755226}
+{"time": "2026-09-14 17:27:48", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021110499976202846}
+{"time": "2026-09-14 17:27:49", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.005611200002022}
+{"time": "2026-09-14 17:27:49", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019781699986197054}
+{"time": "2026-09-14 17:27:50", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9931488999864087}
+{"time": "2026-09-14 17:27:50", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01958239998202771}
+{"time": "2026-09-14 17:27:51", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9970608999719843}
+{"time": "2026-09-14 17:27:51", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018590399995446205}
+{"time": "2026-09-14 17:27:52", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.017499500012491}
+{"time": "2026-09-14 17:27:52", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 105, "training_seconds": 104.3268894997891}
+{"time": "2026-09-14 17:27:52", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.023262200003955513}
+{"time": "2026-09-14 17:27:53", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9916735999868251}
+{"time": "2026-09-14 17:27:53", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02473380003357306}
+{"time": "2026-09-14 17:27:54", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0066890000016429}
+{"time": "2026-09-14 17:27:54", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021901900006923825}
+{"time": "2026-09-14 17:27:55", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9846854000352323}
+{"time": "2026-09-14 17:27:55", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018990200012922287}
+{"time": "2026-09-14 17:27:56", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9786416999995708}
+{"time": "2026-09-14 17:27:56", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019539000000804663}
+{"time": "2026-09-14 17:27:57", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0834729000343941}
+{"time": "2026-09-14 17:27:57", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 110, "training_seconds": 109.37205209984677}
+{"time": "2026-09-14 17:27:57", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01869960001204163}
+{"time": "2026-09-14 17:27:58", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9811311000376008}
+{"time": "2026-09-14 17:27:58", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02168910001637414}
+{"time": "2026-09-14 17:27:59", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9810888000065461}
+{"time": "2026-09-14 17:27:59", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.025048500043340027}
+{"time": "2026-09-14 17:28:00", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0231790999532677}
+{"time": "2026-09-14 17:28:00", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01851389999501407}
+{"time": "2026-09-14 17:28:01", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.975454599945806}
+{"time": "2026-09-14 17:28:01", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.024939300026744604}
+{"time": "2026-09-14 17:28:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0025434999843128}
+{"time": "2026-09-14 17:28:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 115, "training_seconds": 114.3354491997743}
+{"time": "2026-09-14 17:28:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02859680005349219}
+{"time": "2026-09-14 17:28:03", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0038708999636583}
+{"time": "2026-09-14 17:28:03", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020143099944107234}
+{"time": "2026-09-14 17:28:04", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9860579000087455}
+{"time": "2026-09-14 17:28:04", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02119280002079904}
+{"time": "2026-09-14 17:28:05", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0269529999932274}
+{"time": "2026-09-14 17:28:05", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01983130001462996}
+{"time": "2026-09-14 17:28:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9941177999717183}
+{"time": "2026-09-14 17:28:06", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.022651600011158735}
+{"time": "2026-09-14 17:28:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9877328999573365}
+{"time": "2026-09-14 17:28:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 120, "training_seconds": 119.33418169966899}
+{"time": "2026-09-14 17:28:07", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.022322300006635487}
+{"time": "2026-09-14 17:28:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0194323000032455}
+{"time": "2026-09-14 17:28:08", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.0187158000189811}
+{"time": "2026-09-14 17:28:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9748133000102825}
+{"time": "2026-09-14 17:28:09", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020403399947099388}
+{"time": "2026-09-14 17:28:10", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.01507689995924}
+{"time": "2026-09-14 17:28:11", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.023845299961976707}
+{"time": "2026-09-14 17:28:12", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0098360999836586}
+{"time": "2026-09-14 17:28:12", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01839539996581152}
+{"time": "2026-09-14 17:28:13", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9868091000244021}
+{"time": "2026-09-14 17:28:13", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 125, "training_seconds": 124.34014939964982}
+{"time": "2026-09-14 17:28:13", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018575599999167025}
+{"time": "2026-09-14 17:28:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9955570999882184}
+{"time": "2026-09-14 17:28:14", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01832590001868084}
+{"time": "2026-09-14 17:28:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9770648999838158}
+{"time": "2026-09-14 17:28:15", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01718500000424683}
+{"time": "2026-09-14 17:28:16", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0370640000328422}
+{"time": "2026-09-14 17:28:16", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02086260000942275}
+{"time": "2026-09-14 17:28:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.007593700021971}
+{"time": "2026-09-14 17:28:17", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018719700048677623}
+{"time": "2026-09-14 17:28:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.000595199991949}
+{"time": "2026-09-14 17:28:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 130, "training_seconds": 129.3580242996686}
+{"time": "2026-09-14 17:28:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019067500019446015}
+{"time": "2026-09-14 17:28:19", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9833660000003874}
+{"time": "2026-09-14 17:28:19", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019007799972314388}
+{"time": "2026-09-14 17:28:20", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9881656999932602}
+{"time": "2026-09-14 17:28:20", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02007149998098612}
+{"time": "2026-09-14 17:28:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0394353999872692}
+{"time": "2026-09-14 17:28:21", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02134110004408285}
+{"time": "2026-09-14 17:28:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9894083000253886}
+{"time": "2026-09-14 17:28:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.022266000043600798}
+{"time": "2026-09-14 17:28:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9841094000148587}
+{"time": "2026-09-14 17:28:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 135, "training_seconds": 134.34250909968978}
+{"time": "2026-09-14 17:28:23", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.028325700026471168}
+{"time": "2026-09-14 17:28:24", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0506664999993518}
+{"time": "2026-09-14 17:28:24", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018519000033847988}
+{"time": "2026-09-14 17:28:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.982968800002709}
+{"time": "2026-09-14 17:28:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.021492999978363514}
+{"time": "2026-09-14 17:28:26", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9898386999848299}
+{"time": "2026-09-14 17:28:26", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.02095139998709783}
+{"time": "2026-09-14 17:28:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0160167000140063}
+{"time": "2026-09-14 17:28:27", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018870900035835803}
+{"time": "2026-09-14 17:28:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.0139624000294134}
+{"time": "2026-09-14 17:28:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 140, "training_seconds": 139.3959621997201}
+{"time": "2026-09-14 17:28:28", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019970099965576082}
+{"time": "2026-09-14 17:28:29", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9682328999624588}
+{"time": "2026-09-14 17:28:29", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.020472200005315244}
+{"time": "2026-09-14 17:28:30", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9755614000023343}
+{"time": "2026-09-14 17:28:30", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.019800600013695657}
+{"time": "2026-09-14 17:28:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 1.027261700015515}
+{"time": "2026-09-14 17:28:31", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.01901480002561584}
+{"time": "2026-09-14 17:28:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 0.9810682999668643}
+{"time": "2026-09-14 17:28:32", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.018608000013045967}
+{"time": "2026-09-14 17:28:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 6.618353500030935}
+{"time": "2026-09-14 17:28:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 145, "training_seconds": 149.9664399996982}
+{"time": "2026-09-14 17:28:39", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.5009874999523163}
+{"time": "2026-09-14 17:29:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 22.55902739998419}
+{"time": "2026-09-14 17:29:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.49248850002186373}
+{"time": "2026-09-14 17:29:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 22.66002439998556}
+{"time": "2026-09-14 17:29:25", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.575872800021898}
+{"time": "2026-09-14 17:29:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 20.709591199993156}
+{"time": "2026-09-14 17:29:46", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.18605109996860847}
+{"time": "2026-09-14 17:30:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 15.556563999969512}
+{"time": "2026-09-14 17:30:02", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.19008149998262525}
+{"time": "2026-09-14 17:30:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "train", "seconds": 15.643511199974455}
+{"time": "2026-09-14 17:30:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "progress", "epochs": 150, "training_seconds": 247.09515819960507}
+{"time": "2026-09-14 17:30:18", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "ttest", "seconds": 0.18588900001486763}
+{"time": "2026-09-14 17:30:22", "method": "HANAMI", "seed": 30, "task": "2-star 2", "event": "end", "task_wall_seconds": 252.73605790000875, "timing_flags": [], "stages": {"train": {"calls": 150, "total_seconds": 247.09515819960507, "mean_seconds": 1.6473010546640339}, "ttest": {"calls": 157, "total_seconds": 5.231978800089564, "mean_seconds": 0.03332470573305455}}, "inference_mean_seconds": 0.1795732250000583, "inference_sd_seconds": 0.00013837673791717298, "inference_repeats": 20, "test_motifs": 338, "train_motifs": 2706, "input_graph_edges": 50116, "feature_width": 1792, "parameter_count": 3089410, "best_validation_auroc": 0.9430692202653969, "test_metrics": [0.8563218390804598, 0.8816568047337278, 0.8668639053254438, 0.9511921851475789, 0.9469567647688986, 0.8688046647230321], "peak_process_ram_mib": 1742.80078125, "peak_gpu_allocated_mib": 1207.53759765625, "peak_gpu_reserved_mib": 1790.0}
+{"time": "2026-09-14 17:30:22", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "begin"}
+{"time": "2026-09-14 17:30:37", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "train", "seconds": 15.403449599980377}
+{"time": "2026-09-14 17:30:37", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "ttest", "seconds": 0.18199439998716116}
+{"time": "2026-09-14 17:30:38", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "ttest", "seconds": 0.18250220001209527}
+{"time": "2026-09-14 17:30:53", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "train", "seconds": 15.403295400028583}
+{"time": "2026-09-14 17:30:53", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "ttest", "seconds": 0.1831176999839954}
+{"time": "2026-09-14 17:30:53", "method": "HANAMI", "seed": 30, "task": "single 0", "event": "ttest", "seconds": 0.18311309994896874}

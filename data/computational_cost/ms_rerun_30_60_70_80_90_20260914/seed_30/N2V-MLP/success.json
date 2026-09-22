@@ -1,0 +1,7 @@
+{
+  "seed": 30,
+  "method": "N2V-MLP",
+  "tasks": 7,
+  "exit_code": 0,
+  "verified": "2026-09-14T16:11:09.159120"
+}

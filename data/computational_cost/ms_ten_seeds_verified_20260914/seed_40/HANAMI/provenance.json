@@ -1,0 +1,60 @@
+{
+  "method": "HANAMI",
+  "source": "<HANAMI_ROOT>\\main.py",
+  "source_sha256": "432639e4adaaa8d3cd4ff3dd081e8f59eb7793581177b99fc05a070e5e7e7065",
+  "training_device": "cuda",
+  "options": {
+    "baseline_root": "<BASELINE_ROOT>",
+    "method": "HANAMI",
+    "dataset": "ms",
+    "seed": 40,
+    "epochs": 150,
+    "task": "all",
+    "inference_repeats": 20,
+    "output": "<WORK_ROOT>\\work\\computational_cost\\ms_ten_seeds_verified_20260914\\seed_40"
+  },
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "cpu_logical": 24,
+    "ram_gib": 31.71471405029297,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "software": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.7.0+cu126",
+    "cuda": "12.6",
+    "sklearn": "1.6.1",
+    "pyg": "2.6.1",
+    "torch_cpu_threads": 16
+  },
+  "feature_files": {
+    "<HANAMI_ROOT>\\data\\ms\\dise_All.pth": "e4244d11be7b6c31588731672c6c5ede5dfed8faab1ee6930b2e69ba71814815",
+    "<HANAMI_ROOT>\\data\\ms\\drug_All.pth": "63714ba056413abb9df0c5eb555b22a9b28f9c2e6f5990fe36f6486159ca5b81",
+    "<HANAMI_ROOT>\\data\\ms\\gene_All.pth": "6a7ebf6a94817b6630702fd419948cc86cd64d6ed419f73553b9edf770ccab11"
+  },
+  "source_files": {
+    "Attention.py": "0cf4e49adaece9d0f2519dcae4d6a1f820dbd8c907cd485d92a36d8cc8f2aad9",
+    "base_gcn.py": "996c73a24cbeed5341e48a7f5cdcd5bcc0163c6d2e4b8a129204fdeffcd9fe4f",
+    "create_data.py": "f142b8d8e96fcfb94ba1e51b47e9331c5f75488a06bedded5efcc56720fa93df",
+    "embedding.py": "ccfa897617cb9829683a88b7e76446863ba6044736c4fcd8343ff2ac15d8eaa6",
+    "main.py": "432639e4adaaa8d3cd4ff3dd081e8f59eb7793581177b99fc05a070e5e7e7065",
+    "run_clinical_concordance.py": "28abb18d70fb5053a9fef57ff2ff08f54bdd96a82747c9ea44f7c7a6e779a201",
+    "transfer_create_data.py": "1d99d8afbf057c2705767a34e8c3ac688b1496a9af953b2f081109f35f288ac3",
+    "transfer_embedding.py": "13a135ce0a68b1dd3749117cbdcac487a8ee93182fd88b8282b19c4bd50654fc",
+    "transfer_main.py": "fa5ca29b7087c73b7993c23c6624c1b6aaea42e636ba3d45ba3963c57317c4b7",
+    "transfer_utils.py": "c3ec64147782c1393735f267ad41b6b927e6b620a845c185562abae0ea5f7386",
+    "utils.py": "ba9af2c0cee506ead392688954712af4b3081f76bbd84325ef7604881636f0c5"
+  },
+  "ms_arrays": {
+    "Compound-Disease-feat-hierarchy.npy": "53eaa704aaaadc1237c918f9eeedf508fb45ef0c356d936cc6af3f4a472eae92",
+    "cycles.npy": "c756083afd468cab89eca2363bdbb8194e246b2b18ca9f42b0ffc012a560774a",
+    "Gene-Compound-feat-hierarchy.npy": "9dbc215b683983d6cbf25f0069b4101e61af8e72c27ccde41e9a6c1409d69b57",
+    "Gene-Disease-feat-hierarchy.npy": "fda0960897aa04839f41bb5b647027849bd379aec234beb0cd26eb08a47103e0",
+    "id2dise.npy": "2ab43904d421f0e6bd57878f11d421edfc293cfcfe5a87305ff5197f17269b12",
+    "id2drug.npy": "d336bf49f27a0f7f7e6920a731c429cb14959c99b534ddba0638cbe7fb0bd681",
+    "id2gene.npy": "ab660235cebcece2fe90d5b901ea91fdb0d5f1c9d232f9dcf2c2a858cd73dacf",
+    "tup_cenofdise.npy": "a133ed3f26c990bc470fdb6b9c36cab5d8b6cfcdc73e39dbca79a6bd27a31585",
+    "tup_cenofdrug.npy": "5814a33bc3f6df76f5f64def9819a2d101a875d3afd5a84ac48ad402a2df5710",
+    "tup_cenofgene.npy": "96fb682138f648b377d14a55c02c75d2396746406995a6e00a06084a9858cbc2"
+  }
+}

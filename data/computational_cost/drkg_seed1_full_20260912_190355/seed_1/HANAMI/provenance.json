@@ -1,0 +1,69 @@
+{
+  "method": "HANAMI",
+  "source": "<HANAMI_ROOT>\\main.py",
+  "source_sha256": "432639e4adaaa8d3cd4ff3dd081e8f59eb7793581177b99fc05a070e5e7e7065",
+  "training_device": "cuda",
+  "options": {
+    "baseline_root": "<BASELINE_ROOT>",
+    "method": "HANAMI",
+    "dataset": "drkg",
+    "seed": 1,
+    "epochs": 150,
+    "task": "all",
+    "inference_repeats": 20,
+    "output": "<HANAMI_ROOT>\\results\\computational_cost\\drkg_seed1_full_20260912_190355\\seed_1"
+  },
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "cpu_logical": 24,
+    "ram_gib": 31.71471405029297,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "software": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.7.0+cu126",
+    "cuda": "12.6",
+    "sklearn": "1.6.1",
+    "pyg": "2.6.1",
+    "torch_cpu_threads": 16
+  },
+  "feature_files": {
+    "<HANAMI_ROOT>\\data\\drkg\\dise_All.pth": "8a63d08d53b55da45f315bc201f3dbfdf3727b5913bc62bcb1774bc6550a8d3d",
+    "<HANAMI_ROOT>\\data\\drkg\\drug_All.pth": "2b15700faa5cf1f5bec218d5e575a1f2f58c4c72c7c860fd702fb6030023f8b4",
+    "<HANAMI_ROOT>\\data\\drkg\\gene_All.pth": "8e845628d0a6f41a2da19245a888c24b342480495868ceb7d2ff2e1a5d567d0a"
+  },
+  "source_files": {
+    "Attention.py": "0cf4e49adaece9d0f2519dcae4d6a1f820dbd8c907cd485d92a36d8cc8f2aad9",
+    "base_gcn.py": "996c73a24cbeed5341e48a7f5cdcd5bcc0163c6d2e4b8a129204fdeffcd9fe4f",
+    "create_data.py": "f142b8d8e96fcfb94ba1e51b47e9331c5f75488a06bedded5efcc56720fa93df",
+    "embedding.py": "ccfa897617cb9829683a88b7e76446863ba6044736c4fcd8343ff2ac15d8eaa6",
+    "main.py": "432639e4adaaa8d3cd4ff3dd081e8f59eb7793581177b99fc05a070e5e7e7065",
+    "run_clinical_concordance.py": "28abb18d70fb5053a9fef57ff2ff08f54bdd96a82747c9ea44f7c7a6e779a201",
+    "transfer_create_data.py": "1d99d8afbf057c2705767a34e8c3ac688b1496a9af953b2f081109f35f288ac3",
+    "transfer_embedding.py": "13a135ce0a68b1dd3749117cbdcac487a8ee93182fd88b8282b19c4bd50654fc",
+    "transfer_main.py": "fa5ca29b7087c73b7993c23c6624c1b6aaea42e636ba3d45ba3963c57317c4b7",
+    "transfer_utils.py": "c3ec64147782c1393735f267ad41b6b927e6b620a845c185562abae0ea5f7386",
+    "utils.py": "ba9af2c0cee506ead392688954712af4b3081f76bbd84325ef7604881636f0c5"
+  },
+  "drkg_arrays": {
+    "Compound-Disease-feat-hierarchy.npy": "00c67029216745bddf20566ddc98e08fb44a9622955015d4d589073e24ad0240",
+    "cycles.npy": "2e9c665d5ed2233ce555a72582211ea7f617d9e41ad088dfa9dd5a9a04f2c772",
+    "edge_dictionary.npy": "0ef62a18c16420d3aea8d66db81ab0804794b88e5b56d8edc029b44b7bbe3149",
+    "entity_dictionary.npy": "5ce592253db0d0810a1e2648e4e6eb6f487357748d15548ae6c98928de692b51",
+    "Gene-Compound-feat-hierarchy.npy": "4820f3bd298a026a842c1b532cc27418755508b2d2de2de4648ac771bec065f3",
+    "Gene-Disease-feat-hierarchy.npy": "e7d38a1da688bb0273fa33e0c81a576c6b72cc0a7e0b59d388c66b58b75e5b10",
+    "gene_feat_Enformer_matrix.npy": "04a7b48f6764849898aedf4e3f7dfe2267cc41523bd171480e3e5dfdb1e34214",
+    "id2dise-feat-hierarchy.npy": "eeb7ab88accf31327ce63b8940eb088f9c82370052956d9e9c5b4865757883fa",
+    "id2dise.npy": "b728b2a27490b9f961350f4a068768be2f7eb61553527c9c7049bbf6ed279adc",
+    "id2drug-feat-hierarchy.npy": "e66aaec1faa7f96056dc08dcb4a74c1ee93a153b6ba1b90535eb66ee54490c78",
+    "id2drug.npy": "24668a3b379c7b47ed162ec9de1ac4956a15fa69d65065b8bd0a2c476ecf5d6a",
+    "id2gene-feat-hierarchy.npy": "9248beb16b4f957201c9a37193f220fc95532fbe98df5a7a659ef55285ddf00a",
+    "id2gene.npy": "17390519285b060aafe498b9f9bce48620010185e52683ecd7447679e03b0a9f",
+    "subgraph_dise.npy": "15522f669b7bad74c7136aa12184ff7c2cd5116c31cc20321a71bee769240dc4",
+    "subgraph_drug.npy": "6725911c626e9fb93f0412b1b8837d612b800efcb1576969402147c4f0ea47a6",
+    "subgraph_gene.npy": "202f3d5b7ac0a971315b3c32034195fee30530a872c041c893b45818c2e9b7fc",
+    "tup_cenofdise.npy": "09704929d5674d89a4787fcf6c71adeea7bba2f4d97f3194d14e7c706efeb163",
+    "tup_cenofdrug.npy": "15cee4e355c05daa930c2044c63a5632f57e934787e21fda5adcb4a100a3f144",
+    "tup_cenofgene.npy": "8fa38b58a6f637fd793541c5ee51b1171b8397779316706fe2aa2eb68de8a2de"
+  }
+}

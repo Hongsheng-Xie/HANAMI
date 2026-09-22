@@ -1,0 +1,84 @@
+[
+  {
+    "time": "2026-09-14 17:51:05",
+    "method": "HANAMI",
+    "seed": 30,
+    "task": "clique",
+    "event": "end",
+    "task_wall_seconds": 129.36321479999998,
+    "timing_flags": [],
+    "stages": {
+      "train": {
+        "calls": 150,
+        "total_seconds": 126.82264010000029,
+        "mean_seconds": 0.8454842673333353
+      },
+      "ttest": {
+        "calls": 157,
+        "total_seconds": 2.306229900000062,
+        "mean_seconds": 0.014689362420382561
+      }
+    },
+    "inference_mean_seconds": 0.009784214999990581,
+    "inference_sd_seconds": 0.00019364228081451346,
+    "inference_repeats": 20,
+    "test_motifs": 86,
+    "train_motifs": 698,
+    "input_graph_edges": 50116,
+    "feature_width": 1792,
+    "parameter_count": 3089410,
+    "best_validation_auroc": 0.8994050838290968,
+    "test_metrics": [
+      0.8292682926829268,
+      0.7906976744186046,
+      0.813953488372093,
+      0.9091400757166036,
+      0.9217511430988838,
+      0.8095238095238095
+    ],
+    "peak_process_ram_mib": 1716.4296875,
+    "peak_gpu_allocated_mib": 1204.421875,
+    "peak_gpu_reserved_mib": 1772.0
+  },
+  {
+    "time": "2026-09-14 17:53:17",
+    "method": "HANAMI",
+    "seed": 30,
+    "task": "2-star 0",
+    "event": "end",
+    "task_wall_seconds": 131.9409526999999,
+    "timing_flags": [],
+    "stages": {
+      "train": {
+        "calls": 150,
+        "total_seconds": 128.9128278999998,
+        "mean_seconds": 0.8594188526666653
+      },
+      "ttest": {
+        "calls": 171,
+        "total_seconds": 2.768816800000309,
+        "mean_seconds": 0.016191911111112917
+      }
+    },
+    "inference_mean_seconds": 0.01266929000000232,
+    "inference_sd_seconds": 0.001161232935442649,
+    "inference_repeats": 20,
+    "test_motifs": 328,
+    "train_motifs": 2636,
+    "input_graph_edges": 50116,
+    "feature_width": 1792,
+    "parameter_count": 3089410,
+    "best_validation_auroc": 0.9433187091017251,
+    "test_metrics": [
+      0.9230769230769231,
+      0.8780487804878049,
+      0.9024390243902439,
+      0.9538779000594885,
+      0.9534525001941626,
+      0.9
+    ],
+    "peak_process_ram_mib": 1724.09375,
+    "peak_gpu_allocated_mib": 1205.89306640625,
+    "peak_gpu_reserved_mib": 1784.0
+  }
+]

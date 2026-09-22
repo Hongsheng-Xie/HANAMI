@@ -1,0 +1,52 @@
+[
+  {
+    "seed": 10,
+    "method": "RF",
+    "training_minutes": 3.587213249999331,
+    "inference_ms": 202.0151300006546,
+    "peak_ram_gib": 3.680694580078125,
+    "peak_gpu_gib": 0.001857757568359375,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 10,
+    "method": "TriNet",
+    "training_minutes": 0.32072868998802734,
+    "inference_ms": 3.821884997887537,
+    "peak_ram_gib": 1.2911338806152344,
+    "peak_gpu_gib": 0.36542320251464844,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 10,
+    "method": "N2V-MLP",
+    "training_minutes": 3.5504915183380943,
+    "inference_ms": 14.259499983745627,
+    "peak_ram_gib": 1.7053947448730469,
+    "peak_gpu_gib": 2.526854991912842,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 10,
+    "method": "TriMoGCL",
+    "training_minutes": 10.742527530000855,
+    "inference_ms": 37.335769983474165,
+    "peak_ram_gib": 1.6477775573730469,
+    "peak_gpu_gib": 1.470789909362793,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  },
+  {
+    "seed": 10,
+    "method": "HANAMI",
+    "training_minutes": 14.712703503328763,
+    "inference_ms": 69.58660499949474,
+    "peak_ram_gib": 1.694976806640625,
+    "peak_gpu_gib": 1.1934642791748047,
+    "test_motifs": 4968,
+    "timing_flags": 0
+  }
+]

@@ -1,5 +1,9 @@
 # Clinical concordance data provenance
 
+> Historical provenance only. This file describes the superseded 405-pair
+> analysis, not the current Figure 5. Current score hashes and clinical-evidence
+> scope are in [current/manifest.json](current/manifest.json) and [README.md](README.md).
+
 This package uses final ten-seed score arrays, a fixed 46,704-row MS gene-star candidate pool, and frozen clinical-screen tables. The earlier provisional single-seed helper run and its candidate CSV files are not inputs.
 
 ## Frozen analysis boundary

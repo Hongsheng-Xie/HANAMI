@@ -1,0 +1,41 @@
+{
+  "source_directory_name": "ms_hanami_seed30_clean_20260914",
+  "transformation": "JSON reserialization and local path-root substitution only; numeric values unchanged.",
+  "files": [
+    {
+      "path": "completed_tasks.json",
+      "original_sha256": "749e77451e321e3b8e00918c930465bfc5e06d3f35ab9e308a91c9bf27c0b0c6",
+      "published_sha256": "cb757a5928a5e290ae5d000899904e3f25985bff8ef21eb59bf73354a80d6b24"
+    },
+    {
+      "path": "configuration.json",
+      "original_sha256": "a3a2169d6738f7bfe7876cf8e7a3132877d32a82e40065186ca3ed451c6681df",
+      "published_sha256": "cf41ecf4d7afabce73400b2a1410d429672a6a7f554dc8275a31e4ca2a7d69b6"
+    },
+    {
+      "path": "seed_30/HANAMI/events.jsonl",
+      "original_sha256": "6875553434b612557c2578b2571f1e63c8cb5bdb9e8d2d76537c6a53c57addaa",
+      "published_sha256": "4bf8f0d963f59d227424f0fe2ab8fa6e71665595e4ba785e5397768bcf858fdb"
+    },
+    {
+      "path": "seed_30/HANAMI/provenance.json",
+      "original_sha256": "f5cb6f254c52199bdbaaf443a4bfd4f4379ff510f498c66c210bbc24d170307a",
+      "published_sha256": "9e54d3fe34931c399e361c09b9606304ebb8e96b85387b36f62796bf72014ca6"
+    },
+    {
+      "path": "seed_level_costs.json",
+      "original_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "published_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "status.json",
+      "original_sha256": "a3cea09100e39041b6e8da7508c382d3219a2b2daaa6a1413b7d496b73e1b3fd",
+      "published_sha256": "9d9360019381b4aabdd2741ba8cbaeaf06e09bac905ff72d4fc604ab9e3c8ba1"
+    },
+    {
+      "path": "timing_flags.json",
+      "original_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "published_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  ]
+}

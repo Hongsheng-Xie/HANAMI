@@ -1,0 +1,26 @@
+{
+  "source_directory_name": "cost_timing_verification_20260911",
+  "transformation": "JSON reserialization and local path-root substitution only; numeric values unchanged.",
+  "files": [
+    {
+      "path": "timing_audit.json",
+      "original_sha256": "cd523e261ad8b931eadc9e92448f111503bfe8b800b1820bd84a067a94a8c894",
+      "published_sha256": "bf8019990d0591d752f61328beede62861fdb43b2c6d8595191cc3d9a22918e2"
+    },
+    {
+      "path": "TriMoGCL/events.jsonl",
+      "original_sha256": "e959da2230d6269f9a3da5643f6e16b02fc9ebbbab741baa175d7e654d3f153e",
+      "published_sha256": "7867e0a00c772714c72dc66b063b4eb8e141bc628324587aa49512fb1a694d42"
+    },
+    {
+      "path": "TriMoGCL/provenance.json",
+      "original_sha256": "804c3b361c2879a45f11969e2c6e314e88773079ba02e82bf356eced0609b0a4",
+      "published_sha256": "a3543032b9fb5b5d5ecb702153bda18158367717e9e40ca8c9fb6d8f2f8f8ec5"
+    },
+    {
+      "path": "verified_measurements.json",
+      "original_sha256": "518834b3fd96aad9c6bde1dcd339e1021827e48bbe550ed84d4c8f1637310b11",
+      "published_sha256": "b090e94405870f4680f9245580ac7cd121f7b798e03a69c51a78859877d75358"
+    }
+  ]
+}

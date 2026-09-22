@@ -1,0 +1,18 @@
+{
+  "seeds": [
+    10
+  ],
+  "methods": [
+    "RF",
+    "TriNet",
+    "N2V-MLP",
+    "TriMoGCL",
+    "HANAMI"
+  ],
+  "epochs": 150,
+  "task": "all",
+  "inference_repeats": 20,
+  "baseline_root": "<BASELINE_ROOT>",
+  "python": "<WORK_ROOT>\\.drkg-gpu-venv\\Scripts\\python.exe",
+  "worker_sha256": "5d104575469e9df3148953fc86514cbdfa601debbd88bfc9069aa2479a61e376"
+}

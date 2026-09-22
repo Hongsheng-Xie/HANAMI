@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "release": "current Figure 5, complete MS clinical evidence cohort",
+  "aggregation": "arithmetic mean of ten seed-specific rank percentiles per motif",
+  "ranking": "descending prediction score with average ranks for ties",
+  "percentile_formula": "100 * descending_rank / 46704",
+  "seeds": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
+  "candidate_pool_size": 46704,
+  "cohort_motifs": 1630,
+  "cohort_pairs": 785,
+  "disease_labels": 109,
+  "case_candidates": [3999, 14585, 40511, 6118, 35674],
+  "hanami_feature_pipeline": ["dise_All.pth", "drug_All.pth", "gene_All.pth"],
+  "legacy_name_note": "The completed HANAMI run recorded dise_Bio.pth, byte-identical to the current dise_All.pth. The hanami array in the historical baseline archive is NOT used.",
+  "metadata_note": "cohort_metadata.tsv preserves the released clinical cohort and supporting trial identifiers. Historical percentile columns were removed; no motif or pair was reselected.",
+  "clinical_evidence_note": "Trial records support investigation of the drug and disease relation, not proof of efficacy or a gene-mediated mechanism. The frozen cohort is reproduced without a new evidence audit.",
+  "median_used": false,
+  "paths_relative_to": "manifest directory",
+  "files": {
+    "baseline_scores": {"path": "../gene_star_scores_10seeds.npz", "sha256": "7504696c54b3353fdad316abe9b84d584fc2bc9f76e000b92c6dd7b20dba2d18"},
+    "candidate_metadata": {"path": "../gene_star_candidates.csv", "sha256": "83f626dbd8bb6d2701159e52b45e0779575463a1786bd1ca26b73ddf695d82d3"},
+    "cohort_metadata": {"path": "cohort_metadata.tsv", "sha256": "089403cde9a05f230db7989f6b20210a48b206c7cd96f3d2209261a1f6fffbe6"},
+    "released_means": {"path": "validated_gene_star_motifs_1630_mean10.tsv", "sha256": "b253f10f5f03c553c5a36072f2ed5d3709ce658961faff716e92d27a0e21c220"},
+    "cases": {"path": "figure5_cases_5.csv", "sha256": "bb856299f1563043a76c3ccf7865103ef0d4f116ae6527ded0d7635c99a947c2"}
+  },
+  "hanami_scores": [
+    {"seed": 0, "path": "hanami_scores/scores_seed0.npy", "sha256": "7441af630f3a477b77cb719e22c9dbcdce22f9a5f9318e68536b1fa78ef6bba5"},
+    {"seed": 10, "path": "hanami_scores/scores_seed10.npy", "sha256": "2acac72d80539efccc402717256309eaeb7564f7bbef6d5e3de56bbfb14185b2"},
+    {"seed": 20, "path": "hanami_scores/scores_seed20.npy", "sha256": "bf0bcf631d21a51c17c9df6c5d738b734f0b4fc4faf3ef90a9e886d984e6f127"},
+    {"seed": 30, "path": "hanami_scores/scores_seed30.npy", "sha256": "e4ccb30229ddcf25aa13ca9e5f9bd154ec1830529a581c0d4ae0b13c20dc9fc3"},
+    {"seed": 40, "path": "hanami_scores/scores_seed40.npy", "sha256": "84cd4adc643a2ba148b203dc6c8d6ecc40b4edeff214f4f0f37e30d78e0b54e1"},
+    {"seed": 50, "path": "hanami_scores/scores_seed50.npy", "sha256": "e4fcc1e61a333eb143e53545b6b6f3abb4d79c2661be7cbab2f6e7fa408a80ff"},
+    {"seed": 60, "path": "hanami_scores/scores_seed60.npy", "sha256": "8509a8b919013c005e76129b7ebb80705cd5864e0dea01840c26fcff80764748"},
+    {"seed": 70, "path": "hanami_scores/scores_seed70.npy", "sha256": "0c0d9d8169e9c9510cd84e829abfbfca6c6fa90764d8481091e8feef4b9da08d"},
+    {"seed": 80, "path": "hanami_scores/scores_seed80.npy", "sha256": "b60e79f6f5d3c3f5dcf0e8c703b5593b322381f51058c6e1f492028806eb883f"},
+    {"seed": 90, "path": "hanami_scores/scores_seed90.npy", "sha256": "8c246cb4683230751e10a7da351a86eef656353aee252a4b99ca9950c259af3f"}
+  ]
+}

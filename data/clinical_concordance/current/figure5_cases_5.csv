@@ -1,0 +1,6 @@
+panel,candidate_index,motif,clinical_evidence,clinical_reference
+c,3999,Lenvatinib-FLT1-Melanoma,Phase II and III,NCT03820986;NCT04889118;NCT07501104
+d,14585,Pirfenidone-TNF-Hypersensitivity,Phase II in chronic progressive hypersensitivity pneumonitis; broader MS label Hypersensitivity,NCT04675619
+e,40511,Enalapril-ACE-Coronary Artery Disease,Phase III,NCT00000516;NCT04912167
+f,6118,Roflumilast-PDE4D-Diabetes Mellitus,Phase III in type 2 diabetes with neuropathy on background diabetes therapy,NCT05369793
+g,35674,Scopolamine-CHRM2-Bipolar Disorder,Phase II bipolar depression,NCT04211961

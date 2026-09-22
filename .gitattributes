@@ -1,1 +1,7 @@
 data/drkg/* filter=lfs diff=lfs merge=lfs -text
+# Frozen scientific inputs are hashed as bytes. Do not change their line endings.
+data/clinical_concordance/gene_star_candidates.csv -text whitespace=cr-at-eol
+data/clinical_concordance/current/*.csv -text whitespace=cr-at-eol
+data/clinical_concordance/current/*.tsv -text whitespace=cr-at-eol
+data/computational_cost/**/*.json -text whitespace=cr-at-eol
+data/computational_cost/**/*.jsonl -text whitespace=cr-at-eol

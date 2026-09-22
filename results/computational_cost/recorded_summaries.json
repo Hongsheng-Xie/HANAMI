@@ -1,0 +1,1882 @@
+{
+  "cost_timing_verification_20260911": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 16.981386733332087,
+        "inference_ms": 71.63714000635082,
+        "peak_ram_gib": 1.7064132690429688,
+        "peak_gpu_gib": 1.1927733421325684,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 3.8674685533333104,
+        "inference_ms": 16.836339997826144,
+        "peak_ram_gib": 1.6906318664550781,
+        "peak_gpu_gib": 2.5268545150756836,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 3.836832961666611,
+        "inference_ms": 258.6463549960172,
+        "peak_ram_gib": 3.9052658081054688,
+        "peak_gpu_gib": 0.0018587112426757812,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 12.96336720167116,
+        "inference_ms": 57.138389997999184,
+        "peak_ram_gib": 1.64849853515625,
+        "peak_gpu_gib": 1.471491813659668,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 0.43153765666114247,
+        "inference_ms": 5.379815002379473,
+        "peak_ram_gib": 1.2790718078613281,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.836832961666611,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 258.6463549960172,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 3.9052658081054688,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.0018587112426757812,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 0.43153765666114247,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 5.379815002379473,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.2790718078613281,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.36542510986328125,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.8674685533333104,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 16.836339997826144,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6906318664550781,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 2.5268545150756836,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 12.96336720167116,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 57.138389997999184,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.64849853515625,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.471491813659668,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 16.981386733332087,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 71.63714000635082,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.7064132690429688,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.1927733421325684,
+        "peak_gpu_gib_sample_sd": null
+      }
+    ]
+  },
+  "drkg_seed1_full_20260912_190355": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 265.93027820501885,
+        "inference_ms": 389.17509000748396,
+        "peak_ram_gib": 4.692298889160156,
+        "peak_gpu_gib": 4.661454677581787,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 9.399152965014219,
+        "inference_ms": 49.0581849910086,
+        "peak_ram_gib": 2.388744354248047,
+        "peak_gpu_gib": 3.5573463439941406,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 570.3827515466662,
+        "inference_ms": 1766.2226499873216,
+        "peak_ram_gib": 15.899436950683594,
+        "peak_gpu_gib": 0.008259296417236328,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 85.66032247000064,
+        "inference_ms": 157.79599999368656,
+        "peak_ram_gib": 3.5865402221679688,
+        "peak_gpu_gib": 7.213514804840088,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 0.8181398916659721,
+        "inference_ms": 16.683769985684194,
+        "peak_ram_gib": 1.9844017028808594,
+        "peak_gpu_gib": 1.8101468086242676,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 570.3827515466662,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 1766.2226499873216,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 15.899436950683594,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.008259296417236328,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 0.8181398916659721,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 16.683769985684194,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.9844017028808594,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.8101468086242676,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 9.399152965014219,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 49.0581849910086,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 2.388744354248047,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 3.5573463439941406,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 85.66032247000064,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 157.79599999368656,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 3.5865402221679688,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 7.213514804840088,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 265.93027820501885,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 389.17509000748396,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 4.692298889160156,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 4.661454677581787,
+        "peak_gpu_gib_sample_sd": null
+      }
+    ]
+  },
+  "ms_hanami_seed30_clean_20260914": {
+    "jobs": [],
+    "summary": []
+  },
+  "ms_rerun_30_60_70_80_90_20260914": {
+    "jobs": [
+      {
+        "method": "N2V-MLP",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 3.7386620316567134,
+        "inference_ms": 15.019890005351044,
+        "peak_ram_gib": 1.6696853637695312,
+        "peak_gpu_gib": 2.526853084564209,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 4.664044966666067,
+        "inference_ms": 262.98286002420355,
+        "peak_ram_gib": 3.6692161560058594,
+        "peak_gpu_gib": 0.0018572807312011719,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 66.43135716166192,
+        "inference_ms": 225.7462749897968,
+        "peak_ram_gib": 1.6638259887695312,
+        "peak_gpu_gib": 1.4708251953125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 0.40890257166562755,
+        "inference_ms": 4.907855004421435,
+        "peak_ram_gib": 1.2819252014160156,
+        "peak_gpu_gib": 0.36542415618896484,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          30
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 4.664044966666067,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 262.98286002420355,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 3.6692161560058594,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.0018572807312011719,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          30
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 0.40890257166562755,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 4.907855004421435,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.2819252014160156,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.36542415618896484,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          30
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.7386620316567134,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 15.019890005351044,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6696853637695312,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 2.526853084564209,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          30
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 66.43135716166192,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 225.7462749897968,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6638259887695312,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.4708251953125,
+        "peak_gpu_gib_sample_sd": null
+      }
+    ]
+  },
+  "ms_seed10_fresh_20260912_112757": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 14.712703503328763,
+        "inference_ms": 69.58660499949474,
+        "peak_ram_gib": 1.694976806640625,
+        "peak_gpu_gib": 1.1934642791748047,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 3.5504915183380943,
+        "inference_ms": 14.259499983745627,
+        "peak_ram_gib": 1.7053947448730469,
+        "peak_gpu_gib": 2.526854991912842,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 3.587213249999331,
+        "inference_ms": 202.0151300006546,
+        "peak_ram_gib": 3.680694580078125,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 10.742527530000855,
+        "inference_ms": 37.335769983474165,
+        "peak_ram_gib": 1.6477775573730469,
+        "peak_gpu_gib": 1.470789909362793,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 0.32072868998802734,
+        "inference_ms": 3.821884997887537,
+        "peak_ram_gib": 1.2911338806152344,
+        "peak_gpu_gib": 0.36542320251464844,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          10
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.587213249999331,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 202.0151300006546,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 3.680694580078125,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.001857757568359375,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          10
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 0.32072868998802734,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 3.821884997887537,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.2911338806152344,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.36542320251464844,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          10
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.5504915183380943,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 14.259499983745627,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.7053947448730469,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 2.526854991912842,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          10
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 10.742527530000855,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 37.335769983474165,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6477775573730469,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.470789909362793,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          10
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 14.712703503328763,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 69.58660499949474,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.694976806640625,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.1934642791748047,
+        "peak_gpu_gib_sample_sd": null
+      }
+    ]
+  },
+  "ms_seed1_full_20260911": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 16.981386733332087,
+        "inference_ms": 71.63714000635082,
+        "peak_ram_gib": 1.7064132690429688,
+        "peak_gpu_gib": 1.1927733421325684,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 3.8674685533333104,
+        "inference_ms": 16.836339997826144,
+        "peak_ram_gib": 1.6906318664550781,
+        "peak_gpu_gib": 2.5268545150756836,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 3.836832961666611,
+        "inference_ms": 258.6463549960172,
+        "peak_ram_gib": 3.9052658081054688,
+        "peak_gpu_gib": 0.0018587112426757812,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 23.365147328338935,
+        "inference_ms": 55.12136000033934,
+        "peak_ram_gib": 1.64849853515625,
+        "peak_gpu_gib": 1.471491813659668,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 0.43153765666114247,
+        "inference_ms": 5.379815002379473,
+        "peak_ram_gib": 1.2790718078613281,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.836832961666611,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 258.6463549960172,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 3.9052658081054688,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.0018587112426757812,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 0.43153765666114247,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 5.379815002379473,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.2790718078613281,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.36542510986328125,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.8674685533333104,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 16.836339997826144,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6906318664550781,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 2.5268545150756836,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 23.365147328338935,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 55.12136000033934,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.64849853515625,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.471491813659668,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          1
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 16.981386733332087,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 71.63714000635082,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.7064132690429688,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.1927733421325684,
+        "peak_gpu_gib_sample_sd": null
+      }
+    ]
+  },
+  "ms_seed20_fresh_20260912_152011": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 119.62288310499667,
+        "inference_ms": 602.9831799853127,
+        "peak_ram_gib": 1.6897544860839844,
+        "peak_gpu_gib": 1.193659782409668,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 3.6551231216813904,
+        "inference_ms": 14.292429981287569,
+        "peak_ram_gib": 1.6687507629394531,
+        "peak_gpu_gib": 2.526852607727051,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 4.061561648335191,
+        "inference_ms": 221.01371000753713,
+        "peak_ram_gib": 3.9596900939941406,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 12.256169053336878,
+        "inference_ms": 46.90938498824835,
+        "peak_ram_gib": 1.6588706970214844,
+        "peak_gpu_gib": 1.472156047821045,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 0.4280626033403678,
+        "inference_ms": 4.694374970858917,
+        "peak_ram_gib": 1.2792434692382812,
+        "peak_gpu_gib": 0.36542415618896484,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          20
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 4.061561648335191,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 221.01371000753713,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 3.9596900939941406,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.001857757568359375,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          20
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 0.4280626033403678,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 4.694374970858917,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.2792434692382812,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 0.36542415618896484,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          20
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 3.6551231216813904,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 14.292429981287569,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6687507629394531,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 2.526852607727051,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          20
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 12.256169053336878,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 46.90938498824835,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6588706970214844,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.472156047821045,
+        "peak_gpu_gib_sample_sd": null
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          20
+        ],
+        "n_seeds": 1,
+        "timing_flags": 0,
+        "training_minutes": 119.62288310499667,
+        "training_minutes_sample_sd": null,
+        "inference_ms": 602.9831799853127,
+        "inference_ms_sample_sd": null,
+        "peak_ram_gib": 1.6897544860839844,
+        "peak_ram_gib_sample_sd": null,
+        "peak_gpu_gib": 1.193659782409668,
+        "peak_gpu_gib_sample_sd": null
+      }
+    ]
+  },
+  "ms_ten_seeds_20260911": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 18.050111823333523,
+        "inference_ms": 80.30916999705369,
+        "peak_ram_gib": 1.6957473754882812,
+        "peak_gpu_gib": 1.1927733421325684,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 165.01756042666238,
+        "inference_ms": 833.922559992061,
+        "peak_ram_gib": 1.6912040710449219,
+        "peak_gpu_gib": 1.1934642791748047,
+        "timing_flags": 1
+      },
+      {
+        "method": "HANAMI",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 15.024654558341233,
+        "inference_ms": 72.16301499865949,
+        "peak_ram_gib": 1.6894607543945312,
+        "peak_gpu_gib": 1.193659782409668,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 74.81050215666667,
+        "inference_ms": 247.77489998814417,
+        "peak_ram_gib": 1.6939430236816406,
+        "peak_gpu_gib": 1.192927360534668,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 16.992154511666254,
+        "inference_ms": 85.3016799854231,
+        "peak_ram_gib": 1.6887855529785156,
+        "peak_gpu_gib": 1.1924586296081543,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 16.820260403318873,
+        "inference_ms": 81.30147000047145,
+        "peak_ram_gib": 1.68804931640625,
+        "peak_gpu_gib": 1.192582607269287,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 16.65473380665935,
+        "inference_ms": 80.73097500455333,
+        "peak_ram_gib": 1.6938858032226562,
+        "peak_gpu_gib": 1.1925783157348633,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 70,
+        "tasks": 7,
+        "training_minutes": 16.633343790000556,
+        "inference_ms": 83.13635001250077,
+        "peak_ram_gib": 1.6936416625976562,
+        "peak_gpu_gib": 1.192582607269287,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 80,
+        "tasks": 7,
+        "training_minutes": 16.73777389999935,
+        "inference_ms": 82.26960499887355,
+        "peak_ram_gib": 1.690765380859375,
+        "peak_gpu_gib": 1.1927061080932617,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 90,
+        "tasks": 7,
+        "training_minutes": 16.715259524990202,
+        "inference_ms": 82.33793498075102,
+        "peak_ram_gib": 1.691131591796875,
+        "peak_gpu_gib": 1.192439079284668,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 3.9939912299999074,
+        "inference_ms": 15.176225009781774,
+        "peak_ram_gib": 1.7076950073242188,
+        "peak_gpu_gib": 2.5268545150756836,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 3.9405534766565933,
+        "inference_ms": 15.105944997048937,
+        "peak_ram_gib": 1.6923789978027344,
+        "peak_gpu_gib": 2.526854991912842,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 3.554535583333442,
+        "inference_ms": 14.208344995859079,
+        "peak_ram_gib": 1.7226066589355469,
+        "peak_gpu_gib": 2.526852607727051,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 3.6425541816623688,
+        "inference_ms": 14.555370001471601,
+        "peak_ram_gib": 1.68505859375,
+        "peak_gpu_gib": 2.526853084564209,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 3.6560299216662924,
+        "inference_ms": 14.276980009162799,
+        "peak_ram_gib": 1.667694091796875,
+        "peak_gpu_gib": 2.5268540382385254,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 3.6747709783453804,
+        "inference_ms": 14.527015000930987,
+        "peak_ram_gib": 1.6715583801269531,
+        "peak_gpu_gib": 2.526857376098633,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 3.8488887016646913,
+        "inference_ms": 15.69178499194095,
+        "peak_ram_gib": 1.6686248779296875,
+        "peak_gpu_gib": 2.526853561401367,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 70,
+        "tasks": 7,
+        "training_minutes": 3.884074261667168,
+        "inference_ms": 14.684490000945516,
+        "peak_ram_gib": 1.6703109741210938,
+        "peak_gpu_gib": 2.526854991912842,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 80,
+        "tasks": 7,
+        "training_minutes": 3.8620117766666224,
+        "inference_ms": 14.705820009112358,
+        "peak_ram_gib": 1.69366455078125,
+        "peak_gpu_gib": 2.5268540382385254,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 90,
+        "tasks": 7,
+        "training_minutes": 3.6468696549961654,
+        "inference_ms": 14.229444996453822,
+        "peak_ram_gib": 1.6812782287597656,
+        "peak_gpu_gib": 2.5268564224243164,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 5.290343458332548,
+        "inference_ms": 316.5662150015123,
+        "peak_ram_gib": 3.779144287109375,
+        "peak_gpu_gib": 0.0018587112426757812,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 4.533996398333693,
+        "inference_ms": 267.5967699891771,
+        "peak_ram_gib": 3.6374969482421875,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 3.8103728516672466,
+        "inference_ms": 207.90688999695706,
+        "peak_ram_gib": 3.9142494201660156,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 3.6555188383329855,
+        "inference_ms": 197.60859000234632,
+        "peak_ram_gib": 3.6705665588378906,
+        "peak_gpu_gib": 0.0018572807312011719,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 3.986505293333903,
+        "inference_ms": 221.2217499894905,
+        "peak_ram_gib": 3.8221778869628906,
+        "peak_gpu_gib": 0.0018568038940429688,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 4.034351096666554,
+        "inference_ms": 217.4756200009142,
+        "peak_ram_gib": 3.8849029541015625,
+        "peak_gpu_gib": 0.0018582344055175781,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 4.402988959999735,
+        "inference_ms": 225.92889000225114,
+        "peak_ram_gib": 3.872711181640625,
+        "peak_gpu_gib": 0.0018582344055175781,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 70,
+        "tasks": 7,
+        "training_minutes": 4.37554617166655,
+        "inference_ms": 319.10048000281677,
+        "peak_ram_gib": 3.985210418701172,
+        "peak_gpu_gib": 0.0018582344055175781,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 80,
+        "tasks": 7,
+        "training_minutes": 4.4945264699999825,
+        "inference_ms": 223.40974000399004,
+        "peak_ram_gib": 4.0292205810546875,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 90,
+        "tasks": 7,
+        "training_minutes": 3.9491780766664304,
+        "inference_ms": 209.28716000489658,
+        "peak_ram_gib": 3.917888641357422,
+        "peak_gpu_gib": 0.0018591880798339844,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 14.495492710003843,
+        "inference_ms": 60.4787800097256,
+        "peak_ram_gib": 1.6672859191894531,
+        "peak_gpu_gib": 1.471491813659668,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 116.78467227332973,
+        "inference_ms": 55.492559997946955,
+        "peak_ram_gib": 1.646484375,
+        "peak_gpu_gib": 1.470789909362793,
+        "timing_flags": 1
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 10.886432771672359,
+        "inference_ms": 39.25384000322083,
+        "peak_ram_gib": 1.6774711608886719,
+        "peak_gpu_gib": 1.472156047821045,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 148.51565952000237,
+        "inference_ms": 538.0475699930685,
+        "peak_ram_gib": 1.6637840270996094,
+        "peak_gpu_gib": 1.4708251953125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 12.511636034990564,
+        "inference_ms": 53.710369995678775,
+        "peak_ram_gib": 1.646881103515625,
+        "peak_gpu_gib": 1.470536708831787,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 12.523954111680117,
+        "inference_ms": 53.790615014440846,
+        "peak_ram_gib": 1.6469345092773438,
+        "peak_gpu_gib": 1.47129487991333,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 12.247841291675286,
+        "inference_ms": 44.95870501123136,
+        "peak_ram_gib": 1.6775283813476562,
+        "peak_gpu_gib": 1.4707341194152832,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 70,
+        "tasks": 7,
+        "training_minutes": 12.223749975000585,
+        "inference_ms": 46.32642999058589,
+        "peak_ram_gib": 1.6470832824707031,
+        "peak_gpu_gib": 1.4714961051940918,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 80,
+        "tasks": 7,
+        "training_minutes": 12.712512943338274,
+        "inference_ms": 54.080469998007175,
+        "peak_ram_gib": 1.6663436889648438,
+        "peak_gpu_gib": 1.471540927886963,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 90,
+        "tasks": 7,
+        "training_minutes": 12.39679741498597,
+        "inference_ms": 49.04127499612514,
+        "peak_ram_gib": 1.6489105224609375,
+        "peak_gpu_gib": 1.47084379196167,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 0.5463327816648719,
+        "inference_ms": 5.6416550040012226,
+        "peak_ram_gib": 1.3095169067382812,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 0.6051523866587861,
+        "inference_ms": 7.724320006673224,
+        "peak_ram_gib": 1.2780113220214844,
+        "peak_gpu_gib": 0.36542320251464844,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 0.3168402199963263,
+        "inference_ms": 3.8304950125166215,
+        "peak_ram_gib": 1.2804489135742188,
+        "peak_gpu_gib": 0.36542415618896484,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 0.3247826816674205,
+        "inference_ms": 3.8809600024251267,
+        "peak_ram_gib": 1.2814788818359375,
+        "peak_gpu_gib": 0.36542415618896484,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 0.4336628116676972,
+        "inference_ms": 4.866860000765882,
+        "peak_ram_gib": 1.3007621765136719,
+        "peak_gpu_gib": 0.36542224884033203,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 0.4435321400043904,
+        "inference_ms": 4.920999996829778,
+        "peak_ram_gib": 1.2774772644042969,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 0.5461011466497439,
+        "inference_ms": 6.774159996712115,
+        "peak_ram_gib": 1.2818565368652344,
+        "peak_gpu_gib": 0.36542320251464844,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 70,
+        "tasks": 7,
+        "training_minutes": 0.5440520499978447,
+        "inference_ms": 7.6700500037986785,
+        "peak_ram_gib": 1.2942008972167969,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 80,
+        "tasks": 7,
+        "training_minutes": 0.5328060183383059,
+        "inference_ms": 6.595665014174301,
+        "peak_ram_gib": 1.2837753295898438,
+        "peak_gpu_gib": 0.36542224884033203,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 90,
+        "tasks": 7,
+        "training_minutes": 0.4462123716706022,
+        "inference_ms": 4.949669995403383,
+        "peak_ram_gib": 1.2823295593261719,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90
+        ],
+        "n_seeds": 10,
+        "timing_flags": 0,
+        "training_minutes": 4.253332761499963,
+        "training_minutes_sample_sd": 0.47316025836196923,
+        "inference_ms": 240.6102104994352,
+        "inference_ms_sample_sd": 44.697266240738244,
+        "peak_ram_gib": 3.8513568878173827,
+        "peak_ram_gib_sample_sd": 0.12649235417549928,
+        "peak_gpu_gib": 0.0018579959869384766,
+        "peak_gpu_gib_sample_sd": 6.836513890459241e-07
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90
+        ],
+        "n_seeds": 10,
+        "timing_flags": 0,
+        "training_minutes": 0.4739474608315989,
+        "training_minutes_sample_sd": 0.09791691555177172,
+        "inference_ms": 5.685483503330033,
+        "inference_ms_sample_sd": 1.4377534429682262,
+        "peak_ram_gib": 1.2869857788085937,
+        "peak_ram_gib_sample_sd": 0.01081051197412982,
+        "peak_gpu_gib": 0.36542396545410155,
+        "peak_gpu_gib_sample_sd": 1.1723257010514434e-06
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90
+        ],
+        "n_seeds": 10,
+        "timing_flags": 0,
+        "training_minutes": 3.770427976665863,
+        "training_minutes_sample_sd": 0.15160161168504013,
+        "inference_ms": 14.716142001270782,
+        "inference_ms_sample_sd": 0.4790989314235618,
+        "peak_ram_gib": 1.6860870361328124,
+        "peak_ram_gib_sample_sd": 0.018333243784755773,
+        "peak_gpu_gib": 2.5268545627593992,
+        "peak_gpu_gib_sample_sd": 1.4645448684424646e-06
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90
+        ],
+        "n_seeds": 10,
+        "timing_flags": 1,
+        "training_minutes": 36.52987490466791,
+        "training_minutes_sample_sd": 51.21630126417547,
+        "inference_ms": 99.5180615010031,
+        "inference_ms_sample_sd": 154.20409066377496,
+        "peak_ram_gib": 1.6588706970214844,
+        "peak_ram_gib_sample_sd": 0.013007181555909728,
+        "peak_gpu_gib": 1.4711709499359131,
+        "peak_gpu_gib_sample_sd": 0.0005051064616057306
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90
+        ],
+        "n_seeds": 10,
+        "timing_flags": 1,
+        "training_minutes": 37.34563549016384,
+        "training_minutes_sample_sd": 48.43924498998305,
+        "inference_ms": 172.92476599584916,
+        "inference_ms_sample_sd": 238.11991045472422,
+        "peak_ram_gib": 1.6916614532470704,
+        "peak_ram_gib_sample_sd": 0.002543479545938135,
+        "peak_gpu_gib": 1.192817211151123,
+        "peak_gpu_gib_sample_sd": 0.0004208111260132972
+      }
+    ]
+  },
+  "ms_ten_seeds_verified_20260914": {
+    "jobs": [
+      {
+        "method": "HANAMI",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 16.03030055000854,
+        "inference_ms": 73.59918500878848,
+        "peak_ram_gib": 1.7068252563476562,
+        "peak_gpu_gib": 1.1927733421325684,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 15.884161253319084,
+        "inference_ms": 75.87328500812873,
+        "peak_ram_gib": 1.7066459655761719,
+        "peak_gpu_gib": 1.1934642791748047,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 15.518617968339822,
+        "inference_ms": 72.21351502812468,
+        "peak_ram_gib": 1.71527099609375,
+        "peak_gpu_gib": 1.193659782409668,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 27.750142959993294,
+        "inference_ms": 77.22233000095002,
+        "peak_ram_gib": 1.68975830078125,
+        "peak_gpu_gib": 1.192927360534668,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 15.081595773339115,
+        "inference_ms": 70.47003500338178,
+        "peak_ram_gib": 1.6962623596191406,
+        "peak_gpu_gib": 1.1924586296081543,
+        "timing_flags": 0
+      },
+      {
+        "method": "HANAMI",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 15.287263258322492,
+        "inference_ms": 75.04764000186697,
+        "peak_ram_gib": 1.6897392272949219,
+        "peak_gpu_gib": 1.192582607269287,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 3.8533187066796626,
+        "inference_ms": 15.644804984913208,
+        "peak_ram_gib": 1.6676025390625,
+        "peak_gpu_gib": 2.5268545150756836,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 3.7543374016793676,
+        "inference_ms": 14.89739001262933,
+        "peak_ram_gib": 1.690582275390625,
+        "peak_gpu_gib": 2.526854991912842,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 3.776222021675009,
+        "inference_ms": 15.162799978861585,
+        "peak_ram_gib": 1.7063140869140625,
+        "peak_gpu_gib": 2.526852607727051,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 3.8274030566972215,
+        "inference_ms": 15.34007501322776,
+        "peak_ram_gib": 1.6697921752929688,
+        "peak_gpu_gib": 2.526853084564209,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 3.5518179266771766,
+        "inference_ms": 14.384570004767738,
+        "peak_ram_gib": 1.6818809509277344,
+        "peak_gpu_gib": 2.5268540382385254,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 3.5531087383230138,
+        "inference_ms": 14.209650005795993,
+        "peak_ram_gib": 1.6938819885253906,
+        "peak_gpu_gib": 2.526857376098633,
+        "timing_flags": 0
+      },
+      {
+        "method": "N2V-MLP",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 3.663931856671115,
+        "inference_ms": 14.361589989857748,
+        "peak_ram_gib": 1.6726875305175781,
+        "peak_gpu_gib": 2.526853561401367,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 4.419703926666989,
+        "inference_ms": 240.6772900139913,
+        "peak_ram_gib": 3.789325714111328,
+        "peak_gpu_gib": 0.0018587112426757812,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 4.367852356666117,
+        "inference_ms": 235.9500050108181,
+        "peak_ram_gib": 3.7549972534179688,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 4.4563387233317675,
+        "inference_ms": 240.58131500787567,
+        "peak_ram_gib": 3.7504539489746094,
+        "peak_gpu_gib": 0.001857757568359375,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 4.5303272916654045,
+        "inference_ms": 286.6918400017312,
+        "peak_ram_gib": 3.69488525390625,
+        "peak_gpu_gib": 0.0018572807312011719,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 4.24436403500052,
+        "inference_ms": 206.55288997804746,
+        "peak_ram_gib": 3.9016494750976562,
+        "peak_gpu_gib": 0.0018568038940429688,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 3.586400395000237,
+        "inference_ms": 201.6528800013475,
+        "peak_ram_gib": 3.7486228942871094,
+        "peak_gpu_gib": 0.0018582344055175781,
+        "timing_flags": 0
+      },
+      {
+        "method": "RF",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 4.508611964999,
+        "inference_ms": 241.02300000377,
+        "peak_ram_gib": 3.8611488342285156,
+        "peak_gpu_gib": 0.0018582344055175781,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 11.906268860001001,
+        "inference_ms": 47.57918499526568,
+        "peak_ram_gib": 1.6667442321777344,
+        "peak_gpu_gib": 1.471491813659668,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 11.722703353341785,
+        "inference_ms": 43.25327002152335,
+        "peak_ram_gib": 1.6455650329589844,
+        "peak_gpu_gib": 1.470789909362793,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 12.050513533332074,
+        "inference_ms": 47.12753001076635,
+        "peak_ram_gib": 1.6468963623046875,
+        "peak_gpu_gib": 1.472156047821045,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 11.97958155499946,
+        "inference_ms": 47.266370002762415,
+        "peak_ram_gib": 1.6657943725585938,
+        "peak_gpu_gib": 1.4708251953125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 10.889975268325847,
+        "inference_ms": 40.66737000539433,
+        "peak_ram_gib": 1.6708297729492188,
+        "peak_gpu_gib": 1.470536708831787,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 10.942861641672788,
+        "inference_ms": 39.93341499590315,
+        "peak_ram_gib": 1.6507644653320312,
+        "peak_gpu_gib": 1.47129487991333,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriMoGCL",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 126.25026663669463,
+        "inference_ms": 459.64433501067106,
+        "peak_ram_gib": 1.653564453125,
+        "peak_gpu_gib": 1.4707341194152832,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 1,
+        "tasks": 7,
+        "training_minutes": 0.5063151633328137,
+        "inference_ms": 7.77677999867592,
+        "peak_ram_gib": 1.3088569641113281,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 10,
+        "tasks": 7,
+        "training_minutes": 0.41394183003091406,
+        "inference_ms": 5.214120028540492,
+        "peak_ram_gib": 1.2976951599121094,
+        "peak_gpu_gib": 0.36542320251464844,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 20,
+        "tasks": 7,
+        "training_minutes": 0.42418994666368237,
+        "inference_ms": 4.834805001155473,
+        "peak_ram_gib": 1.2833786010742188,
+        "peak_gpu_gib": 0.36542415618896484,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 30,
+        "tasks": 7,
+        "training_minutes": 0.5591699349907382,
+        "inference_ms": 6.968210026388988,
+        "peak_ram_gib": 1.2941627502441406,
+        "peak_gpu_gib": 0.36542415618896484,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 40,
+        "tasks": 7,
+        "training_minutes": 0.3620787083142204,
+        "inference_ms": 4.578715015668422,
+        "peak_ram_gib": 1.2801399230957031,
+        "peak_gpu_gib": 0.36542224884033203,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 50,
+        "tasks": 7,
+        "training_minutes": 0.3436237383362216,
+        "inference_ms": 4.275365005014464,
+        "peak_ram_gib": 1.2789688110351562,
+        "peak_gpu_gib": 0.36542510986328125,
+        "timing_flags": 0
+      },
+      {
+        "method": "TriNet",
+        "seed": 60,
+        "tasks": 7,
+        "training_minutes": 0.4055626133321008,
+        "inference_ms": 5.081010013236664,
+        "peak_ram_gib": 1.293731689453125,
+        "peak_gpu_gib": 0.36542320251464844,
+        "timing_flags": 0
+      }
+    ],
+    "summary": [
+      {
+        "method": "RF",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60
+        ],
+        "n_seeds": 7,
+        "timing_flags": 0,
+        "training_minutes": 4.301942670475719,
+        "training_minutes_sample_sd": 0.32970636458357744,
+        "inference_ms": 236.16131714536874,
+        "inference_ms_sample_sd": 27.941712959514437,
+        "peak_ram_gib": 3.7858690534319197,
+        "peak_ram_gib_sample_sd": 0.07182934143733004,
+        "peak_gpu_gib": 0.0018578256879534041,
+        "peak_gpu_gib_sample_sd": 6.41434392103719e-07
+      },
+      {
+        "method": "TriNet",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60
+        ],
+        "n_seeds": 7,
+        "timing_flags": 0,
+        "training_minutes": 0.430697419285813,
+        "training_minutes_sample_sd": 0.07688567200434854,
+        "inference_ms": 5.532715012668632,
+        "inference_ms_sample_sd": 1.3153033355122543,
+        "peak_ram_gib": 1.2909905569893974,
+        "peak_ram_gib_sample_sd": 0.01081617096114947,
+        "peak_gpu_gib": 0.3654238837105887,
+        "peak_gpu_gib_sample_sd": 1.0611508183749902e-06
+      },
+      {
+        "method": "N2V-MLP",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60
+        ],
+        "n_seeds": 7,
+        "timing_flags": 0,
+        "training_minutes": 3.711448529771795,
+        "training_minutes_sample_sd": 0.12410943639933335,
+        "inference_ms": 14.857268570007623,
+        "inference_ms_sample_sd": 0.5532970617854285,
+        "peak_ram_gib": 1.683248792375837,
+        "peak_ram_gib_sample_sd": 0.014365175912277539,
+        "peak_gpu_gib": 2.5268543107169017,
+        "peak_gpu_gib_sample_sd": 1.578063088725322e-06
+      },
+      {
+        "method": "TriMoGCL",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60
+        ],
+        "n_seeds": 7,
+        "timing_flags": 0,
+        "training_minutes": 27.96316726405251,
+        "training_minutes_sample_sd": 43.34320940038814,
+        "inference_ms": 103.63878214889804,
+        "inference_ms_sample_sd": 157.01602104942862,
+        "peak_ram_gib": 1.65716552734375,
+        "peak_ram_gib_sample_sd": 0.010383389900719615,
+        "peak_gpu_gib": 1.471118382045201,
+        "peak_gpu_gib_sample_sd": 0.0005667461497840227
+      },
+      {
+        "method": "HANAMI",
+        "seeds": [
+          1,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "n_seeds": 6,
+        "timing_flags": 0,
+        "training_minutes": 17.592013627220393,
+        "training_minutes_sample_sd": 4.989114964203607,
+        "inference_ms": 74.07099834187345,
+        "inference_ms_sample_sd": 2.480836408640752,
+        "peak_ram_gib": 1.7007503509521484,
+        "peak_ram_gib_sample_sd": 0.010437662190808075,
+        "peak_gpu_gib": 1.1929776668548584,
+        "peak_gpu_gib_sample_sd": 0.00048411243273533354
+      }
+    ]
+  }
+}

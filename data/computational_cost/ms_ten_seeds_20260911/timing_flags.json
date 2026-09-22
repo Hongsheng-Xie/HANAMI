@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 10,
+    "method": "TriMoGCL",
+    "task": "2-star 0",
+    "flags": [
+      {
+        "epoch": 18,
+        "seconds": 6201.117778600019,
+        "threshold_seconds": 30.0
+      }
+    ]
+  },
+  {
+    "seed": 10,
+    "method": "HANAMI",
+    "task": "2-star 2",
+    "flags": [
+      {
+        "epoch": 78,
+        "seconds": 341.2352329999849,
+        "threshold_seconds": 155.47159100009594
+      }
+    ]
+  }
+]
