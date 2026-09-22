@@ -2,7 +2,7 @@
 
 The current workflow uses the completed clinical evidence audit and saved model
 scores. The [manifest](manifest.json) records the input paths, identifiers and
-SHA256 checksums verified during reproduction.
+SHA256 checksums of the saved inputs.
 
 ## Candidate pool and scores
 

@@ -2,8 +2,8 @@
 
 This directory packages the specific `bio_allgene_control` runner and data loader
 identified by the completed ten-seed run behind the current Figure 5 HANAMI
-scores. It is optional: the normal Figure 5 workflow reconstructs the figure and
-statistics directly from the frozen scores and does not retrain a model.
+scores. It is optional: the normal Figure 5 workflow creates the figure and
+statistics directly from the prepared ranking tables and does not retrain a model.
 
 ## Source and scope
 
@@ -56,7 +56,7 @@ Completed seeds are skipped unless `--force` is supplied.
 
 The source package was validated without executing training. It does not claim
 bitwise regeneration of the released scores across environments. Keep the frozen
-scores as the input for exact numerical reproduction of the released figure.
+scores as the source records underlying the prepared ranking tables.
 
 ## Completed-run provenance
 

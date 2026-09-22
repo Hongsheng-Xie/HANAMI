@@ -4,4 +4,4 @@
 
 Required R packages: `rmarkdown`, `knitr`, `ggplot2`, `tidyr`, `dplyr`, `patchwork` and `scales`.
 
-The PDF, PNG and statistical tables are saved in `results/clinical_concordance/figure5/`. Optional data reconstruction and checks are in [tools/figure5](../../tools/figure5/); input details are in the [data guide](../../data/clinical_concordance/).
+The PDF, PNG and statistical tables are saved in `results/clinical_concordance/figure5/`. Input details are in the [data guide](../../data/clinical_concordance/).

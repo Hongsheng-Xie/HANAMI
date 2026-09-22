@@ -102,7 +102,7 @@ Open `analysis/clinical_concordance/plot_figure5.Rmd` and knit it in R, or run f
 rmarkdown::render("analysis/clinical_concordance/plot_figure5.Rmd")
 ```
 
-Prepared inputs are included. Optional data reconstruction and verification tools are in [`tools/figure5/`](tools/figure5/).
+Prepared inputs are included.
 
 ## Computational cost
 
