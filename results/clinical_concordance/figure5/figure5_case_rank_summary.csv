@@ -1,6 +1,0 @@
-"panel","candidate_index","motif","clinical_evidence","clinical_reference","RF_motif_percentile","TriNet_motif_percentile","N2V_MLP_motif_percentile","TriMoGCL_motif_percentile","HANAMI_motif_percentile"
-"c",3999,"Lenvatinib-FLT1-Melanoma","Phase II and III","NCT03820986;NCT04889118;NCT07501104",79.4157887975,79.2424631723,75.1586587873,54.3705035971,41.0136176773
-"d",14585,"Pirfenidone-TNF-Hypersensitivity","Phase II in chronic progressive hypersensitivity pneumonitis; broader MS label Hypersensitivity","NCT04675619",47.9304770469,56.3788968825,49.9496831107,54.2279033916,30.1021325797
-"e",40511,"Enalapril-ACE-Coronary Artery Disease","Phase III","NCT00000516;NCT04912167",38.9000942103,47.053785543,44.4689962316,48.0395683453,25.1916324084
-"f",6118,"Roflumilast-PDE4D-Diabetes Mellitus","Phase III in type 2 diabetes with neuropathy on background diabetes therapy","NCT05369793",47.0876156218,52.383521754,57.380952381,49.7147995889,33.9356372045
-"g",35674,"Scopolamine-CHRM2-Bipolar Disorder","Phase II bipolar depression","NCT04211961",37.3056911614,34.2940647482,32.0041109969,16.4082305584,8.4453151764

@@ -45,6 +45,8 @@ This project implements a drug–gene–disease motif prediction model using a m
 
 ## Usage
 
+The `results/` directory contains locally generated outputs and is excluded from version control.
+
 ### Basic Training
 
 Run training with default parameters:

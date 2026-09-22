@@ -4,16 +4,8 @@ __pycache__/
 .venv/
 venv/
 
-# Generated clinical-concordance outputs
-results/clinical_concordance/*
-!results/clinical_concordance/.gitkeep
-!results/clinical_concordance/figure5/
-results/clinical_concordance/figure5/*
-!results/clinical_concordance/figure5/*.csv
-!results/clinical_concordance/figure5/figure5.pdf
-!results/clinical_concordance/figure5/figure5.png
-!results/clinical_concordance/figure5/run_manifest.json
-!results/clinical_concordance/figure5/r_package_versions.txt
+# Generated outputs for all analyses
+/results/
 
 # Platform and editor files
 .DS_Store
