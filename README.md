@@ -34,12 +34,11 @@ This project implements a drug–gene–disease motif prediction model using a m
 - `create_data.py`: Manages the logic of assembling valid drug-gene-disease motifs and generating corresponding negative samples
 - `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
 - `main.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
-- `run_clinical_concordance.py`: Reproduces current Figure 5 from frozen scores, without training
 - `utils.py`: Utility functions for graph processing and logging
 - [`analysis/ms_validation/`](analysis/ms_validation/): R Markdown workflow used to prepare the MS benchmark plots
 - [`analysis/drkg_validation/`](analysis/drkg_validation/): R Markdown workflow used to prepare the DRKG benchmark plots
 - [`analysis/transfer_validation/`](analysis/transfer_validation/): R Markdown workflow used to prepare the transfer and cold-start plots
-- [`analysis/clinical_concordance/`](analysis/clinical_concordance/): Current complete-cohort Figure 5 Rmd, builders and tests
+- [`analysis/clinical_concordance/`](analysis/clinical_concordance/): R Markdown workflow used to prepare Figure 5
 - [`data/clinical_concordance/`](data/clinical_concordance/): Frozen candidate scores, clinical cohort, five cases and provenance
 - [`analysis/computational_cost/`](analysis/computational_cost/): Cost instrumentation, archived-record reconstruction and provenance limits
 - [`data/README.md`](data/README.md): Feature dimensions, Git LFS setup and transfer-subset reconstruction
@@ -97,11 +96,13 @@ The clinical concordance analysis compares how HANAMI and four baselines rank MS
 
 ### Usage
 
-Run the analysis from the repository root:
+Open `analysis/clinical_concordance/plot_figure5.Rmd` and knit it in R, or run from the repository root:
 
-```bash
-python run_clinical_concordance.py
+```r
+rmarkdown::render("analysis/clinical_concordance/plot_figure5.Rmd")
 ```
+
+Prepared inputs are included. Optional data reconstruction and verification tools are in [`tools/figure5/`](tools/figure5/).
 
 ## Computational cost
 

@@ -2,9 +2,9 @@
 title: "HANAMI Figure 5: complete cohort with error bars"
 output: html_document
 params:
-  source: "results/clinical_concordance/figure5/validated_gene_star_motifs_1630_mean10.tsv"
+  source: "data/clinical_concordance/current/validated_gene_star_motifs_1630_mean10.tsv"
   case_source: "data/clinical_concordance/current/figure5_cases_5.csv"
-  seed_source: "results/clinical_concordance/figure5/figure5_case_seed_percentiles.csv"
+  seed_source: "data/clinical_concordance/current/figure5_case_seed_percentiles.csv"
   bar_alpha: 0.8
   layout_columns: 4
   output_stats: "results/clinical_concordance/figure5/figure5_complete_cohort_cluster_robust_results.csv"

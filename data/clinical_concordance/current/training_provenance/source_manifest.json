@@ -6,9 +6,9 @@
     {
       "historical_relative_path": "bio_allgene_control/run_bio_allgene_hanami.py",
       "original_sha256": "5282598317328707dd29e96d8c740a78e3e8c29f538b95a5d576b8995b3abd4d",
-      "packaged_path": "analysis/clinical_concordance/score_generation/run_bio_allgene_hanami.py",
+      "packaged_path": "training/clinical_concordance/run_bio_allgene_hanami.py",
       "changes": [
-        "Replace local model/data/output paths with repository-relative defaults.",
+        "Replace local model/data/output paths with repository-relative defaults; adjust repository-root depth after relocation to training/clinical_concordance/.",
         "Remove the local TriMoGCL virtual-environment path; import installed dependencies.",
         "Report dise_All.pth, the byte-identical replacement of dise_Bio.pth.",
         "Update metadata references to the packaged main.py and label the unused historical extractor."
@@ -17,7 +17,7 @@
     {
       "historical_relative_path": "bio_allgene_control/utils_our_bio_allgene.py",
       "original_sha256": "9ef98dd213c47fd8bde458de6336d9cb32be5c3e4cf339acdf5509da79f7cd34",
-      "packaged_path": "analysis/clinical_concordance/score_generation/utils_our_bio_allgene.py",
+      "packaged_path": "training/clinical_concordance/utils_our_bio_allgene.py",
       "changes": [
         "Replace the two dise_Bio.pth filename references with byte-identical dise_All.pth.",
         "Remove trailing whitespace without changing executable code."

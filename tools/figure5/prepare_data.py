@@ -1,8 +1,9 @@
-"""Reproduce current Figure 5 motif means from frozen, checksummed scores.
+"""Reconstruct Figure 5's prepared tables from frozen, checksummed scores.
 
 Rank the complete MS pool separately for each method and seed, then take the
 arithmetic mean of ten rank percentiles for each motif. This does not train
-models or reselect the clinical cohort. Only the output directory is written.
+models or reselect the clinical cohort. Both the cohort means and case-seed
+values are reconstructed in one pass. Only the output directory is written.
 """
 from __future__ import annotations
 
@@ -137,12 +138,35 @@ def ensure_output_directory(output_dir: Path, input_dir: Path) -> Path:
     return output_dir
 
 
-def build(input_dir: Path = DEFAULT_INPUT, output_dir: Path = DEFAULT_OUTPUT) -> Path:
-    manifest, cohort, _, _, checks = reconstruct(input_dir)
+def case_seed_table(cases: pd.DataFrame, percentiles: dict) -> pd.DataFrame:
+    rows = [
+        {"panel": case.panel, "candidate_index": int(case.candidate_index),
+         "method": METHOD_NAMES[key], "seed": seed,
+         "rank_percentile": float(values[s, case.candidate_index])}
+        for key, values in percentiles.items()
+        for s, seed in enumerate(SEEDS)
+        for case in cases.itertuples(index=False)
+    ]
+    result = pd.DataFrame(rows).sort_values(["panel", "method", "seed"]).reset_index(drop=True)
+    if len(result) != 250 or result.duplicated(["panel", "method", "seed"]).any():
+        raise ValueError("Expected exactly 250 unique panel/method/seed observations")
+    return result
+
+
+def build(input_dir: Path = DEFAULT_INPUT, output_dir: Path = DEFAULT_OUTPUT) -> tuple[Path, Path]:
+    manifest, cohort, cases, percentiles, checks = reconstruct(input_dir)
+    case_values = case_seed_table(cases, percentiles)
+    case_record = manifest["files"]["case_seed_percentiles"]
+    released_cases = pd.read_csv(checked_path(input_dir, case_record))
+    released_cases = released_cases.sort_values(["panel", "method", "seed"]).reset_index(drop=True)
+    pd.testing.assert_frame_equal(case_values, released_cases, check_dtype=False,
+                                  rtol=0, atol=1e-12)
     output_dir = ensure_output_directory(output_dir, input_dir)
-    output = output_dir / "validated_gene_star_motifs_1630_mean10.tsv"
+    mean_output = output_dir / "validated_gene_star_motifs_1630_mean10.tsv"
+    case_output = output_dir / "figure5_case_seed_percentiles.csv"
     # Match the frozen release's CRLF bytes on Linux as well as Windows.
-    cohort.to_csv(output, sep="\t", index=False, float_format="%.10f", lineterminator="\r\n")
+    cohort.to_csv(mean_output, sep="\t", index=False, float_format="%.10f", lineterminator="\r\n")
+    case_values.to_csv(case_output, index=False, float_format="%.17g", lineterminator="\r\n")
     audit = {
         "input_manifest_sha256": sha256(input_dir / "manifest.json"),
         "all_source_hashes_verified": True,
@@ -150,10 +174,13 @@ def build(input_dir: Path = DEFAULT_INPUT, output_dir: Path = DEFAULT_OUTPUT) ->
         "seeds": manifest["seeds"], "candidate_pool_size": 46704,
         "cohort_motifs": 1630, "cohort_pairs": 785, "disease_labels": 109,
         "aggregation": manifest["aggregation"], "median_used": False,
-        "source_reproduction_checks": checks, "output_sha256": sha256(output),
+        "case_candidates": manifest["case_candidates"], "case_seed_values": len(case_values),
+        "case_seed_values_match_release": True,
+        "source_reproduction_checks": checks,
+        "output_sha256": {path.name: sha256(path) for path in (mean_output, case_output)},
     }
-    output.with_suffix(".audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
-    return output
+    (output_dir / "prepare_data.audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
+    return mean_output, case_output
 
 
 def main() -> None:
@@ -161,7 +188,10 @@ def main() -> None:
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
-    print(f"Verified frozen sources and reproduced 1,630 motif means: {build(args.input_dir, args.output_dir)}")
+    outputs = build(args.input_dir, args.output_dir)
+    print("Verified frozen sources and reproduced 1,630 motif means and 250 case-seed values:")
+    for path in outputs:
+        print(path)
 
 
 if __name__ == "__main__":

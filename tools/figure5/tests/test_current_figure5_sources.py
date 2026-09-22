@@ -1,19 +1,19 @@
 """Regression tests for the released Figure 5 inputs and reconstruction.
 
 Run from the repository root:
-python -m unittest discover -s analysis/clinical_concordance/tests -v
+python -m unittest discover -s tools/figure5/tests -v
 """
 from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-import build_mean_rank_percentile_source as means
-import build_figure5_errorbar_data as cases_builder
+import prepare_data as means
 
 
 class CurrentFigure5Tests(unittest.TestCase):
@@ -54,10 +54,15 @@ class CurrentFigure5Tests(unittest.TestCase):
         before = {path: means.sha256(path) for path in files if path.is_file()}
         with tempfile.TemporaryDirectory() as directory:
             output_dir = Path(directory)
-            table = means.build(output_dir=output_dir)
-            case_file = cases_builder.build(output_dir=output_dir)
+            with patch.object(means, "reconstruct", wraps=means.reconstruct) as reconstruction:
+                table, case_file = means.build(output_dir=output_dir)
+                reconstruction.assert_called_once()
             self.assertTrue(table.exists())
+            frozen_mean = means.DEFAULT_INPUT / "validated_gene_star_motifs_1630_mean10.tsv"
+            self.assertEqual(means.sha256(table), means.sha256(frozen_mean))
             result = pd.read_csv(case_file)
+            frozen_cases = pd.read_csv(means.DEFAULT_INPUT / "figure5_case_seed_percentiles.csv")
+            pd.testing.assert_frame_equal(result, frozen_cases, check_dtype=False, rtol=0, atol=1e-12)
             self.assertEqual(len(result), 250)
             self.assertFalse(result.duplicated(["panel", "method", "seed"]).any())
             self.assertTrue((result.groupby(["panel", "method"]).size() == 10).all())

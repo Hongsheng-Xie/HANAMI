@@ -1,11 +1,12 @@
 """Independently verify Figure 5's R outputs against the frozen release."""
 from __future__ import annotations
 import argparse
+import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy.stats import t, ttest_rel
-from build_mean_rank_percentile_source import DEFAULT_INPUT, DEFAULT_OUTPUT, METHOD_COLUMNS, METHOD_NAMES
+from prepare_data import DEFAULT_INPUT, DEFAULT_OUTPUT, METHOD_COLUMNS, METHOD_NAMES, checked_path
 
 METHODS = list(METHOD_NAMES.values())
 
@@ -19,7 +20,8 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     output = args.output_dir
-    frozen = pd.read_csv(DEFAULT_INPUT / "validated_gene_star_motifs_1630_mean10.tsv", sep="\t")
+    manifest = json.loads((DEFAULT_INPUT / "manifest.json").read_text(encoding="utf-8"))
+    frozen = pd.read_csv(checked_path(DEFAULT_INPUT, manifest["files"]["released_means"]), sep="\t")
     values = frozen[list(METHOD_COLUMNS.values())].to_numpy()
     clusters, ids = np.unique(frozen["disease_mesh_id"] + ":" + frozen["drugbank_id"], return_inverse=True)
     n, g = len(values), len(clusters)
@@ -58,7 +60,7 @@ def main():
         assert row.df == 784 and row.baseline == "TriMoGCL" and row.significance == "*"
     near(tests.p_raw, [.0151253264000526, .0199482574390034])
 
-    seeds = pd.read_csv(output / "figure5_case_seed_percentiles.csv")
+    seeds = pd.read_csv(checked_path(DEFAULT_INPUT, manifest["files"]["case_seed_percentiles"]))
     case_tests = pd.read_csv(output / "figure5_case_seed_tests.csv").set_index("panel")
     case_ids = [3999, 14585, 40511, 6118, 35674]
     expected_p = [.0101861403208684, .026368750391558, .0254077860812336,

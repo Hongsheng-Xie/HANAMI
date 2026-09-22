@@ -19,12 +19,12 @@ trailing whitespace was also removed without changing the executable code.
 The generated metadata points to the packaged main runner and labels the unused
 historical extractor. Original source hashes and the complete list of packaging
 changes are recorded in
-[source_manifest.json](../../../data/clinical_concordance/current/training_provenance/source_manifest.json).
+[source_manifest.json](../../data/clinical_concordance/current/training_provenance/source_manifest.json).
 
 The original six diagnostic targets are preserved in the runner and historical
 metadata. They are not the five current Figure 5 cases and are not used to select
 the current clinical cohort or calculate the current figure. Current Figure 5
-aggregation remains in the parent clinical-concordance workflow.
+aggregation remains in [the Figure 5 workflow](../../analysis/clinical_concordance/).
 
 ## Dependencies
 
@@ -46,7 +46,7 @@ After installing the dependencies, run from the repository root with a
 CUDA-capable environment:
 
 ```sh
-python analysis/clinical_concordance/score_generation/run_bio_allgene_hanami.py --output-dir results/clinical_concordance/score_generation --seeds 0,10,20,30,40,50,60,70,80,90 --epochs 150 --score-batch 2048
+python training/clinical_concordance/run_bio_allgene_hanami.py --output-dir results/clinical_concordance/score_generation --seeds 0,10,20,30,40,50,60,70,80,90 --epochs 150 --score-batch 2048
 ```
 
 Use a separate output directory for new experiments. The command writes scores,
@@ -60,10 +60,14 @@ scores as the input for exact numerical reproduction of the released figure.
 
 ## Completed-run provenance
 
-[training_provenance](../../../data/clinical_concordance/current/training_provenance/)
+[training_provenance](../../data/clinical_concordance/current/training_provenance/)
 contains the sanitized original run manifest and ten per-seed records. Machine
 paths were replaced by repository-relative paths or historical basenames;
 original file hashes, metrics, seeds, feature names and diagnostic targets are
 preserved. Historical checkpoints are not included. The separate
 `current/manifest.json` continues to define the checksummed frozen Figure 5
 inputs and has not been replaced by these training records.
+
+The optional source files were moved from the analysis directory to
+`training/clinical_concordance/` for organization. Only the repository-root depth
+and documentation paths changed during this move; no training was executed.

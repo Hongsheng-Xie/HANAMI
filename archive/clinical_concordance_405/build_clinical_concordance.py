@@ -20,7 +20,7 @@ import yaml
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = SCRIPT_DIR.parents[2]
+REPO_ROOT = SCRIPT_DIR.parents[1]
 
 
 def load_config(path: Path) -> dict[str, Any]:

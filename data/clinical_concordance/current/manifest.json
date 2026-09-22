@@ -21,7 +21,8 @@
     "candidate_metadata": {"path": "../gene_star_candidates.csv", "sha256": "83f626dbd8bb6d2701159e52b45e0779575463a1786bd1ca26b73ddf695d82d3"},
     "cohort_metadata": {"path": "cohort_metadata.tsv", "sha256": "089403cde9a05f230db7989f6b20210a48b206c7cd96f3d2209261a1f6fffbe6"},
     "released_means": {"path": "validated_gene_star_motifs_1630_mean10.tsv", "sha256": "b253f10f5f03c553c5a36072f2ed5d3709ce658961faff716e92d27a0e21c220"},
-    "cases": {"path": "figure5_cases_5.csv", "sha256": "bb856299f1563043a76c3ccf7865103ef0d4f116ae6527ded0d7635c99a947c2"}
+    "cases": {"path": "figure5_cases_5.csv", "sha256": "bb856299f1563043a76c3ccf7865103ef0d4f116ae6527ded0d7635c99a947c2"},
+    "case_seed_percentiles": {"path": "figure5_case_seed_percentiles.csv", "sha256": "b32de9df9b43ff66643bc25f5aec4eec33f9febf91c6d93333bd0d4df4c35a5b"}
   },
   "hanami_scores": [
     {"seed": 0, "path": "hanami_scores/scores_seed0.npy", "sha256": "7441af630f3a477b77cb719e22c9dbcdce22f9a5f9318e68536b1fa78ef6bba5"},
