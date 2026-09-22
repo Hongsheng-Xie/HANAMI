@@ -42,7 +42,6 @@ This project implements a drug–gene–disease motif prediction model using a m
 - [`analysis/transfer_validation/`](analysis/transfer_validation/): R Markdown workflow used to prepare the transfer and cold-start plots
 - [`analysis/clinical_concordance/`](analysis/clinical_concordance/): R Markdown workflow used to prepare Figure 5
 - [`data/clinical_concordance/`](data/clinical_concordance/): Frozen candidate scores, clinical cohort, five cases and provenance
-- [`analysis/computational_cost/`](analysis/computational_cost/): Cost instrumentation, archived-record reconstruction and provenance limits
 - [`data/README.md`](data/README.md): Feature dimensions, Git LFS setup and transfer-subset reconstruction
 
 ## Usage
@@ -92,36 +91,16 @@ Run transfer training with default parameters:
 python transfer_main.py
 ```
 
-## Clinical concordance analysis
+## Clinical Concordance Analysis
 
 ### Overview
 
-The clinical concordance analysis compares how HANAMI and four baselines rank MS gene-star motifs supported by clinical trial records. Figure 5 summarizes performance across 1,630 motifs from 785 drug–disease pairs and presents five biological case studies. See the [analysis instructions](analysis/clinical_concordance/) for inputs and plotting.
+The clinical concordance module evaluates how HANAMI and four baselines prioritize motifs containing drug–disease pairs investigated in Phase II or III trials. It compares motif rankings across the MS clinical evidence cohort and uses shared genes to provide biological context for five representative drug–disease relations.
 
 ### Usage
 
-To generate new HANAMI scores, run from the repository root in a CUDA-enabled environment with PyTorch, PyTorch Geometric, NumPy, scikit-learn and tqdm:
+Run HANAMI training and candidate scoring with default parameters:
 
 ```bash
 python run_bio_allgene_hanami.py
 ```
-
-The defaults use ten seeds, 150 epochs and the MS `dise_All.pth`, `drug_All.pth` and `gene_All.pth` matrices. Scores are saved under `results/clinical_concordance/score_generation/`.
-
-Open `analysis/clinical_concordance/plot_figure5.Rmd` and knit it in R, or run from the repository root:
-
-```r
-rmarkdown::render("analysis/clinical_concordance/plot_figure5.Rmd")
-```
-
-Prepared inputs are included.
-
-## Computational cost
-
-The [cost package](analysis/computational_cost/) includes the measurement scripts, archived runs, timing-review records and a non-training reconstruction command:
-
-```bash
-python analysis/computational_cost/rebuild_recorded_tables.py
-```
-
-DRKG Supplementary Table 2 is reproduced from its complete recorded seven-task, seed-1 runs. The available MS records do not fully establish the manuscript's final Table 1 averages; this unresolved provenance is documented rather than replaced with inferred or selectively reconstructed numbers. New timing runs require the baseline source directory described in the cost package.
