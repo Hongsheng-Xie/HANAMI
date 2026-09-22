@@ -18,13 +18,10 @@ The historical `dise_Bio.pth` name is retained in these records and is
 byte-identical to the packaged `dise_All.pth`. Original metrics and target lists
 have not been recalculated or replaced by current Figure 5 cases.
 
-The optional portable runner is documented in
-[training/clinical_concordance](../../../../training/clinical_concordance/).
+The portable runner is documented in the
+[main README](../../../../README.md#clinical-concordance-analysis).
 The frozen Figure 5 input checksums remain in [the current manifest](../manifest.json).
 
-The optional scripts were subsequently moved from
-`analysis/clinical_concordance/score_generation/` to
-`training/clinical_concordance/`. Their repository-root calculation and
-documentation links were adjusted; training was not rerun. The sanitized
-historical `run_manifest.json` retains its previously recorded runner location.
+The source scripts are in the repository root. The sanitized historical
+`run_manifest.json` retains its previously recorded runner location.
 Use `source_manifest.json` for the current packaged source paths.

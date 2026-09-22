@@ -18,7 +18,7 @@ import torch
 import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score
 
-HANAMI_ROOT = Path(__file__).resolve().parents[2]
+HANAMI_ROOT = Path(__file__).resolve().parent
 DEFAULT_OUT = HANAMI_ROOT / "results/clinical_concordance/score_generation"
 if str(HANAMI_ROOT) not in sys.path:
     sys.path.insert(0, str(HANAMI_ROOT))

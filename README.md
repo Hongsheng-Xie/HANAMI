@@ -35,6 +35,8 @@ This project implements a drug–gene–disease motif prediction model using a m
 - `embedding.py`: Leverages domain-specific pre-trained models to extract and process the initial high-dimensional feature representations for drugs, genes, and diseases.
 - `main.py`: Main training script with contrastive learning, seed-based experiments, and model evaluations (AUROC, AUPR)
 - `utils.py`: Utility functions for graph processing and logging
+- [`run_bio_allgene_hanami.py`](run_bio_allgene_hanami.py): HANAMI training and candidate scoring for the clinical concordance experiment
+- [`utils_our_bio_allgene.py`](utils_our_bio_allgene.py): Data preparation for the clinical concordance scorer
 - [`analysis/ms_validation/`](analysis/ms_validation/): R Markdown workflow used to prepare the MS benchmark plots
 - [`analysis/drkg_validation/`](analysis/drkg_validation/): R Markdown workflow used to prepare the DRKG benchmark plots
 - [`analysis/transfer_validation/`](analysis/transfer_validation/): R Markdown workflow used to prepare the transfer and cold-start plots
@@ -97,6 +99,14 @@ python transfer_main.py
 The clinical concordance analysis compares how HANAMI and four baselines rank MS gene-star motifs supported by clinical trial records. Figure 5 summarizes performance across 1,630 motifs from 785 drug–disease pairs and presents five biological case studies. See the [analysis instructions](analysis/clinical_concordance/) for inputs and plotting.
 
 ### Usage
+
+To generate new HANAMI scores, run from the repository root in a CUDA-enabled environment with PyTorch, PyTorch Geometric, NumPy, scikit-learn and tqdm:
+
+```bash
+python run_bio_allgene_hanami.py
+```
+
+The defaults use ten seeds, 150 epochs and the MS `dise_All.pth`, `drug_All.pth` and `gene_All.pth` matrices. Scores are saved under `results/clinical_concordance/score_generation/`.
 
 Open `analysis/clinical_concordance/plot_figure5.Rmd` and knit it in R, or run from the repository root:
 

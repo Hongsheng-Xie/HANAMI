@@ -17,7 +17,7 @@ archive. The ten seeds are 0, 10, 20, 30, 40, 50, 60, 70, 80 and 90.
 
 The HANAMI run used `dise_All.pth`, `drug_All.pth` and `gene_All.pth`. Its original
 disease-feature filename, `dise_Bio.pth`, is byte-identical to `dise_All.pth`.
-The [optional score-generation source](../../../training/clinical_concordance/)
+The [score-generation source](../../../run_bio_allgene_hanami.py)
 and [completed-run records](training_provenance/) document the training pipeline.
 
 ## Clinical cohort
