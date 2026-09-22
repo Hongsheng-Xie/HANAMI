@@ -93,7 +93,7 @@ python transfer_main.py
 
 ### Overview
 
-Current Figure 5 evaluates all 1,630 clinically supported MS gene-star motifs from 785 drug–disease pairs and 109 disease labels. Each method ranks the same 46,704 candidates. Motif values are arithmetic means across ten seeds, not medians. Panels a–b report the percentage ranked best and the cohort mean percentile; panels c–g show the five current cases with error bars and exploratory paired tests. See the [analysis instructions](analysis/clinical_concordance/) and [data guide](data/clinical_concordance/) for inputs, significance tests and clinical-evidence qualifications.
+The clinical concordance analysis compares how HANAMI and four baselines rank MS gene-star motifs supported by clinical trial records. Figure 5 summarizes performance across 1,630 motifs from 785 drug–disease pairs and presents five biological case studies. See the [analysis instructions](analysis/clinical_concordance/) for inputs and plotting.
 
 ### Usage
 
@@ -102,8 +102,6 @@ Run the analysis from the repository root:
 ```bash
 python run_clinical_concordance.py
 ```
-
-The shared gene is an existing MS structural connection, not a causal mechanism established by this analysis. Clinical trial records indicate investigation, not proof of efficacy or regulatory approval. The old 405-pair consensus workflow is archived under `analysis/clinical_concordance/legacy_405/` and is not used for current Figure 5.
 
 ## Computational cost
 

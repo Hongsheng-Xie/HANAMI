@@ -18,31 +18,10 @@ params:
   dpi: 300
 ---
 
-This document reproduces HANAMI Fig. 5 from the frozen strict-plus-manual
-clinical-evidence motif table. Panels a and b use the complete cohort of all
-qualifying drug-gene-disease motifs. Panel a shows the percentage of motifs
-for which each method assigns the lowest ten-seed mean rank percentile, and
-panel b compares the cohort mean of those motif values. The remaining panels
-show descriptive cases and do not change the cohort in panels a-b.
-Significance is tested for both cohort-level endpoints. In panel a, a one-sided
-CR1 cluster-robust t test evaluates whether HANAMI has a larger proportion of
-unique best-ranked motifs than TriMoGCL. In panel b, the same test evaluates
-whether HANAMI has a lower mean motif rank percentile than TriMoGCL. The
-individual cases also have exploratory one-sided paired t tests across ten
-matched seeds against the baseline with the lowest mean percentile for each
-case. These P-values are unadjusted and do not account for case selection.
-
-Panels a-b show each method's marginal 95% CR1 confidence interval,
-clustered by drug-disease pair and conditional on the ten-seed mean values.
-Panels c-g show the mean plus or minus one sample SD across ten seeds for
-each fixed case. These SD bars are descriptive, not confidence intervals.
-The complete SD intervals are displayed, even when their endpoints extend
-beyond the 0-100 range of individual percentiles. Overlap of marginal error
-bars is not a test of the paired difference.
-
-To reconstruct the case seed table from the original score manifest, run
-`python analysis/clinical_concordance/build_figure5_errorbar_data.py` from
-the repository root before knitting this Rmd.
+This document compares ten-seed motif rankings across five methods in the MS
+clinical evidence cohort. Panels a-b summarize cohort performance, and panels
+c-g show five representative motifs. See [README.md](README.md) for input and
+execution instructions.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
@@ -104,6 +83,8 @@ strict_data <- read.delim(
   comment.char = ""
 )
 
+# Inputs average 100 * descending rank / 46704 across ten seeds, with
+# average ranks for tied scores. Lower percentiles indicate higher priority.
 method_columns <- c(
   "RF" = "RF_motif_percentile",
   "TriNet" = "TriNet_motif_percentile",
@@ -137,7 +118,7 @@ if (anyDuplicated(strict_data$candidate_index)) {
 ## Cohort and significance tests
 
 ```{r cohort-analysis}
-# The publication analysis retains every qualifying motif. No Top-k selection.
+# Complete clinical evidence cohort.
 cohort_disease_ids <- unique(strict_data$disease_mesh_id)
 cohort_data <- strict_data
 cohort_data$pair_id <- paste(
@@ -151,16 +132,14 @@ n_pair_clusters <- length(unique(cohort_data$pair_id))
 n_diseases <- length(unique(cohort_data$disease_mesh_id))
 stopifnot(n_motifs == 1630L, n_pair_clusters == 785L, n_diseases == 109L)
 
-# The estimand is the pooled mean over motifs. Clustering changes only its
-# uncertainty calculation, so gene-specific motifs remain the observations.
+# Panel b: cohort mean of the ten-seed mean percentile for each motif.
 method_means <- vapply(
   method_columns,
   function(column) mean(cohort_data[[column]]),
   numeric(1)
 )
 
-# Count unique lowest-percentile methods, with all cohort motifs as denominator.
-# A tied motif is reported separately rather than assigned to the first method.
+# Panel a: unique best-ranked motifs as a percentage of the complete cohort.
 motif_percentiles <- as.matrix(cohort_data[unname(method_columns)])
 lowest_percentile <- apply(motif_percentiles, 1L, min)
 is_best <- motif_percentiles == lowest_percentile
@@ -178,6 +157,7 @@ best_rank_summary <- data.frame(
 )
 stopifnot(sum(best_rank_counts) + n_best_rank_ties == n_motifs)
 
+# Panels a-b: unadjusted one-sided CR1 t tests, clustered by drug-disease pair.
 cluster_robust_t_test <- function(
     differences, panel, endpoint, alternative, baseline,
     hanami_mean, baseline_mean, lower_tail) {
@@ -307,8 +287,7 @@ aggregate_panel <- data.frame(
   stringsAsFactors = FALSE
 )
 
-# The illustrative case panels are exploratory. Their explicit input table
-# is kept separate from the strict-evidence cohort used for panels a-b.
+# Load the five case-study motifs.
 case_data <- read.csv(
   case_source_path,
   stringsAsFactors = FALSE,
@@ -346,7 +325,6 @@ if (any(!case_motifs$disease_mesh_id %in% cohort_disease_ids)) {
   stop("Every illustrative case must belong to the selected disease cohort")
 }
 
-# Case membership does not determine cohort eligibility.
 if (anyDuplicated(case_motifs$disease_mesh_id)) {
   stop("Each illustrative case must represent a different disease type")
 }
@@ -376,8 +354,7 @@ case_panels <- cbind(
 
 source_data <- rbind(best_share_panel, aggregate_panel, case_panels)
 
-# Marginal intervals describe each individual bar, not the HANAMI-baseline
-# contrast. The paired contrast tests above are intentionally unchanged.
+# Panels a-b: marginal 95% CR1 confidence intervals conditional on ten-seed means.
 cluster_mean_interval <- function(values) {
   estimate <- mean(values)
   scores <- rowsum(values - estimate, cohort_data$pair_id, reorder = FALSE)[, 1L]
@@ -410,6 +387,7 @@ stopifnot(
   all(case_seed_values$rank_percentile > 0 & case_seed_values$rank_percentile <= 100),
   identical(sort(unique(case_seed_values$seed)), seq.int(0L, 90L, 10L))
 )
+# Panels c-g: mean and sample SD across ten seeds.
 case_errorbars <- case_seed_values %>%
   group_by(panel, method) %>%
   summarise(
@@ -429,9 +407,8 @@ stopifnot(
 case_check <- left_join(case_panels, case_errorbars, by = c("panel", "method"))
 stopifnot(!anyNA(case_check$seed_mean), max(abs(case_check$value - case_check$seed_mean)) < 1e-8)
 
-# Match runs explicitly by seed. Keep one strongest-baseline comparison per
-# case, using the smallest baseline mean rank percentile, not the smallest P.
-# The case selection was exploratory; these are nominal, unadjusted P-values.
+# Panels c-g: exploratory, unadjusted one-sided paired t tests across seeds
+# against the baseline with the lowest mean percentile in each panel.
 case_tests <- do.call(rbind, lapply(current_case_panels, function(panel_id) {
   panel_means <- case_check[case_check$panel == panel_id, ]
   baselines <- panel_means[panel_means$method != "HANAMI", ]
@@ -448,7 +425,7 @@ case_tests <- do.call(rbind, lapply(current_case_panels, function(panel_id) {
   test <- t.test(hanami$rank_percentile, comparator$rank_percentile,
                  paired = TRUE, alternative = "less")
   normality <- shapiro.test(difference)
-  # Diagnostic sensitivity analysis, not a replacement chosen by significance.
+  # Additional normality and sensitivity diagnostics are exported with the tests.
   sensitivity <- wilcox.test(difference, alternative = "less", exact = TRUE)
   data.frame(
     panel = panel_id, candidate_index = hanami$candidate_index[1L],
@@ -518,7 +495,7 @@ write.csv(
   row.names = FALSE
 )
 
-# Use the same long-table plotting columns as Figures 2-4.
+# Prepare the long-format plotting table.
 df_long <- source_data %>%
   rename(Model = method, Metric = panel_title, Score = value)
 df_long$Model <- factor(df_long$Model, levels = methods)
@@ -555,7 +532,7 @@ create_single_panel_clinical <- function(data, motif_title, colors) {
   panel_index <- match(panel_letter, letters)
   panel_column <- ((panel_index - 1L) %% layout_columns) + 1L
   panel_row <- ceiling(panel_index / layout_columns)
-  # Match the Figure 2 frame grid while retaining a y-axis title in each panel.
+  # Panel frame and axis layout.
   y_title_right_margin <- 4.4
   y_title_vjust <- if (panel_column == 1L) 0.5 else 0.25
   panel_tag_x <- -0.1311
@@ -597,7 +574,7 @@ create_single_panel_clinical <- function(data, motif_title, colors) {
       aspect.ratio = 1
     )
 
-  # Retain the approved five-bar order, widths and gaps in every panel.
+  # Use the same method order in each panel.
   stopifnot(identical(as.character(data$Model), methods))
   data$x_position <- seq_along(methods)
   title <- format_title(motif_title, panel_type)
@@ -618,8 +595,7 @@ create_single_panel_clinical <- function(data, motif_title, colors) {
 
   base_max <- max(data$Score, 1)
   interval_max <- max(data$error_upper, 1)
-  # Labels still report bar means; placing them above the full whiskers avoids
-  # collisions. Never truncate SD intervals to the percentile domain.
+  # Position mean labels above the full error bars.
   label_gap <- interval_max * 0.025
   data$label_y <- data$error_upper + label_gap
   ymin <- if (min(data$error_lower) < 0) min(data$error_lower) - interval_max * 0.025 else 0
@@ -692,8 +668,7 @@ create_single_panel_clinical <- function(data, motif_title, colors) {
     custom_theme +
     theme(plot.tag.position = c(panel_tag_x, 1.12))
 
-  # Match the supplementary figures: red stars or black n.s.; retain exact
-  # P-values in the exported test table, not on the figure canvas.
+  # Display red stars or black n.s. for the selected comparison.
   if (has_annotation) {
     x1 <- match(data$comparison_method[[1]], methods)
     x2 <- match(data$reference_method[[1]], methods)
@@ -744,8 +719,6 @@ for (i in seq_along(level_order)) {
   )
 }
 
-# Error-bar definitions belong in the manuscript's Figure 5 legend, not on
-# the figure canvas. Statistical calculations and error-bar extents are unchanged.
 caption_parts <- character(0)
 if (n_best_rank_ties > 0L) {
   caption_parts <- c(
