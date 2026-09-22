@@ -39,6 +39,8 @@ as a whole, and an MS disease label can be broader than the trial condition.
 For example, the Hypersensitivity case concerns hypersensitivity pneumonitis.
 The [five-case table](figure5_cases_5.csv) records the relevant clinical context.
 
-The previous 405-pair analysis is documented in the
-[historical provenance note](../PROVENANCE.md) and
-[archived workflow](../../../archive/clinical_concordance_405/).
+The [registry snapshot](../clinicaltrials_snapshot.csv.gz) retains the available
+archived records whose trial identifiers occur in this cohort. It covers at
+least one cited trial for 381 of the 785 pairs, not all cohort evidence.
+The [snapshot metadata](../clinicaltrials_metadata.json) preserves retrieval
+details, checksums and four additional review notes for current pairs.

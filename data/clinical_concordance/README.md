@@ -11,5 +11,7 @@ Figure 5 uses 1,630 motifs from 785 drug–disease pairs and 109 disease labels.
 | `current/validated_gene_star_motifs_1630_mean10.tsv` | Mean rank percentiles across ten seeds |
 | `current/figure5_case_seed_percentiles.csv` | Seed-specific percentiles for the five cases |
 | `current/figure5_cases_5.csv` | Five case-study motifs and clinical references |
+| `clinicaltrials_snapshot.csv.gz` | Available archived trial records cited by the current cohort |
+| `clinicaltrials_metadata.json` | Snapshot provenance, coverage and retained manual review notes |
 
-See the [workflow instructions](../../analysis/clinical_concordance/) to generate Figure 5 and the [provenance note](current/PROVENANCE.md) for source details and historical materials.
+See the [workflow instructions](../../analysis/clinical_concordance/) to generate Figure 5 and the [provenance note](current/PROVENANCE.md) for source details.

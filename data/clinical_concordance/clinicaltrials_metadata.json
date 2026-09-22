@@ -1,9 +1,10 @@
 {
   "source": "ClinicalTrials.gov",
-  "scope": "Frozen Phase II/III exports for 20 MS disease nodes used by the post hoc clinical-concordance matching workflow.",
+  "scope": "Available archived trial records cited by the current 1,630-motif cohort; a partial evidence snapshot, not a new cohort selection.",
   "snapshot": {
     "file": "clinicaltrials_snapshot.csv.gz",
-    "rows": 22760,
+    "rows": 2209,
+    "unique_trial_ids": 1548,
     "columns": [
       "source_disease_local_id",
       "source_disease_label",
@@ -19,25 +20,23 @@
       "study_title",
       "brief_summary"
     ],
-    "sha256": "67e14d61214147db2083988699361aec96cab8432a8802713c149ea4ae274d40",
-    "compressed_bytes": 5421432,
+    "sha256": "f23167791ce4e9635b2eaf088c911524f67b41fb23bb23b0e268dd0438d1b068",
+    "compressed_bytes": 481081,
     "duplicates_across_disease_queries_retained": true
   },
-  "matching_summary": {
-    "exported_node_files": 20,
-    "exported_studies_total": 22760,
-    "automatic_match_rows": 2113,
-    "automatic_matched_pairs": 477,
-    "condition_matched_rows": 1852,
-    "condition_matched_pairs": 420,
-    "manual_review_queue_rows": 1852
+  "derivation": {
+    "source_commit": "1001e2f3afe4343bf3d5572f14bce12b2d7df79a",
+    "source_snapshot_sha256": "67e14d61214147db2083988699361aec96cab8432a8802713c149ea4ae274d40",
+    "source_rows": 22760,
+    "filter": "Retain original rows whose nct_id occurs in current/cohort_metadata.tsv supporting_trials. Preserve every retained field and original row order.",
+    "cohort_metadata_sha256": "089403cde9a05f230db7989f6b20210a48b206c7cd96f3d2209261a1f6fffbe6"
   },
-  "matching_criteria": {
-    "phase": "PHASE2 or PHASE3",
-    "study_type": "INTERVENTIONAL",
-    "intervention": "drug intervention exact-normalized to the candidate drug, with a limited formulation-suffix normalization",
-    "condition": "rule-based mapping to the source MS disease node",
-    "interpretation": "registry concordance only; neither trial efficacy nor FDA approval is implied"
+  "coverage": {
+    "cohort_trial_ids": 3688,
+    "trial_ids_with_snapshot_records": 1548,
+    "pairs_with_at_least_one_snapshot_record": 381,
+    "motifs_with_at_least_one_snapshot_record": 1017,
+    "note": "Supporting trial identifiers for the entire cohort remain in cohort_metadata.tsv. This snapshot does not contain all cited trial records."
   },
   "exports": [
     {
@@ -265,20 +264,6 @@
       "query_file_sha256": "694c60a793486deb1bd1d227f09b42dcfa877bbfdbf8c0bdf5e7e8c4a8080951"
     },
     {
-      "disease_local_id": 228,
-      "disease_label": "Bradycardia",
-      "condition_group": "cardiovascular_hypertensive",
-      "query": "bradycardia",
-      "source_url": "https://clinicaltrials.gov/search?cond=bradycardia&aggFilters=phase:2%203&viewType=Card",
-      "query_timestamp_utc": "2026-08-03T23:43:18.165Z",
-      "transport": "official ClinicalTrials.gov UI CSV export; all 30 selectable fields",
-      "observed_count": 18,
-      "cache_file": "ctgov_node_228_bradycardia_phase2_phase3_all_fields.csv",
-      "cache_file_sha256": "56ed92143a04923593dd6944b98f074bf8dff6668ab4a5c3072f21d2b9241b7e",
-      "query_file": "ctgov_node_228_bradycardia_phase2_phase3_all_fields_query.json",
-      "query_file_sha256": "7d6a0b9f1b843738eeee0ecdfc9524d0d2e3f413df904f9960f33ebd1e1d0d06"
-    },
-    {
       "disease_local_id": 296,
       "disease_label": "Coronary Artery Disease",
       "condition_group": "cardiovascular_hypertensive",
@@ -321,12 +306,78 @@
       "query_file_sha256": "9087c43119e8bf7b09d0fcdf8c06f792d942b1d74f48fc1a862cb5fab4ca7ee7"
     }
   ],
-  "provenance_files": {
-    "match_script": "match_ctgov_exports.py",
-    "match_script_sha256": "f3ea80a33f730f822d20dbdba49999f1a8ae0014329bca2b12474ebf51bc287c",
-    "match_summary": "ctgov_match_summary.json",
-    "match_summary_sha256": "12953dc21b458cdefe127a7eeca04fa0bfec8907178a31425923ea1b7cf9cb3d",
-    "match_audit": "ctgov_export_and_match_audit.csv",
-    "match_audit_sha256": "11f1897f64e324da2b521e66a0cc1f7b1bcc7e6e69f49fe58ab7ddf38253b5ca"
-  }
+  "manual_review_notes": [
+    {
+      "validation_pair_id": "b5a4dc62ed1a9e89e2ad",
+      "condition_group": "psychiatric_mood",
+      "disease_local_global_id": "162",
+      "disease_label": "Depressive Disorder",
+      "drug_name": "cariprazine",
+      "drugbank_id": "DB06016",
+      "gene_intermediaries": "DRD2|1813|pool:18891; HTR2A|3356|pool:23328; HTR1A|3350|pool:29679; DRD3|1814|pool:17793",
+      "classification": "strong",
+      "disease_mapping": "broader_category",
+      "supporting_nct_ids": "NCT01469377;NCT01715805;NCT03738215;NCT03739203",
+      "supporting_phases": "PHASE2;PHASE3",
+      "supporting_statuses": "COMPLETED",
+      "source_urls": "https://clinicaltrials.gov/study/NCT01469377;https://clinicaltrials.gov/study/NCT01715805;https://clinicaltrials.gov/study/NCT03738215;https://clinicaltrials.gov/study/NCT03739203",
+      "manual_reason": "MDD is a clinically narrower diagnosis within the broader MS Depressive Disorder node; cariprazine is the active adjunctive intervention in Phase II/III efficacy studies.",
+      "reviewed_utc": "2026-08-03T23:41:17.317856+00:00",
+      "review_scope": "key six manuscript candidates"
+    },
+    {
+      "validation_pair_id": "a202c2e53faa42c33557",
+      "condition_group": "prostate_oncology",
+      "disease_local_global_id": "2",
+      "disease_label": "Prostatic Neoplasms",
+      "drug_name": "propranolol",
+      "drugbank_id": "DB00571",
+      "gene_intermediaries": "ADRB2|154|pool:26436",
+      "classification": "strong",
+      "disease_mapping": "exact_or_named_subtype",
+      "supporting_nct_ids": "NCT05679193",
+      "supporting_phases": "PHASE2",
+      "supporting_statuses": "COMPLETED",
+      "source_urls": "https://clinicaltrials.gov/study/NCT05679193",
+      "manual_reason": "Propranolol is the active perioperative intervention in a Phase II prostate-cancer recurrence study that began in 2023.",
+      "reviewed_utc": "2026-08-03T23:41:17.318639+00:00",
+      "review_scope": "key six manuscript candidates"
+    },
+    {
+      "validation_pair_id": "8ccd5637da8187b566b5",
+      "condition_group": "breast_oncology",
+      "disease_local_global_id": "6",
+      "disease_label": "Breast Neoplasms",
+      "drug_name": "lasofoxifene",
+      "drugbank_id": "DB06202",
+      "gene_intermediaries": "ESR1|2099|pool:2296",
+      "classification": "strong",
+      "disease_mapping": "broader_category",
+      "supporting_nct_ids": "NCT01042379;NCT03781063",
+      "supporting_phases": "PHASE2",
+      "supporting_statuses": "RECRUITING;COMPLETED",
+      "source_urls": "https://clinicaltrials.gov/study/NCT01042379;https://clinicaltrials.gov/study/NCT03781063",
+      "manual_reason": "Lasofoxifene is an active Phase II intervention in breast-cancer studies; the completed study concerns the narrower ER-positive, HER2-negative, ESR1-mutant subtype.",
+      "reviewed_utc": "2026-08-03T23:41:17.319387+00:00",
+      "review_scope": "key six manuscript candidates"
+    },
+    {
+      "validation_pair_id": "e3206cb5a700c2f9e1c3",
+      "condition_group": "neurological_seizure",
+      "disease_local_global_id": "112",
+      "disease_label": "Seizures",
+      "drug_name": "diazepam",
+      "drugbank_id": "DB00829",
+      "gene_intermediaries": "GABRA1|2554|pool:33823; 2566|2566|pool:45254; GABRB3|2562|pool:24756; GABRA5|2558|pool:43018; GABRD|2563|pool:8350",
+      "classification": "strong",
+      "disease_mapping": "broader_category",
+      "supporting_nct_ids": "NCT00004297;NCT00326612;NCT02904265",
+      "supporting_phases": "PHASE3;PHASE2;PHASE2|PHASE3",
+      "supporting_statuses": "COMPLETED;TERMINATED",
+      "source_urls": "https://clinicaltrials.gov/study/NCT00004297;https://clinicaltrials.gov/study/NCT00326612;https://clinicaltrials.gov/study/NCT02904265",
+      "manual_reason": "Diazepam is an active comparator or treatment in Phase II/III seizure-spectrum trials; status epilepticus and epilepsy are narrower seizure-spectrum conditions.",
+      "reviewed_utc": "2026-08-03T23:41:17.320091+00:00",
+      "review_scope": "key six manuscript candidates"
+    }
+  ]
 }
